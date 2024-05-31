@@ -1,10 +1,10 @@
 # CS 3900 – Application of the Software Development Lifecycle
-Fall 2024
+## Fall 2024
 
 ## Course Information
-Instructor: Kayleigh Duncan
-Time: TR 2:00 PM - 3:20 PM
-Location: Russ 355
+Instructor: Kayleigh Duncan  
+Time: TR 2:00 PM - 3:20 PM  
+Location: Russ 355  
 
 ## Course Description
 Software development is a team activity where successful software is continually enhanced and refined to add value over time. Working in a team environment with other developers, quality assurance, product owners, and scrum masters is a skill needed for anyone entering or working in a corporate environment. This course will introduce and practice software development in a real world scenario. Beginning with defining requirements, using agile methodology, create database designs, create functional UI/UX designs, create microservices, pushing code in a CI/CD pipeline, and create a front end web application. During the software development lifecycle you will practice merging and branching code, code review others changes, and unit and performance test code. You will be partnered with software developers, database engineers, and IT leadership from a local Dayton company (Winsupply) for practical hands-on experience and mentorship.
