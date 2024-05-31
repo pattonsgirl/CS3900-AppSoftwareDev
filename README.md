@@ -1,2 +1,4 @@
-# CS 3900 - Applications of Software Development Process
+# CS 3900 - Application of the Software Development Lifecycle
+
+[Syllabus](#syllabus.md)
 
