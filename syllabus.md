@@ -24,10 +24,8 @@ These prerequisites attempt to ensure familiarity with the command line, the bas
 ## Course Topics / Outline
 This outline is a proposed ordering.  Content may be delevered in different order.
 | Week    | Topics   | Assignment(s) |
-| -----------  | ----------- | ----------- |
-| 1      | Course overview / expectations   | ? |
-|        | Intro to project stack           | ? |
-|        | Intro to Agile                   | ? |
+| :-----------:  | ----------- | ----------- |
+| 1      | Course overview / expectations <br> Intro to project stack <br> Intro to Agile                   | ? |
 | 2      | Database terminology & design    | ? |
 |        |                   |      |
 |        |                   |      |
@@ -64,13 +62,12 @@ This outline is a proposed ordering.  Content may be delevered in different orde
 | 13     |                   |      |
 |        |                   |      |
 |        |                   |      |
-| 14     |  ?                | Work on final project? |
-|        |  No class 11/28   |      |
+| 14     |  ?   <br> No class 11/28  | Work on final project? |
 | 15     |  Final project work week?   |      |
-|        |                   |      |
-|        |                   |      |
+
 | 16     | Final Exam Block: 12/12, 2:45 PM - 4:45 PM  | Retrospective?  Presentations?  |
 
+## Grading
 
 
 
