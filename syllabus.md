@@ -68,7 +68,16 @@ This outline is a proposed ordering.  Content may be delevered in different orde
 
 ## Grading
 
+| Category   | Weight | Sub-Category   | Sub-Category Weight |
+|------------|--------|----------------|---------------------|
+| Modules (~6) | 80% | In-Class Assignments <br> Group Project Assignments <br> Module quiz  | 45% <br> 45% <br> 10%  |
+| Final Project  | 10%  |   |  |
+| Final Presentation?  | 0%  |  |   |
+| Retrospective  | 10%  |   |  |
 
+The grading scale for the course is [90-100] A; [80-90) B; [70-80) C; [60-69) D; [0-60) F. 
+
+TODO: is there a want for midterm / final exam?  Should presentation component be looped into project?
 
 ## Honors Requirements
 
