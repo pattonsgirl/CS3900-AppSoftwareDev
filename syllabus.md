@@ -26,41 +26,27 @@ This outline is a proposed ordering.  Content may be delevered in different orde
 | Week    | Topics   | Assignment(s) |
 | :-----------:  | ----------- | ----------- |
 | 1      | Course overview / expectations <br> Intro to project stack <br> Intro to Agile                   | ? |
-| 2      | Database terminology & design    | ? |
-|        |                   |      |
-|        |                   |      |
-| 3      |                   |      |
-|        |                   |      |
-|        |                   |      |
-| 4      |                   |      |
-|        |                   |      |
-|        |                   |      |
-| 5      |                   |      |
-|        |                   |      |
-|        |                   |      |
+| 2      | Business plan / requirements <br> Setup toy project <br> setup DB container    | ? |
+| 3      | Database terminology & design                  |      |
+| 4      | DB W2                  |      |
+| 5      | Hand off day           |      |
+|        | UX/UI & wireframing & design layout    |      |
 | 6      |                   |      |
-|        |                   |      |
-|        |                   |      |
-| 7      |                   |      |
-|        |                   |      |
+|        | Hand off day <br> Docker - get stack for backend     |      |
+| 7      | Backend services (2 weeks)                  |      |
 |        |                   |      |
 | 8      |                   |      |
-|        |                   |      |
-|        |                   |      |
-| 9      |                   |      |
-|        |                   |      |
-|        |                   |      |
+|        | Unit testing                  |      |
+|        |      |      |
+| 9      |  Automation testing                 |      |
+|        |  Intro to piplines                |      |
 | 10     |                   |      |
 |        |                   |      |
+| 11     |  Frontend development (2 weeks)      |      |
 |        |                   |      |
-| 11     |                   |      |
-|        |                   |      |
-|        |                   |      |
-| 12     |                   |      |
-|        |                   |      |
+| 12     | Kubernetes and full stack hosting    |      |
 |        |                   |      |
 | 13     |                   |      |
-|        |                   |      |
 |        |                   |      |
 | 14     | ?   <br> No class 11/28  | Work on final project? |
 | 15     | Final project work week?   |      |
