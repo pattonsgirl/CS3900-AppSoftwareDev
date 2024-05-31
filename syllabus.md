@@ -62,10 +62,9 @@ This outline is a proposed ordering.  Content may be delevered in different orde
 | 13     |                   |      |
 |        |                   |      |
 |        |                   |      |
-| 14     |  ?   <br> No class 11/28  | Work on final project? |
-| 15     |  Final project work week?   |      |
-
-| 16     | Final Exam Block: 12/12, 2:45 PM - 4:45 PM  | Retrospective?  Presentations?  |
+| 14     | ?   <br> No class 11/28  | Work on final project? |
+| 15     | Final project work week?   |      |
+| 16     | Final Exam Block: 12/12, 2:45 PM - 4:45 PM  | Retrospective? <br> Presentations?  |
 
 ## Grading
 
