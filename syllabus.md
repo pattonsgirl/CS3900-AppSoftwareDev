@@ -15,6 +15,12 @@ Upon successful completion of this course, students will be able to:
 2. Elicit business requirements, and design and implement a software solution that meets those requirements.
 3. Demonstrate understanding of full-stack applications, including database, front-end user interface, and back end services elements.
 
+## Pre-Requisites
+
+CEG 2350 minimum grade of C **AND** CS 1181 minimum grade of C.
+
+These prerequisites attempt to ensure familiarity with the command line, the basics of using git and GitHub, and competency with programming, code literacy, and basic data structures, although the course will not use Java as its primary programming language.  If you do not feel you meet competency in these areas, talk with your instructor early to consider if this course will be a good fit for you.
+
 ## Course Topics / Outline
 This outline is a proposed ordering.  Content may be delevered in different order.
 | Week    | Topics   | Assignment(s) |
@@ -64,6 +70,33 @@ This outline is a proposed ordering.  Content may be delevered in different orde
 |        |                   |      |
 |        |                   |      |
 | 16     | Final Exam Block: 12/12, 2:45 PM - 4:45 PM  | Retrospective?  Presentations?  |
+
+
+
+
+## Honors Requirements
+
+Students taking the course to satisfy the requirements of a university honors program will be given additional requirements for their term project.  To earn honors credit, students must earn an A or B for the overall course grade, and complete all extra honors requirements listed above. 
+
+TODO: removed "In addition, honors students will be required to prepare a written retrospective of the course summarizing the work done by their project team, the degree to which they feel each learning objective has been met, and providing suggestions for improvement in future course offerings."
+
+## Late work
+
+TODO: accept late work?
+
+Programming assignments are due by 11:59 pm on the due date. Late programming assignments will be accepted, but 10% of the total available points will be deducted for each day late. Programming assignments are considered one day late after 11:59 pm on the due date. At 11:59 pm of each successive day (including weekends) the assignment is considered an additional day late until turned in. No points will be awarded for programming assignments turned in more than 4 days late.
+
+## Academic Integrity
+
+Discussion of course contents with other students is an important part of the academic process and is encouraged. However, it is expected that course programming assignments, homework assignments, and other course assignments will be completed on an individual basis. Students may discuss general concepts with one another, but may not, unless specifically instructed to do so, work together on the actual implementation of any course assignment. If you work with other students on general concepts, be certain to acknowledge the collaboration and its extent in the assignment. Unacknowledged collaboration will be considered dishonest. Code sharing (including code from previous terms) is strictly disallowed. Copying or significant collaboration on any graded assignments will be considered a violation of the university guidelines for academic honesty. If the same work is turned in by two or more students, all parties involved may be held equally accountable for violation of academic integrity. You are responsible for ensuring that other students do not have access to your work.  If you suspect that your work has been compromised notify the course instructor immediately. Failure to attend the first day of class, during which time I will explain these academic honesty policies in detail, does not excuse you from following these policies. If you have any questions about collaboration or any other issues related to academic integrity, please see me immediately for clarification. In addition to the policy stated in this syllabus, students are expected to comply with the [Wright State University Code of Student Conduct](http://www.wright.edu/students/judicial/conduct.html), and in particular the portions pertaining to [Academic Integrity](http://www.wright.edu/students/judicial/integrity.html) at all times.
+
+## Use of AI Tools
+Generative AI (e.g. ChatGPT, Midjourney, Co-pilot, etc.): You may not use AI to complete assignments unless stated otherwise by the instructor.  For those assignments where AI tools are permitted, you must include a statement of what AI tools were used in the completion of the assignment, how they were used, and what portions of the assignment include material that was developed with the assistance of AI tools.  If you have any questions about whether or not use of a particular tool or technology is allowed, check with your instructor first. 
+
+In using AI tools, be aware that every assignment submission will be graded using the criteria provided in the assignment. Be aware that ChatGPT and other AI tools may not develop accurate or high-quality work that earns a passing grade. You will always be expected to check and verify AI-generated results for quality and accuracy. You will be graded on the work you turn in.
+
+## Additional Needs
+Students with disabilities or any additional needs are encouraged to set up an appointment at their convenience to discuss any classroom accommodation that may be necessary.
 
 
 
