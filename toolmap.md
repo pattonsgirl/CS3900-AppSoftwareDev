@@ -1,7 +1,7 @@
 ```mermaid
 mindmap
   root((Course Tool Map))
-    GitHub <br/> (version control)
+    GitHub (version control)
       Documentation
       Collaboration
       Code
@@ -10,6 +10,13 @@ mindmap
         Tools
         Topics
           Wireframing
+      Responsive Web Design
+        Tools
+          Angular
+          Grid
+          Typescript
+          NodeJS
+        Topics
     BackEnd
       Databases
         Tools
@@ -19,5 +26,4 @@ mindmap
     Dev Ops
         Tools
         Topics
-          Wireframing
 ```
