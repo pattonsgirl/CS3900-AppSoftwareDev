@@ -1,19 +1,23 @@
 ```mermaid
 mindmap
-  root((mindmap))
-    Origins
-      Long history
-      ::icon(fa fa-book)
-      Popularisation
-        British popular psychology author Tony Buzan
-    Research
-      On effectiveness<br/>and features
-      On Automatic creation
-        Uses
-            Creative techniques
-            Strategic planning
-            Argument mapping
-    Tools
-      Pen and paper
-      Mermaid
+  root((Course Tool Map))
+    GitHub <br/> (version control)
+      Documentation
+      Collaboration
+      Code
+    FrontEnd
+      UI / UX
+        Tools
+        Topics
+          Wireframing
+    BackEnd
+      Databases
+        Tools
+          H2
+        Topics
+          DB Design
+    Dev Ops
+        Tools
+        Topics
+          Wireframing
 ```
