@@ -28,4 +28,4 @@ Uniquely named `.md` files within the module folder.  The intent is that assignm
 
 # Project Requirements
 
-The group project should have new requirements within each module based on lessons learned from the in-class work.
+Uniquely named `.md` files within the module folder.  The group project should have new requirements within each module based on lessons learned from the in-class work.
