@@ -40,7 +40,7 @@ This outline is a proposed ordering.  Content may be delevered in different orde
 | 13     | Web Design  | Dev Ops     |
 | 14     | Office Hours with Module Teams |  No class 11/28  |
 | 15     | Office Hours with Module Teams |  Retrospective   |
-| 16     | Final Exam Block: 12/12, 2:45 PM - 4:45 PM   |
+| 16     | | Final Exam Block: 12/12, 2:45 PM - 4:45 PM   |
 
 ## Grading
 
