@@ -61,7 +61,7 @@ Students taking the course to satisfy the requirements of a university honors pr
 
 ## Late work
 
-Assignments are due by the due date posted.  Due to the pacing of this course, it is essential to complete assignments to the best of your availability within the time frame given. Late assignments will be accepted for feedback purposes only.  If you have a documented justification for needing an extension contact the course instructor.
+Assignments are due by the due date posted.  Due to the pacing of this course, it is essential to complete assignments to the best of your ability within the time frame given. Late assignments will be accepted for feedback purposes only.  If you have a documented justification for needing an extension contact the course instructor.
 
 ## Academic Integrity
 
