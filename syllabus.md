@@ -23,34 +23,24 @@ These prerequisites attempt to ensure familiarity with the command line, the bas
 
 ## Course Topics / Outline
 This outline is a proposed ordering.  Content may be delevered in different order.
-| Week    | Topics   | Assignment(s) |
+| Week    | Tuesday Topic(s)   | Thursday Topic(s) |
 | :-----------:  | ----------- | ----------- |
-| 1      | Course overview / expectations <br> Intro to project stack <br> Intro to Agile                   | ? |
-| 2      | Business plan / requirements <br> Setup toy project <br> setup DB container    | ? |
-| 3      | Database terminology & design                  |      |
-| 4      | DB W2                  |      |
-| 5      | Hand off day           |      |
-|        | UX/UI & wireframing & design layout    |      |
-| 6      |                   |      |
-|        | Hand off day <br> Docker - get stack for backend     |      |
-| 7      | Backend services (2 weeks)                  |      |
-|        |                   |      |
-| 8      |                   |      |
-|        | Unit testing                  |      |
-|        |      |      |
-| 9      |  Automation testing                 |      |
-|        |  Intro to piplines                |      |
-| 10     |                   |      |
-|        |                   |      |
-| 11     |  Frontend development (2 weeks)      |      |
-|        |                   |      |
-| 12     | Kubernetes and full stack hosting    |      |
-|        |                   |      |
-| 13     |                   |      |
-|        |                   |      |
-| 14     | ?   <br> No class 11/28  | Work on final project? |
-| 15     | Final project work week?   |      |
-| 16     | Final Exam Block: 12/12, 2:45 PM - 4:45 PM  | Retrospective? <br> Presentations?  |
+| 1      | Course overview / expectations <br> Intro to Agile | Business Requirements <br> Product Owner |
+| 2      | Dev Ops    | Big Room Planning |
+| 3      | Databases  | Databases     |
+| 4      | Databases  | Databases     |
+| 5      | UX/UI      | UX/UI     |
+| 6      | Microservices | Microservices |
+| 7      | Microservices | Microservices |
+| 8      | Unit testing  | Unit testing  |
+| 9      | Automation testing | Automation testing  |
+| 10     | Hand off day <br> Agile check-in   | Dev Ops    |
+| 11     | Dev Ops     | Web Design     |
+| 12     | Web Design  | Web Design     |
+| 13     | Web Design  | Dev Ops     |
+| 14     | Office Hours with Module Teams |  No class 11/28  |
+| 15     | Office Hours with Module Teams |  Retrospective   |
+| 16     | Final Exam Block: 12/12, 2:45 PM - 4:45 PM   |
 
 ## Grading
 
