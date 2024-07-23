@@ -1,6 +1,6 @@
 # CS 3900 - Application of the Software Development Lifecycle
 
-Course [Syllabus](#syllabus.md)
+Course [Syllabus](syllabus.md)
 
 In this repo you can find:
 - Background / additional information for modules
