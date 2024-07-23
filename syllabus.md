@@ -55,7 +55,11 @@ The grading scale for the course is [90-100] A; [80-90) B; [70-80) C; [60-69) D;
 
 TODO: is there a want for midterm / final exam?  Should presentation component be looped into project?
 
-## Honors Requirements
+### Assignment Requirements
+
+Unless otherwise specified in the assignment description, assignments are to be completed **individually**.  Students may collaborate on ideas and share resources.  Cite collaborations in code comments or commit messages.
+
+### Honors Requirements
 
 Students taking the course to satisfy the requirements of a university honors program will be given additional requirements for their assignments / group project.  To earn honors credit, students must earn an A or B for the overall course grade, and complete all extra honors requirements detailed in assignment / group project requirements. 
 
@@ -77,7 +81,7 @@ In using AI tools, be aware that every assignment submission will be graded usin
 
 ## Additional Needs
 
-Students with disabilities or any additional needs are encouraged to set up an appointment at their convenience to discuss any classroom accommodation that may be necessary.
+Students with disabilities or any additional needs are encouraged to set up an appointment with the course instructor at their convenience to discuss any classroom accommodation that may be necessary.
 
 
 
