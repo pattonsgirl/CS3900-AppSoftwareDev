@@ -2,8 +2,8 @@
 
 ## Purpose / Objectives
 
-Setting up Angular environment
-Structure / style content of web app
+- Setting up Angular environment
+- Structure / style content of web app
 
 ## Description
 
@@ -13,9 +13,9 @@ Clone module repository
 
 Using homepage template (and noting the TODOs), add the following:
 
-Use directives - requirements TODO
-Apply styling - requirements TODO
-Set up a navigation bar - requirements TODO
+- Use directives - requirements TODO
+- Apply styling - requirements TODO
+- Set up a navigation bar - requirements TODO
 
 Bonus feature:
 
@@ -25,6 +25,6 @@ Push your edits to the assignment repository.
 
 # Rubric
 
-Meets assignment criteria / objectives (3 pts)
-Follows good styling (1 pt)
-Good commit structure based on completion of components (1 pt)
+- Meets assignment criteria / objectives (3 pts)
+- Follows good styling (1 pt)
+- Good commit structure based on completion of components (1 pt)
