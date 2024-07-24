@@ -1,6 +1,10 @@
 # Getting Familar with Containers
 
-## Pre-Module Videos / Content
+## Pre-Module 
+
+- Videos / Content
+- Install Docker on system
+- CLI refresher
 
 ## Slides
 
