@@ -2,9 +2,9 @@
 
 ## Purpose / Objectives
 
-- Check that containerization environment is configured on system
+- Check that container engine (Docker) is configured on system
 - Basics of Docker commands / control
-- Working within container environments*
+- Testing connection to containerized environment
 
 ## Description
 
@@ -22,7 +22,7 @@ The overall goal is to, in a container, run MariaDB, initialize your database us
 ## Deliverable(s)
 
 - Dockerfile added to assignment repo
-- README file includes:
+- README file in assignment repo includes:
   - Commands used to complete assignment
   - Screenshot of successful container build process 
   - Screenshot of running container process
