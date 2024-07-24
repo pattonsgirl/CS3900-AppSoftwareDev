@@ -28,7 +28,7 @@ The overall goal is to, in a container, run MariaDB, initialize your database us
   - Screenshot of running container process
   - Screenshot of SQL query validation
 
-# Rubric
+## Rubric
 
 - Dockerfile that builds a container per specification (1 pt)
 - Documentation states how to build and run the assignment container (1 pt)
