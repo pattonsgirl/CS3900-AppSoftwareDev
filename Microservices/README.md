@@ -17,6 +17,7 @@
 
 - In class coding / building
 
-- 
+  
+<img width="1840" alt="image" src="https://github.com/user-attachments/assets/43956bb1-0118-4e08-9b8c-c2047493ff3f">
 
 
