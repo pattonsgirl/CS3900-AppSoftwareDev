@@ -28,7 +28,8 @@ Create /customers GET endpoint and correct /products GET endpoint
   * email [String]  
   * latestWorkOrderStatus [String]  
   * lastUpdatedDate [Date]  
-* Response format should be like below when HTTP status code is 200.  
+* Response format should be like below when HTTP status code is 200.
+```
   {  
      "meta": {  
          "message": "Customers retrieved successfully."  
@@ -49,17 +50,21 @@ Create /customers GET endpoint and correct /products GET endpoint
              "lastUpdatedDate": "07/28/2024 10:20:00 AM"  
          }  
      ]  
-  }  
-* Response format should be like below when HTTP status code is 500.  
+  }
+```
+* Response format should be like below when HTTP status code is 500.
+```
   {  
      "meta": {  
          "message": "Failed to retrieve customers.",  
          "errorMessage": "NullPointer Exception…….."  
      },  
      "Data": null  
-  }  
+  }
+``` 
 * Understand and correct the /products GET endpoint and response format should be like below.  
-  200 HTTP Status Code  
+  200 HTTP Status Code
+```
   {  
      "meta": {  
          "message": "Products retrieved successfully."  
@@ -76,15 +81,18 @@ Create /customers GET endpoint and correct /products GET endpoint
          }  
      ]  
   }
+```
 
 	500 HTTP Status Code  
+```
 {  
    "meta": {  
        "message": "Failed to retrieve products.",  
        "errorMessage": "NullPointer Exception…….."  
    },  
    "Data": null  
-}  
+}
+```
 ## Deliverable
 
 * Push /customers GET endpoint into the Github repository.  
