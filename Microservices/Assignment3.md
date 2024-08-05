@@ -24,7 +24,8 @@ Create /customers POST endpoint and correct /states GET endpoint
   * zip \[Not Null, max (5)\]  
   * phone \[Not Null, max (10)\] \- \[allow only numbers with valid phone format\]  
   * email \[Not Null, max (100)\] \- \[allow only valid email format\]  
-* The Request Body should be like below.  
+* The Request Body should be like below.
+```
    {  
              "firstName": "Test",  
              "lastName": "User",  
@@ -35,9 +36,11 @@ Create /customers POST endpoint and correct /states GET endpoint
              "zip": "45322",  
              "phone": "999-333-6677",  
              "email": "test@gmail.com"  
-   }  
+   }
+```
     
-* Response format should be like below when HTTP status code is 200\.  
+* Response format should be like below when HTTP status code is 200\.
+```
   {  
      "meta": {  
          "message": "Customer created successfully."  
@@ -54,16 +57,20 @@ Create /customers POST endpoint and correct /states GET endpoint
              "phone": "999-333-6677",  
              "email": "test@gmail.com"  
          }  
-  }  
-* Response format should be like below when HTTP status code is 500\.  
+  }
+```
+* Response format should be like below when HTTP status code is 500\.
+```
   {  
      "meta": {  
          "message": "Failed to create customer.",  
          "errorMessage": "NullPointer Exception…….."  
      },  
      "Data": null  
-  }  
-* Response format should be like below when HTTP Status code is 400\.  
+  }
+```
+* Response format should be like below when HTTP Status code is 400\.
+```
   {  
       "meta": {  
           "message": "Validation Error"  
@@ -85,10 +92,12 @@ Create /customers POST endpoint and correct /states GET endpoint
               }  
           \]  
       }  
-  }  
+  }
+```
     
 * Understand and correct the /states GET endpoint and response format should be like below.  
-  200 HTTP Status Code  
+  200 HTTP Status Code
+```
   {  
      "meta": {  
          "message": "States retrieved successfully."  
@@ -100,8 +109,9 @@ Create /customers POST endpoint and correct /states GET endpoint
          }  
      \]  
   }
-
-	500 HTTP Status Code  
+```
+	500 HTTP Status Code
+```
 {  
    "meta": {  
        "message": "Failed to retrieve states.",  
@@ -109,6 +119,7 @@ Create /customers POST endpoint and correct /states GET endpoint
    },  
    "Data": null  
 }  
+```
 \#\# Deliverable
 
 * Push /customers POST endpoint into the Github repository.  
