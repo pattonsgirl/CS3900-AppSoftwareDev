@@ -12,7 +12,8 @@ Create /customers/{customerId} PUT endpoint and complete /workOrders POST endpoi
 \#\# Assignment Description
 
 * Create /customers/{customerId} PUT endpoint and add proper bean validation.  
-* The Request Body should be like below.  
+* The Request Body should be like below.
+```
    {  
              "firstName": "Test",  
              "lastName": "User",  
@@ -23,9 +24,11 @@ Create /customers/{customerId} PUT endpoint and complete /workOrders POST endpoi
              "zip": "45322",  
              "phone": "999-333-6677",  
              "email": "test@gmail.com"  
-   }  
+   }
+```
     
-* Response format should be like below when HTTP status code is 200\.  
+* Response format should be like below when HTTP status code is 200\.
+```
   {  
      "meta": {  
          "message": "Customer updated successfully."  
@@ -42,8 +45,10 @@ Create /customers/{customerId} PUT endpoint and complete /workOrders POST endpoi
              "phone": "999-333-6677",  
              "email": "test@gmail.com"  
          } 
-  }  
+  }
+```
 * Response format should be like below when HTTP status code is 500\.  
+```
   {  
      "meta": {  
          "message": "Failed to update customer.",  
@@ -51,22 +56,26 @@ Create /customers/{customerId} PUT endpoint and complete /workOrders POST endpoi
      },  
      "Data": null  
   }
+```
 
 * Response format should be like below when HTTP Status code is 404 (when customer id not found in database)\.
+```
   {  
      "meta": {  
          "message": "Invalid customer id." 
      },  
      "Data": null  
   }
-* Response format should be like below when HTTP Status code is 400\.  
+```
+* Response format should be like below when HTTP Status code is 400\.
+```
   {  
       "meta": {  
           "message": "Validation Error"  
       },  
       "data": {  
           "entity": "customerDTO",  
-          "errors": \[  
+          "errors": [  
               {  
                   "field": "firstName",  
                   "rejectedValue": null,  
@@ -79,9 +88,10 @@ Create /customers/{customerId} PUT endpoint and complete /workOrders POST endpoi
                   "message": "Customer email must not be null or blank",  
                   "errorCode": "NOT\_BLANK"  
               }  
-          \]  
+          ]  
       }  
-  }  
+  }
+```
     
 * Finish /workOrders POST endpoint and return response in expected format.
 * 
