@@ -90,7 +90,6 @@ Create /customers GET endpoint and correct /products GET endpoint
 * Push /customers GET endpoint into the Github repository.  
 * Push fixes of /products GET endpoint into the Github repository.
 
-## Bonus Feature
 
 ## Rubric
 
