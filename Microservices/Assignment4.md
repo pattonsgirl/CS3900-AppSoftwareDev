@@ -30,8 +30,7 @@ Create /customers/{customerId} PUT endpoint and complete /workOrders POST endpoi
      "meta": {  
          "message": "Customer updated successfully."  
      },  
-     "data": \[  
-         {  
+     "data": {  
              "id": 1,  
              "firstName": "Test",  
              "lastName": "User",  
@@ -42,8 +41,7 @@ Create /customers/{customerId} PUT endpoint and complete /workOrders POST endpoi
              "zip": "45322",  
              "phone": "999-333-6677",  
              "email": "test@gmail.com"  
-         }  
-     \]  
+         } 
   }  
 * Response format should be like below when HTTP status code is 500\.  
   {  
