@@ -102,6 +102,7 @@ Create /customers/{customerId} PUT endpoint and complete /workOrders POST endpoi
 
 \#\# Bonus Feature  
 	Create /customers/{customerID} DELETE endpoint to remove customer data from database, if it’s not associated with any work order.  
+ 
 \#\# Rubric
 
 - Create /customers PUT endpoint to update customer data in database, and return 200, 400 & 500 HTTP status response in given format. (2 pt)
