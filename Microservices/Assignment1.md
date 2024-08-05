@@ -33,8 +33,6 @@ Add to README:
 * Screenshot of health check GET endpoint response  
 * Complete the Quiz in Pilot
 
-\#\# Bonus Feature
-
 \#\# Rubric
 
 - Open application in VSCode and configure docker dev container (2 pt)  
