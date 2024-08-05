@@ -77,7 +77,7 @@ Create /customers POST endpoint and correct /states GET endpoint
       },  
       "data": {  
           "entity": "customerDTO",  
-          "errors": \[  
+          "errors": [  
               {  
                   "field": "firstName",  
                   "rejectedValue": null,  
@@ -90,7 +90,7 @@ Create /customers POST endpoint and correct /states GET endpoint
                   "message": "Customer email must not be null or blank",  
                   "errorCode": "NOT\_BLANK"  
               }  
-          \]  
+          ]  
       }  
   }
 ```
@@ -102,12 +102,12 @@ Create /customers POST endpoint and correct /states GET endpoint
      "meta": {  
          "message": "States retrieved successfully."  
      },  
-     "data": \[  
+     "data": [  
          {  
              "code": "OH",  
              "name": "Ohio"  
          }  
-     \]  
+     ]  
   }
 ```
 	500 HTTP Status Code
