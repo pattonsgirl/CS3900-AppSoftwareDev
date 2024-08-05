@@ -42,8 +42,7 @@ Create /customers POST endpoint and correct /states GET endpoint
      "meta": {  
          "message": "Customer created successfully."  
      },  
-     "data": \[  
-         {  
+     "data": {  
              "id": 1,  
              "firstName": "Test",  
              "lastName": "User",  
@@ -55,7 +54,6 @@ Create /customers POST endpoint and correct /states GET endpoint
              "phone": "999-333-6677",  
              "email": "test@gmail.com"  
          }  
-     \]  
   }  
 * Response format should be like below when HTTP status code is 500\.  
   {  
