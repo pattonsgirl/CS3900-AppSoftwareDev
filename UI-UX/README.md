@@ -1,15 +1,16 @@
 # UI / UX
 
-In an attempt to make it "seamless" to share information with students and to make the option of modifying resources at anytime 
-possible, it will be best for teams to add their content to this shared GitHub.  Students will be linked to this GitHub repository 
-from Pilot (the learning management system) rather than have a queue of things that need updated / sycronized.
+## Wireframes
 
-1. Create a module folder in this repository for content, assignments, and project requirements
-2. Create wither a singular README.md OR multiple files named background.md, content.md, assignment.md, project.md, etc.
-
-# Background
+### Background
 
 Before we begin this unit, you need to read / watch the following videos / articles.
+
+- [10 Usability Heuristics for User Interface Design](https://www.nngroup.com/articles/ten-usability-heuristics/)
+- [How to Conduct a Heuristic Evaluation](https://www.nngroup.com/articles/how-to-conduct-a-heuristic-evaluation/)
+- [Heuristic Evaluation Workbook](https://media.nngroup.com/media/articles/attachments/Heuristic_Evaluation_Workbook_1_Fillable.pdf)
+- [Jakob’s Ten Usability Heuristics](https://media.nngroup.com/media/articles/attachments/Heuristic_Summary1_Letter-compressed.pdf)
+
 
 You will need to understand these key takeaways:
 - thing 1
