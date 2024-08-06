@@ -8,14 +8,14 @@ Agile will have three planned points in this course:
 3. An end of semester retrospective
 
 ## Business Requirements:
-- [Class Outline / Text Notes](outline-businessreq.md)
+- [Class Outline / Text Notes](BusinessReq-ClassOutline.md)
 - [Slide Deck](slides-businessreq.pdf)
 - [Group Project Requirements for Business Planning](ProjectUpdate-BusinessReq.md)
 
 ## Agile Methods
 
 ### MVP & Project Planning:
-- [Class Outline / Text Notes](outline-agileplanning.md)
+- [Class Outline / Text Notes](Agile-ClassOutline-MVPPlanning.md)
 - [Slide Deck](slides-agileplanning.pdf)
 - [Group Project Requirements for MVP & planning](ProjectUpdate-AgileProjectPlan.md)
 
