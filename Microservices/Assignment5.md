@@ -40,7 +40,7 @@ Create /workOrders/{workOrderId}/lineItems POST endpoint and complete /workOrder
   ```
   {  
      "meta": {  
-         "message": "Failed to add work order line item.",  
+         "message": "Failed to add workorder line item.",  
          "errorMessage": "NullPointer Exception…….."  
      },  
      "Data": null  
