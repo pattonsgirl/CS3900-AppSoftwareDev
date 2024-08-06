@@ -1,14 +1,17 @@
-# Agile Planning - Group Project Additions
+# Agile Project Planning - Group Project Additions
 
 ## Purpose / Objectives
 
+- Define an MVP for your group themed project
 - Apply agile methods to create a plan for your group themed project
 
 ## Description
 
-Define an MVP for your group themed project.
+If you have not already, join your group's GitHub repository and clone the repository to your system.
 
-For your group themed topic, generate a project outline of work that needs to be accomplished to create a fully functioning application.  Pick a tool that you and your group members find productive (even if it requires a small learning curve).  
+Define an MVP for your group themed project.  The MVP should focus on the user's perspective of the project deliverable and should not be technically dense.
+
+Generate a project outline of work for your group themed topic that needs to be accomplished to create a fully functioning application.  Pick a tool that your group finds productive.  
 
 Tool options TODO - check for easy tools integration / limits / capabilities:
 - Trello (recommended)
@@ -24,11 +27,14 @@ Your outline of work must address a minimum of the following:
 
 ## Deliverable(s)
 
-Your group repository need to include the following:
-- mvp.md with your MVP defined
-- TODO on tool to generate project outline of work either uploaded to repo and / or add Winsupply with appropriate permissions (minimum of view)
+Your group repository needs to include the following:
+- README.md with your MVP defined (TODO: README.md or mvp.md?)
+- Copy of project outline of work either linked OR uploaded to repo
+  - If you are using a cloud based collaboration tool, like an Excel sheet in OneDrive or Google Excel sheet, add Winsupply team members with a minimum of the ability to view.
 
 ## Rubric
+
+Contribution to the deliverable via commit history will not be factored into grading for this assignment - it is expected that your group collaborated in order to define the MVP and the project outline of work.
 
 - MVP addresses:
   - understanding what the user is going to have as a deliverable (goal), but stays at elevator pitch level
