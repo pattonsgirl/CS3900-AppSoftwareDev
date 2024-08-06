@@ -1,51 +1,43 @@
-# Business Requirements - Group Project Additions
+# Agile Planning - Group Project Additions
 
 ## Purpose / Objectives
 
-- Ability to conduct interview to uncover customer / user needs / pain points / frustrations
-- Ability to generate product requirements from interviews
+- Apply agile methods to create a plan for your group themed project
 
 ## Description
 
-Clone your group repository.
+Define an MVP for your group themed project.
 
-Come up with a themed topic for your group project that involves: 
-1.
-2.
-3.
+For your group themed topic, generate a project outline of work that needs to be accomplished to create a fully functioning application.  Pick a tool that you and your group members find productive (even if it requires a small learning curve).  
 
-Create a set (three per team member) of user interview questions to flesh out base capabilities for your application.
+Tool options TODO - check for easy tools integration / limits / capabilities:
+- Trello (recommended)
+- GitHub Projects / Issues
+- Excel
 
-Conduct an in-person interview (one per member) with all interview questions and record it via video or transcription.  You may use your group members or someone external to your group / the class.
-
-Build a set of Product Requirements for your themed project that addresses learnings from the user interview and considers the following elements of a Product Requirements Outline:
-- Context
-- Use Case(s)
-- Objective
-- Assumptions
-- Requirements
-- Scope
-- Performance
-- Open questions
+Your outline of work must address a minimum of the following:
+- define different epics with an initial timeline on each epic
+  - Note: keep in mind that timeline **is the timeline of the class**
+- add a business case to each epic
+- assign two / three user stories to each epic
+- define one spike
 
 ## Deliverable(s)
 
-Your group repository need to include the follow documents:
-- interview-questions.md with your interview questions
-- interview-[name].md where name is the name of the person interviewed and contains a transcription or link to video file of the interview.
-- product-requirements.md with your product requirement outline
+Your group repository need to include the following:
+- mvp.md with your MVP defined
+- TODO on tool to generate project outline of work either uploaded to repo and / or add Winsupply with appropriate permissions (minimum of view)
 
 ## Rubric
 
-- Each group member made a contribution to the interview questions file, as reflected in commit history.
-- Each group member submitted an interview transcript or video file.
-- Product Requirements Document addresses each point sufficiently:
-  - Context
-  - Use Case(s)
-  - Objective
-  - Assumptions
-  - Requirements
-  - Scope
-  - Performance
-  - Open questions
-- Each group member made a contribution to the Product Requirement Document, as reflected in commit history.
+- MVP addresses:
+  - understanding what the user is going to have as a deliverable (goal), but stays at elevator pitch level
+  - defines minumin set of expectations
+  - is accomplishable in the defined period of time (based on epics)
+  - perspective is of the user and is not technically dense
+  - customer value is defined
+- Outline of work addresses:
+  - different epics defined with an initial timeline on each epic
+  - business case assigned to each epic
+  - two / three user stories assigned to each epic
+  - one spike defined
