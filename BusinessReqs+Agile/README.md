@@ -17,7 +17,7 @@ Agile will have three planned points in this course:
 ### MVP & Project Planning:
 - [Class Outline / Text Notes](outline-agileplanning.md)
 - [Slide Deck](slides-agileplanning.pdf)
-- [Group Project Requirements for MVP & planning(ProjectUpdate-AgileProjectPlan.md)
+- [Group Project Requirements for MVP & planning](ProjectUpdate-AgileProjectPlan.md)
 
 ### Mid-Semester Check-in:
 - [Group Project Progress Checkin](projectupdate-agilechecking.md)
