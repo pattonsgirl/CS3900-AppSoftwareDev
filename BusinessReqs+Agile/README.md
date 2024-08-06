@@ -9,7 +9,7 @@ Agile will have three planned points in this course:
 
 ## Business Requirements:
 - [Class Outline / Text Notes](BusinessReq-ClassOutline.md)
-- [Slide Deck](slides-businessreq.pdf)
+- [Slide Deck](BusinessRequirements-Slides.pdf)
 - [Group Project Requirements for Business Planning](ProjectUpdate-BusinessReq.md)
 
 ## Agile Methods
