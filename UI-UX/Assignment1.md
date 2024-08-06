@@ -33,7 +33,7 @@ In the assignment repository, create a file named `wireframe.md` that includes a
 
 Score: # out of 6 points
 
-- Screenshot of given wireframe (before changes) (1 pt)
-- What changes were made to the given wireframe (minimum of two) (2 pt)
-- Explanation of why changes were made based on Gestalt principles & Jakob’s Usability Heuristics (minimum of two) (2 pt)
-- Screenshot of updated wireframe (post changes) (1 pt)
+- Screenshot of given wireframe (before changes) (1 pt.)
+- What changes were made to the given wireframe (minimum of two) (2 pt.)
+- Explanation of why changes were made based on Gestalt principles & Jakob’s Usability Heuristics (minimum of two) (2 pt.)
+- Screenshot of updated wireframe (post changes) (1 pt.)

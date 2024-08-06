@@ -30,7 +30,7 @@ Build a set of Product Requirements for your group project that addresses learni
 
 ## Deliverable(s)
 
-The group repository need to include the follow documents:
+The group repository needs to include the follow documents:
 - interview-questions.md with the group's set of interview questions
 - interview-[name].md where name is the name of the person interviewed and contains a transcription or link to video file of the interview.
 - product-requirements.md with the group's product requirement outline
