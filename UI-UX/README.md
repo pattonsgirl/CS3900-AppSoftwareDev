@@ -46,6 +46,6 @@ PowerPoint (or other slide deck tools):
 
 [Assignment 2?]()
 
-# Project Requirements
+## Project Requirements
 
 [Group Project Requirements Update](ProjectUpdate-UIUX.md)

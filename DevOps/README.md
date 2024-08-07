@@ -26,6 +26,10 @@ The elements required in the group project will be contained in the module that 
 
 [Containerizing the Development Environment](Assignment1.md)
 
+### Project Requirements
+
+Group project requirements are included in the [Database Design group project requirements](ProjectUpdate-DBDesign.md).
+
 ## Unit 2: GitHub Actions & AWS Tools
 
 ### Pre-Unit 
@@ -40,6 +44,10 @@ The elements required in the group project will be contained in the module that 
 
 [GitHub Actions and ECS](Assignment2.md)
 
+### Project Requirements
+
+Group project requirements are included in the [TODO group project requirements]().
+
 ## Unit 3: Inner Development Loop
 
 ### Pre-Unit 
@@ -53,3 +61,7 @@ The elements required in the group project will be contained in the module that 
 ### Assignment
 
 [Inner Development Loop](Assignment3.md)
+
+### Project Requirements
+
+Group project requirements are included in the [TODO group project requirements]().
