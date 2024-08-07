@@ -2,8 +2,8 @@
 
 ## Purpose / Objectives
 
-- Assess understanding of the inner development loop
-- Working with IDE tools to ensure code quality
+- Build understanding of the inner development loop
+- Work with IDE tools to ensure code quality
 
 ## Assignment
 
@@ -17,10 +17,10 @@ This application will have various mistakes you will need to use IDE tools to re
 
 ## Deliverables
 
-- Fixes are pushed to the assigment repo
-- Remove the test results file from the .gitignore and upload test results.
+- Fixes are pushed to the assignment repo
+- Remove the test results file from the `.gitignore` and upload test results.
 
 ## Rubric
 
-- Fixes are pushed to the assigment repo (3 pt)
-- Remove the test results file from the .gitignore and upload test results (2 pt)
+- Fixes are pushed to the assignment repo (3 pt.)
+- Remove the test results file from the `.gitignore` and upload test results (2 pt.)
