@@ -1,11 +1,11 @@
-# Dev Ops Assignment 2 - GitHub Actions and ECS
+# Dev Ops - Assignment 2 - GitHub Actions and ECS
 
 ## Purpose / Objectives
 
 - Familiarity with AWS CloudFormation for configuring ECS (repositories, tasks, clusters, services)
 - Setting up a build automation and pipelines using GitHub Actions
 
-## Assignment
+## Description
 
 Clone assignment repository with starter application, AWS ECS configuration YAML, and GitHub Action workflow.
 

@@ -1,11 +1,11 @@
-# Dev Ops Assignment 3 - Inner Development Loop
+# Dev Ops - Assignment 3 - Inner Development Loop
 
 ## Purpose / Objectives
 
 - Build understanding of the inner development loop
 - Work with IDE tools to ensure code quality
 
-## Assignment
+## Description
 
 Clone the assignment repository with the sample Spring Boot application.
 
