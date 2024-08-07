@@ -24,7 +24,7 @@ The elements required in the group project will be contained in the module that 
 
 ### Assignment
 
-[Container Intro](Assignment1.md)
+[Containerizing the Development Environment](Assignment1.md)
 
 ## Unit 2: GitHub Actions & AWS Tools
 
