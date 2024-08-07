@@ -2,7 +2,7 @@
 
 In an attempt to make it "seamless" to share information with students and to make the option of modifying resources at anytime 
 possible, it will be best for teams to add their content to this shared GitHub.  Students will be linked to this GitHub repository 
-from Pilot (the learning management system) rather than have a queue of things that need updated / sycronized.
+from Pilot (the learning management system) rather than have a queue of things that need updated / synchronized.
 
 1. Create a module folder in this repository for content, assignments, and project requirements
 2. Create wither a singular README.md OR multiple files named background.md, content.md, assignment.md, project.md, etc.
