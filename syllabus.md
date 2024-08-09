@@ -32,13 +32,13 @@ This outline is a proposed ordering.  Content may be delevered in different orde
 | 5      | UX/UI      | UX/UI     |
 | 6      | Microservices | Microservices |
 | 7      | Microservices | Microservices |
-| 8      | Unit testing  | Unit testing  |
-| 9      | Automation testing | Automation testing  |
-| 10     | Hand off day <br> Agile check-in   | Dev Ops    |
-| 11     | Dev Ops     | Web Design     |
+| 8      | Microservices | Unit testing  |
+| 9      | Unit testing | Automation testing  |
+| 10     | Dev Ops      | Dev Ops    |
+| 11     | Hand off day <br> Agile check-in   | Web Design    |
 | 12     | Web Design  | Web Design     |
-| 13     | Web Design  | Dev Ops     |
-| 14     | Office Hours with Module Teams |  No class 11/28  |
+| 13     | Web Design  | Office Hours with Module Teams     |
+| 14     | Dev Ops |  No class 11/28  |
 | 15     | Office Hours with Module Teams |  Retrospective   |
 | 16     | | Final Exam Block: 12/12, 2:45 PM - 4:45 PM   |
 
