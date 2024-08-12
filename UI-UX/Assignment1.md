@@ -1,31 +1,43 @@
-# UI / UX - Assignment 2 - User Flows
+# UI / UX - Assignment 1 - User Flows
 
 ## Purpose / Objectives
 
-- Learn the importance of user flows in the design process. 
+- Understand the importance of user flows in the design process. 
 - Understand how UX fits into the product development lifecycle. 
 
 ## Resources
 
 - []()
+https://www.interaction-design.org/literature/topics/ux-design?page=7 
+https://www.youtube.com/watch?v=DNBIcBdKnQo 
+https://www.coursera.org/articles/user-flow 
+https://www.interaction-design.org/literature/topics/user-flows 
+How to for balsamiq: https://www.youtube.com/watch?v=E5Z1QOly72E  
 
 
 ## Description
 
-1. Continuing in the UI / UX the assignment repository (TODO: what is starter?)
-2. TODO: what tool to use for user flows?
-2. Create user flows for the following features of the Work Order Management System application:
+1. Clone the assignment repository for this unit.
+2. Create a Balsamic account - https://balsamiq.com/
+3. Import the balsamic starter (TODO - name) project for user flows for the WorkOrder Pro application.
+4. Use Balsamic to create user flows for the following features:
     - Search
     - Create
     - Update
     - Delete (Optional)
     - Batch (Honors)
 
-
 ## Deliverable
 
-TODO
+To the assignment repository add the following:
+- Exported Balsamic project file(s) with user flows
+- PDF(s) of the user flows
+- `user-flows.md` containing, for each user flow, an explanation of application behavior based on user interaction.
 
 ## Rubric 
 
-TODO
+Score: # out of 7 points
+
+- Exported Balsamic project in repo (1 pt.)
+- PDF(s) contains user flows for Search, Create, and Update (3 pts)
+- Each user flow has a description in `user-flows.md` that describes application behavior based on user interaction. (3 pts)

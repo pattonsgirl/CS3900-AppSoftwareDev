@@ -1,4 +1,4 @@
-# UI / UX - Assignment 1 - Wireframing
+# UI / UX - Assignment 2 - Wireframing
 
 ## Purpose / Objectives
 
@@ -14,12 +14,11 @@
 
 ## Description
 
-1. Clone the assignment repository (TODO: can it contain starter wireframe?)
-2. Create a Balsamic account - https://balsamiq.com/
-3. Import the starter wireframe into Balsamic.
-4. Using the Heuristic Evaluation Workbook (linked below), identify issues and explain corrections to the given wireframe using a minimum of two of Jakob’s Usability Heuristics.
+1. Continue in the assignment repository for this unit.
+2. Import the starter wireframe for the WorkOrder Pro application into Balsamic.
+3. Using the Heuristic Evaluation Workbook (linked below), identify issues and explain corrections to the given wireframe using a minimum of two of Jakob’s Usability Heuristics.
     - [Heuristic Evaluation Workbook](https://media.nngroup.com/media/articles/attachments/Heuristic_Evaluation_Workbook_1_Fillable.pdf)
-5. Applying the Usability Heuristics, improve the given wireframe with a minimum of two corrections / features.
+4. Applying the Usability Heuristics, improve the given wireframe with a minimum of two corrections / features.
 
 ## Deliverable
 

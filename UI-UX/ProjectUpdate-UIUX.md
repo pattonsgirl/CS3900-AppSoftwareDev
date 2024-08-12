@@ -2,9 +2,8 @@
 
 ## Purpose / Objectives
 
-- Apply Jakob's Usability Heuristics to group project
-- Build a wireframe for group project
-- Build user flows for group project
+- Define user flows and application wireframes for group project
+- Understand how defining UI / UX elements defines the direction of upcoming project development
 
 ## Description
 
