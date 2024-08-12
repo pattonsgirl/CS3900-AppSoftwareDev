@@ -1,6 +1,6 @@
 # UI / UX
 
-## Unit 1 - Wireframes
+## Unit 1 - User Flows
 
 ### Background
 
@@ -23,7 +23,7 @@ PowerPoint (or other slide deck tools):
 
 [Assignment 1 - Wireframe & Best UX Practices](Assignment1.md)  
 
-## Unit 2 - User Flows
+## Unit 2 - Wireframes
 
 ### Background
 
