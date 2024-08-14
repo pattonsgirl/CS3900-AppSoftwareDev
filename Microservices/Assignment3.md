@@ -39,7 +39,7 @@ Create /customers POST endpoint and correct /states GET endpoint
    }
 ```
     
-* Response format should be like below when HTTP status code is 200\.
+* Response format should be like below when HTTP status code is 201\.
 ```
   {  
      "meta": {  
@@ -129,5 +129,5 @@ Create /customers POST endpoint and correct /states GET endpoint
 
 - Add required fields validation and format validation on CustomerDTO class. (1pt)  
 - Create Customer entity model class with all required Jakarta persistence annotations and create CustomerRepository for the implementation. (1pt)  
-- Create /customers POST endpoint to save customer data in database, and return 200, 400 & 500 HTTP status response in given format. (2 pt)  
+- Create /customers POST endpoint to save customer data in database, and return 201, 400 & 500 HTTP status response in given format. (2 pt)  
 - Fixes of /states GET endpoint to retrieve states from database, and return 200 & 500 HTTP status response in given format. (1 pt)
