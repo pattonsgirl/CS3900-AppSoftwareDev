@@ -28,7 +28,7 @@ Create the Karate Test Suite for Endpoints.
   * Confirm the following fields from the PUT response:  
     * CustomerId  
     * TechnicianCode  
-    * Confirm the response status is 204  
+    * Confirm the response status is 200
 * Create a Technician.feature class in the features folder of the test directory.   
 * Create the following scenarios to perform a GET request for a Technician.  
   * Create a GET request to retrieve a technician.  
