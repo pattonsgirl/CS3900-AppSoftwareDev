@@ -12,11 +12,11 @@ Create Controller classes WebMVCTest
 \#\# Assignment Description
 
 * Create CustomerControllerTest class for CustomerController and add all test methods for POST, PUT & GET endpoints. Make sure all JUnit test cases should pass.  
-  * POST endpoint \- cover JUnit test cases for 200, 400, 404 & 405 HTTP Status and verify response using ResponseBodyMatcher.toContains() method when status code is 200\.  
+  * POST endpoint \- cover JUnit test cases for 201, 400, 404 & 405 HTTP Status and verify response using ResponseBodyMatcher.toContains() method when status code is 200\.  
   * PUT endpoint \- cover JUnit test cases for 200, 400, 404 & 405 HTTP Status and verify response using ResponseBodyMatcher.toContains() method when status code is 200  
   * GET endpoint \- cover JUnit test cases for 200, 404 & 405 HTTP Status and verify response using ResponseBodyMatcher.toContains() method when status code is 200  
 * Continue WorkOrderControllerTest class remaining endpoints test cases. Make sure all JUnit test cases should pass.  
-  * POST endpoint (line item) \- cover JUnit test cases for 200, 400, 404 & 405 HTTP Status and verify response using ResponseBodyMatcher.toContains() method when status code is 200\.  
+  * POST endpoint (line item) \- cover JUnit test cases for 201, 400, 404 & 405 HTTP Status and verify response using ResponseBodyMatcher.toContains() method when status code is 200\.  
   * GET endpoint \- cover JUnit test cases for 200, 404 & 405 HTTP Status and verify response using ResponseBodyMatcher.toContains() method when status code is 200  
 * Fixes in StateControllerTest class for state GET endpoint. Make sure all JUnit test cases should pass.  
   * Fix test cases for GET endpoint to confirm it’s handle 200, 404 & 405 HTTP Status code and verify response when status code is 200\.  
