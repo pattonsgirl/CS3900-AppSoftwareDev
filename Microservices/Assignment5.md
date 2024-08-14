@@ -21,7 +21,7 @@ Create /workOrders/{workOrderId}/lineItems POST endpoint and complete /workOrder
    }
   ```
     
-* Response format should be like below when HTTP status code is 200\.
+* Response format should be like below when HTTP status code is 201\.
   ```
   {  
      "meta": {  
@@ -77,6 +77,6 @@ Create /workOrders/{workOrderId}/lineItems POST endpoint and complete /workOrder
 
 \#\# Rubric
 
-- Create /workOrders/{workOrderId}/{lineItem} POST endpoint to add new line item for work order in database, and return 200, 400 & 500 HTTP status response in given format. (2 pt)  
+- Create /workOrders/{workOrderId}/{lineItem} POST endpoint to add new line item for work order in database, and return 201, 400 & 500 HTTP status response in given format. (2 pt)  
 - Handle exception when workOrder doesn't exists then return 404 with a valid message. (1 pt)  
 - Complete remaining changes of /workOrders/{workOrderId} PUT endpoint to update workorder details in database, and return 200, 400 & 500 HTTP status response in given format. (2 pt)
