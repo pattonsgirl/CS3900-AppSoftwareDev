@@ -11,7 +11,8 @@
 - https://www.youtube.com/watch?v=DNBIcBdKnQo 
 - https://www.coursera.org/articles/user-flow 
 - https://www.interaction-design.org/literature/topics/user-flows 
-- Balsamiq Cloud 101: https://www.youtube.com/watch?v=E5Z1QOly72E  
+- Balsamiq Cloud 101: https://www.youtube.com/watch?v=E5Z1QOly72E
+- Comparing wireframes with flow diagrams: https://balsamiq.com/learn/articles/wireflows/#flow-diagrams  
 
 ## Description
 
