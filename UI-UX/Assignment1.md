@@ -7,13 +7,11 @@
 
 ## Resources
 
-- []()
-https://www.interaction-design.org/literature/topics/ux-design?page=7 
-https://www.youtube.com/watch?v=DNBIcBdKnQo 
-https://www.coursera.org/articles/user-flow 
-https://www.interaction-design.org/literature/topics/user-flows 
-How to for balsamiq: https://www.youtube.com/watch?v=E5Z1QOly72E  
-
+- https://www.interaction-design.org/literature/topics/ux-design?page=7 
+- https://www.youtube.com/watch?v=DNBIcBdKnQo 
+- https://www.coursera.org/articles/user-flow 
+- https://www.interaction-design.org/literature/topics/user-flows 
+- Balsamiq Cloud 101: https://www.youtube.com/watch?v=E5Z1QOly72E  
 
 ## Description
 
