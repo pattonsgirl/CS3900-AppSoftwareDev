@@ -4,10 +4,10 @@ Course [Syllabus](syllabus.md)
 
 In this repo you can find:
 - Background / additional information for modules
-- In-class assignments for modules
+- Assignments for modules
 - Group project requirements based on module contents
 
-Students in this course will be given starter code for the in-class assignments.  The base repository is here: https://github.com/pattonsgirl/CS3900-WOMS
+Students in this course will be given starter code for the assignments.
 
 Students will use repositories generated via GitHub classrooms.  See Pilot (our LMS) for additional details and links.
 
