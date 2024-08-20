@@ -47,7 +47,7 @@ This outline is a proposed ordering.
 
 | Category   | Weight | Sub-Category   | Sub-Category Weight |
 |------------|--------|----------------|---------------------|
-| Modules (~7) | 80% (11.43% / module) | Individual Assignments <br> Group Project Assignments | 70% <br> 30%  |
+| Modules (~7) | 80% (11.43% / module) | Individual Assignments <br> Group Project Components | 70% <br> 30%  |
 | Final Project  | 10%  |   |  |
 | Retrospective  | 10%  |   |  |
 
