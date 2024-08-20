@@ -41,15 +41,14 @@ This outline is a proposed ordering.
 | 13 - Nov 18 | Web Design  | Office Hours with Module Teams     |
 | 14 - Nov 25 | Dev Ops - Hosting |  Thanksgiving Break <br> No class 11/28  |
 | 15 - Dec 2  | Office Hours with Module Teams |  Retrospective   |
-| 16 - Dec 9  | --- | Final Exam Block: 12/12, 2:45 PM - 4:45 PM   |
+| 16 - Dec 9  | --- | Final Exam Block <br> 12/12, 2:45 PM - 4:45 PM   |
 
 ## Grading
 
 | Category   | Weight | Sub-Category   | Sub-Category Weight |
 |------------|--------|----------------|---------------------|
-| Modules (~6) | 80% | In-Class Assignments <br> Group Project Assignments <br> Module quiz  | 45% <br> 45% <br> 10%  |
+| Modules (~7) | 80% (11.43% / module) | Individual Assignments <br> Group Project Assignments | 70% <br> 30%  |
 | Final Project  | 10%  |   |  |
-| Final Presentation?  | 0%  |  |   |
 | Retrospective  | 10%  |   |  |
 
 The grading scale for the course is [90-100] A; [80-90) B; [70-80) C; [60-69) D; [0-60) F. 
