@@ -2,12 +2,12 @@
 ## Fall 2024
 
 ## Course Information
-Instructor: Kayleigh Duncan  
+Instructor of record: Kayleigh Duncan  
 Time: TR 2:00 PM - 3:20 PM  
 Location: Russ 355  
 
 ## Course Description
-Software development is a team activity where successful software is continually enhanced and refined to add value over time. Working in a team environment with other developers, quality assurance, product owners, and scrum masters is a skill needed for anyone entering or working in a corporate environment. This course will introduce and practice software development in a real world scenario. Beginning with defining requirements, using agile methodology, create database designs, create functional UI/UX designs, create microservices, pushing code in a CI/CD pipeline, and create a front end web application. During the software development lifecycle you will practice merging and branching code, code review others changes, and unit and performance test code. You will be partnered with software developers, database engineers, and IT leadership from a local Dayton company (Winsupply) for practical hands-on experience and mentorship.
+Software development is a team activity where successful software is continually enhanced and refined to add value over time. Working in a team environment with other developers, quality assurance, product owners, and scrum masters is a skill needed for anyone entering or working in a corporate environment. This course will introduce and practice software development in a real world scenario. Students will begin with defining requirements, using agile methodology, then advance to create database designs, create functional UI/UX designs, create microservices, pushing code in a CI/CD pipeline, and create a front end web application. During the software development lifecycle you will practice merging and branching code, code reviews, and unit and performance tests. You will be partnered with software developers, database engineers, and IT leadership from a local Dayton company (Winsupply) for practical hands-on experience and mentorship.
 
 ## Student Learning Outcomes 
 Upon successful completion of this course, students will be able to:	
@@ -22,25 +22,26 @@ CEG 2350 minimum grade of C **AND** CS 1181 minimum grade of C.
 These prerequisites attempt to ensure familiarity with the command line, the basics of using git and GitHub, and competency with programming, code literacy, and basic data structures, although the course will not use Java as its primary programming language.  If you do not feel you meet competency in these areas, talk with your instructor early to consider if this course will be a good fit for you.
 
 ## Course Topics / Outline
-This outline is a proposed ordering.  Content may be delevered in different order.
+This outline is a proposed ordering.
+
 | Week    | Tuesday Topic(s)   | Thursday Topic(s) |
 | :-----------:  | ----------- | ----------- |
-| 1      | Course overview / expectations <br> Intro to Agile | Business Requirements <br> Product Owner |
-| 2      | Dev Ops    | Big Room Planning |
-| 3      | Databases  | Databases     |
-| 4      | Databases  | Databases     |
-| 5      | UX/UI      | UX/UI     |
-| 6      | Microservices | Microservices |
-| 7      | Microservices | Microservices |
-| 8      | Microservices | Unit testing  |
-| 9      | Unit testing | Automation testing  |
-| 10     | Dev Ops      | Dev Ops    |
-| 11     | Hand off day <br> Agile check-in   | Web Design    |
-| 12     | Web Design  | Web Design     |
-| 13     | Web Design  | Office Hours with Module Teams     |
-| 14     | Dev Ops |  No class 11/28  |
-| 15     | Office Hours with Module Teams |  Retrospective   |
-| 16     | | Final Exam Block: 12/12, 2:45 PM - 4:45 PM   |
+| 1 - Aug 26  | Intro to Business Requirements | Intro to Agile |
+| 2 - Sept 2  | Dev Ops - Containerizing the Development Environment    | Progress Check In <br> Database Design - Conceptual Models |
+| 3 - Sept 9  | Database Design - Logical Models  | Database Design - Physical Models     |
+| 4 - Sept 16 | Database Design - DB Initialization Scripts  | Database Design - SQL Essentials     |
+| 5 - Sept 23 | UX/UI - User Flows      | UX/UI - Wireframes    |
+| 6 - Sept 30 | Microservices | Microservices |
+| 7 - Oct 7   | Microservices | Microservices |
+| 8 - Oct 14  | Microservices | Unit testing  |
+| 9 - Oct 21  | Unit testing | Automation testing  |
+| 10 - Oct 28 | Dev Ops - Pipelines     | Dev Ops - Pipelines   |
+| 11 - Nov 4  | Hand off day <br> Agile check-in   | Web Design    |
+| 12 - Nov 11 | Web Design  | Web Design     |
+| 13 - Nov 18 | Web Design  | Office Hours with Module Teams     |
+| 14 - Nov 25 | Dev Ops - Hosting |  No class 11/28  |
+| 15 - Dec 2  | Office Hours with Module Teams |  Retrospective   |
+| 16 - Dec 9  | --- | Final Exam Block: 12/12, 2:45 PM - 4:45 PM   |
 
 ## Grading
 
