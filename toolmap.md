@@ -1,11 +1,6 @@
 ```mermaid
 mindmap
   root((Course Tool Map))
-    GitHub (version control)
-      Documentation
-      Collaboration
-      Code
-      Pipelines
     FrontEnd
       UI / UX
         Tools
@@ -35,7 +30,7 @@ mindmap
     Dev Ops
         Tools
           GitHub
-          Docker (containers)
+          Docker
           AWS
         Topics
           Containerizing environment
