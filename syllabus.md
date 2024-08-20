@@ -27,7 +27,7 @@ This outline is a proposed ordering.
 | Week # - Date    | Tuesday Topic(s)   | Thursday Topic(s) |
 | :-----------:  | ----------- | ----------- |
 | 1 - Aug 26  | Intro to Business Requirements | Intro to Agile |
-| 2 - Sept 2  | Dev Ops - Containerizing the Development Environment    | Progress Check In <br> Database Design - Conceptual Models |
+| 2 - Sept 2  | Dev Ops - Containerizing the <br>Development Environment    | Progress Check In <br> Database Design - Conceptual Models |
 | 3 - Sept 9  | Database Design - Logical Models  | Database Design - Physical Models     |
 | 4 - Sept 16 | Database Design - DB Initialization Scripts  | Database Design - SQL Essentials     |
 | 5 - Sept 23 | UX/UI - User Flows      | UX/UI - Wireframes    |
