@@ -5,10 +5,13 @@ mindmap
       Documentation
       Collaboration
       Code
+      Pipelines
     FrontEnd
       UI / UX
         Tools
+          Balsamic
         Topics
+          User flows
           Wireframing
       Responsive Web Design
         Tools
@@ -16,14 +19,26 @@ mindmap
           Grid
           Typescript
           NodeJS
-        Topics
     BackEnd
       Databases
         Tools
-          H2
+          Maria DB
+          DBeaver
         Topics
-          DB Design
+          Conceptual models
+          Logical models
+          Physical models
+          DB initialization scripts
+          SQL survival skills
+      Microservices
+      Testing
     Dev Ops
         Tools
+          GitHub
+          Docker (containers)
+          AWS
         Topics
+          Containerizing environment
+          Testing pipelines
+          Deployment / hosting
 ```
