@@ -12,11 +12,11 @@ Clone the assignment repository.  The assignment repository will include a scrip
 
 1. Build a Dockerfile with the following specifications:
     - MariaDB as a base image (FROM)
-    - COPY initialization script
-    - RUN script (TODO: check if needed)
+    - COPY [initialization script](init.sql) to `/docker-entrypoint-initdb.d/`
+    - RUN script
 2. Build a container image using the Dockerfile
-3. Start / run a (detached?) container using the container image
-3. Run the following SQL query to validate connection (TODO)
+3. Start / run a container using the container image with the [provided environment variables](variables.env)
+4. Run the following SQL query to validate connection `SELECT * from school.students`
 
 ## Deliverable(s)
 
@@ -27,7 +27,7 @@ To your assignment repository, include the following files:
 - container-build.md file documenting:
   - Commands used to complete assignment
     - This should be done such that you can reference it throughout the course
-  - Screenshot of successful container build process 
+  - Screenshot of successful container build process
   - Screenshot of running container process
   - Screenshot of SQL query validation
 
