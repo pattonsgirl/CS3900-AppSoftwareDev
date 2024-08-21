@@ -2,12 +2,19 @@
 
 # Background
 
-Before we begin this unit, you need to read / watch the following videos / articles.
+•	Video: The Expert - https://youtu.be/BKorP55Aqvg?feature=shared
+
+•	Video: What is Agile? - https://youtu.be/Z9QbYZh1YXY?feature=shared
+
+•	Video: Making sense of MVP - https://youtu.be/0P7nCmln7PM?feature=shared
+
+•	Reading: The Scrum Guide 
+
 
 You will need to understand these key takeaways:
-- thing 1
-- thing 2
-- thing 3
+- Communication is the most important part of the entire Software Development Lifecycle. 
+- Agile, at it's core, is a way to increase delivery, collaboration, and communication to provide a better product for the end user.
+- How MVP can influence a successful Agile Team.
 
 # Content
 
