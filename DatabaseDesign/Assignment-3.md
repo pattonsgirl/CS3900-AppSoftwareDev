@@ -37,7 +37,7 @@ Submit to the assignment repository on GitHub.  Your README must include:
 	- Default values / Null values
 	- Check constraints
 	- Database Access
-- Your physical model diagram using group project theme
+- Your physical model using group project theme
 - Description of presented physical model
 
 ## Rubric
