@@ -24,7 +24,7 @@ The elements required in the group project will be contained in the module that 
 
 ### Assignment
 
-[Containerizing the Development Environment](Assignment1.md)
+[Containerizing the Development Environment](Assignment1/Assignment1.md)
 
 ### Project Requirements
 
@@ -42,7 +42,7 @@ Group project requirements are included in the [Database Design group project re
 
 ### Assignment
 
-[GitHub Actions and ECS](Assignment2.md)
+[GitHub Actions and ECS](Assignment2/Assignment2.md)
 
 ### Project Requirements
 
@@ -60,7 +60,7 @@ Group project requirements are included in the [TODO group project requirements]
 
 ### Assignment
 
-[Inner Development Loop](Assignment3.md)
+[Inner Development Loop](Assignment3/Assignment3.md)
 
 ### Project Requirements
 
