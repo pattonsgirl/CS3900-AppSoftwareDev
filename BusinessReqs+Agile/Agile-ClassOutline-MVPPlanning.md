@@ -23,3 +23,5 @@ Key points you will be presenting in class, any internet resources to share as c
 Powerpoint (or other slide deck tools):
 1. Export the slide deck to PDF
 2. Add the PDF to the module folder
+
+3. [Slide Deck - Uploaded AFTER Class Session]
