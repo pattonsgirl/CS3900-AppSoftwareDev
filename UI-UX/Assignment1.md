@@ -17,7 +17,7 @@
 ## Description
 
 1. Clone the assignment repository for this unit.
-2. Create a Balsamic account - https://balsamiq.com/
+2. Create a Balsamic Cloud account - https://balsamiq.cloud/
 3. Import the balsamic starter (TODO - name) project for user flows for the WorkOrder Pro application.
 4. Use Balsamic to create user flows for the following features:
     - Search
