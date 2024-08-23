@@ -6,6 +6,13 @@
 
 Before we begin this unit, you need to read / watch the following videos / articles.
 
+- https://www.interaction-design.org/literature/topics/ux-design?page=7 
+- https://www.youtube.com/watch?v=DNBIcBdKnQo 
+- https://www.coursera.org/articles/user-flow 
+- https://www.interaction-design.org/literature/topics/user-flows 
+- Balsamiq Cloud 101: https://www.youtube.com/watch?v=E5Z1QOly72E
+- Comparing wireframes with flow diagrams: https://balsamiq.com/learn/articles/wireflows/#flow-diagrams  
+
 You will need to understand these key takeaways:
 1. User Experience Drives Design Decisions: User flows are essential tools that help map the user’s journey through an application. They are designed not just to outline steps but to focus on the user’s needs, motivations, and potential challenges. Your goal is to design intuitive flows that enhance the user experience by simplifying their path to achieving specific goals.
 
