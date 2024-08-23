@@ -8,7 +8,7 @@
 
 •	Video: Making sense of MVP - https://youtu.be/0P7nCmln7PM?feature=shared
 
-•	Reading: The Scrum Guide 
+•	Reading: The Scrum Guide - https://www.scrum.org/resources/scrum-guide
 
 
 You will need to understand these key takeaways:
