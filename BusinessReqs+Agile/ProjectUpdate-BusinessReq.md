@@ -9,11 +9,6 @@
 
 If you have not already, join your group's GitHub repository and clone the repository to your system.  Your contributions to components required will be tracked via commits to your group's repository.
 
-Come up with a themed topic for your group project that encompasses: 
-1. TODO
-2. TODO
-3. TODO
-
 Create a set of user interview questions, three per team member, to flesh out base needs and capabilities of the group's application.
 
 Conduct in-person user interviews using the full set of interview questions and record it via video or transcription.  Each group member must conduct an interview and submit the recording or transcription to the group repository.  Interviews can be conducted on your group members or someone external to your group or the class.  
