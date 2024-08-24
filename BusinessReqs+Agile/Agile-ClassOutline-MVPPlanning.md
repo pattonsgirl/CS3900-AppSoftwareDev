@@ -2,13 +2,10 @@
 
 # Background
 
-•	Video: The Expert - https://youtu.be/BKorP55Aqvg?feature=shared
-
-•	Video: What is Agile? - https://youtu.be/Z9QbYZh1YXY?feature=shared
-
-•	Video: Making sense of MVP - https://youtu.be/0P7nCmln7PM?feature=shared
-
-•	Reading: The Scrum Guide - https://www.scrum.org/resources/scrum-guide
+- Video: The Expert - https://youtu.be/BKorP55Aqvg?feature=shared
+- Video: What is Agile? - https://youtu.be/Z9QbYZh1YXY?feature=shared
+- Video: Making sense of MVP - https://youtu.be/0P7nCmln7PM?feature=shared
+- Reading: The Scrum Guide - https://www.scrum.org/resources/scrum-guide
 
 
 You will need to understand these key takeaways:
