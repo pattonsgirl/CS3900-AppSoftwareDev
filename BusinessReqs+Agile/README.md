@@ -8,7 +8,6 @@ Agile will have three planned points in this course:
 3. An end of semester retrospective
 
 ## Business Requirements:
-- [Class Outline / Text Notes](BusinessReq-ClassOutline.md)
 - [Slide Deck](BusinessReqs-Slides.pdf)
 - [In Class Worksheet - Sample User Interview](BusinessReqs-InClassWorksheet.md)
 - [WorkOrder Pro - Product Requirements](WorkOrderPro-ProductRequirementsDocument.md)
