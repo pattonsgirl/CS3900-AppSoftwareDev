@@ -9,11 +9,11 @@
 
 If you have not already, join your group's GitHub repository and clone the repository to your system.  Your contributions to components required will be tracked via commits to your group's repository.
 
-Create a set of user interview questions, three per team member, to flesh out base needs and capabilities of the group's application.
+In `BR-InterviewQuestions.md` create a set of user interview questions, three per team member, to flesh out base needs and capabilities of the group's application.
 
 Conduct in-person user interviews using the full set of interview questions and record it via video or transcription.  Each group member must conduct an interview and submit the recording or transcription to the group repository.  Interviews can be conducted on your group members or someone external to your group or the class.  
 
-Build a set of Product Requirements for your group project that addresses learnings from the user interviews and considers the following elements of a Product Requirements Outline:
+In ``BR-ProjectRequirementsDocument.md` build a set of Product Requirements for your group project that addresses learnings from the user interviews and considers the following elements of a Product Requirements Outline:
 - Context
 - Use Case(s)
 - Objective
@@ -26,9 +26,9 @@ Build a set of Product Requirements for your group project that addresses learni
 ## Deliverable(s)
 
 The group repository needs to include the follow documents:
-- interview-questions.md with the group's set of interview questions
-- interview-[name].md where name is the name of the person interviewed and contains a transcription or link to video file of the interview.
-- product-requirements.md with the group's product requirement outline
+- `BR-InterviewQuestions.md` with the group's set of interview questions
+- `BR-Interview-[lastname]` where name is the name of the person interviewed and contains a transcription (`.md` files) or link to video file of the interview.
+- `BR-ProjectRequirementsDocument.md` with the group's product requirement outline
 
 ## Rubric
 
