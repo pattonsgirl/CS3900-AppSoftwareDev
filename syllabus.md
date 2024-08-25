@@ -45,9 +45,17 @@ This outline is a proposed ordering.
 
 ## Grading
 
+* Note: this is planned on current assignment outlines and noted to set course expectations.  Total number of assignments may change.
+
 | Category   | Weight | Sub-Category   | Sub-Category Weight |
 |------------|--------|----------------|---------------------|
-| Modules (~7) | 80% (11.43% / module) | Individual Assignments <br> Group Project Components | 70% <br> 30%  |
+| Business Requirements <br>& Agile Methods Module | 11.43% | Group Project Component x 4 | 25% of module weight each  |
+| DevOps Module     | 11.43% | Individual Assignments x 4 <br>*Group Project Component will be tied to other modules* | 25% of module weight each  |
+| Database Design Module | 11.43% | Individual Assignments x 5 <br> Group Project Component | 70% <br> 30%  |
+| UI / UX Module | 11.43% | Individual Assignments x 2 <br> Group Project Component | 70% <br> 30%  |
+| Microservices Module | 11.43% | Individual Assignments x 4 <br> Group Project Component | 70% <br> 30%  |
+| Unit & Automation Testing Module | 11.43% | Individual Assignments x 3 <br> Group Project Component | 70% <br> 30%  |
+| Web Design Module | 11.43% | Individual Assignments x 4 <br> Group Project Component | 70% <br> 30%  |
 | Final Project  | 10%  |   |  |
 | Retrospective  | 10%  |   |  |
 
