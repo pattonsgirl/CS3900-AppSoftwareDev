@@ -6,6 +6,17 @@ Instructor of record: Kayleigh Duncan
 Time: TR 2:00 PM - 3:20 PM  
 Location: Russ 355  
 
+### Office Hours
+
+Access to module instructors (read section below) will be coordinated via Microsoft Teams (see access link in Course Information in Pilot).  The instructor of record will, frankly, be learning all of this too - utilize their office hours if you feel unable to productively interact with the module teams.
+
+**Instructor of record office hours: MW 1:00 PM - 3:00 PM, otherwise by appointment in Russ 340.**  
+    - Communications outside of office hours should be posted to the class Microsoft Teams channel.  
+
+**Module instructor access: 9:00 AM - 5:00 PM M-F via the class Microsoft Teams channel.** Responses may not be immediate.  Posting to the correct module theme will get you the speediest help.  If you are unsure, post to the General channel. 
+    - Screen share / synchronous sessions should be requested in advance to be respectful of schedules.
+    - If you are going to send an **email**, email both module instructors and the course instructor.
+
 ## Course Description
 Software development is a team activity where successful software is continually enhanced and refined to add value over time. Working in a team environment with other developers, quality assurance, product owners, and scrum masters is a skill needed for anyone entering or working in a corporate environment. This course will introduce and practice software development in a real world scenario. Students will begin with defining requirements, using agile methodology, then advance to create database designs, create functional UI/UX designs, create microservices, pushing code in a CI/CD pipeline, and create a front end web application. During the software development lifecycle you will practice merging and branching code, code reviews, and unit and performance tests. You will be partnered with software developers, database engineers, and IT leadership from a local Dayton company (Winsupply) for practical hands-on experience and mentorship.
 
@@ -87,7 +98,7 @@ In using AI tools, be aware that every assignment submission will be graded usin
 
 ## Additional Needs
 
-Students with disabilities or any additional needs are encouraged to set up an appointment with the course instructor at their convenience to discuss any classroom accommodation that may be necessary.
+Students with disabilities or any additional needs are encouraged to set up an appointment with the course instructor at their earliest convenience to discuss any classroom accommodation that may be necessary.
 
 
 
