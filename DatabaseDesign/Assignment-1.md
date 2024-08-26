@@ -13,7 +13,7 @@
 
 The intent is to learn about conceptual models and build one using your group project’s theme.
 
-1. In your `cs3900-unit1-username` repository, edit the file `DBAssignment1.md` in the `Assignments` folder.
+1. In your `cs3900-unit1-username` repository, edit the file `DB-Assignment-1.md` in the `Assignments` folder.
 2. Watch the required videos (listed in the [Assignment-1-required.md](Assignment-1-required.md) file)
 3. Write a description of the following common conceptual model terms:
 	- Purpose of a conceptual model
