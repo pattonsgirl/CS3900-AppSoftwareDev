@@ -40,7 +40,7 @@ Based on this user interview answer the following questions:
 - [ ] How many fish I caught
 - [ ] The type of fish I caught
 - [ ] The length and weight of the fish I caught
-- [ ] The type of bate I used
+- [ ] The type of bait I used
 - [ ] If I am on a boat or fishing from land
 
 3. Which platforms would you develop the application for 
