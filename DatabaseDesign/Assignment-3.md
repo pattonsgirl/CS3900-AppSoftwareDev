@@ -13,8 +13,8 @@
 
 The intent is to learn about physical models and build one using your group project’s theme.
 
-1. Clone the Assignment-3 repository
-2. Watch the required videos (listed in the Assignment-3-required.md file)
+1. In your `cs3900-unit1-username` repository, edit the file `DB-Assignment-3.md` in the `Assignments` folder.
+2. Watch the required videos (listed in the [Assignment-3-required.md](Assignment-3-required.md) file)
 3. Write a description of the following common physical model components:
 	- Key difference of the physical model compared to the conceptual and logical models
 	- What are the basic data types
