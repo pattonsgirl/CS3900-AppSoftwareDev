@@ -91,7 +91,8 @@ Honors capabilities:
 
 The scope of this project includes: 
 - Database creation using MariaDB 
-- All frontend development, using Angular Backend development, connecting the frontend to the database using JAVA
+- All frontend development, using Angular
+- Backend development, connecting the frontend to the database using JAVA
 
 Outside the scope of this project: 
 - Any communication with technicians, customers, suppliers, etc. 
