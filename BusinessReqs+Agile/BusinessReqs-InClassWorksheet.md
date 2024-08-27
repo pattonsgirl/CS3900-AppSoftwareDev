@@ -8,7 +8,7 @@ You are the Product Manager for a company that is developing a mobile applicatio
 
 A: For sure! I like to go fishing every weekend during the summer. It is where I relax and unwind after a long work week. I own a small boat and trailer, so I can go to different places. I went this past Saturday to a local lake and caught a bunch of different fish
 
-> Q: That sounds exciting!Do you take any technology with you on your fishing trips
+> Q: That sounds exciting! Do you take any technology with you on your fishing trips?
 
 A: Yes, I always have my iPhone with me. I use it to take pictures of what I catch
 
