@@ -13,8 +13,8 @@
 
 The intent is to learn about logical models and build one using your group project’s theme.
 
-1. Clone the Assignment-2 repository
-2. Watch the required videos (listed in the Assignment-2-required.md file)
+1. In your `cs3900-unit1-username` repository, edit the file `DB-Assignment-2.md` in the `Assignments` folder.
+2. Watch the required videos (listed in the [Assignment-2-required.md](Assignment-2-required.md) file)
 3. Write a description of the following common logical model terms:
 	- Purpose of a logical model
 	- Primary Key
