@@ -1,4 +1,4 @@
-# Business Requirements - Group Project Additions
+# Business Requirements - Group Project Components
 
 ## Purpose / Objectives
 
@@ -13,7 +13,7 @@ In `BR-InterviewQuestions.md` create a set of user interview questions, three pe
 
 Conduct in-person user interviews using the full set of interview questions and record it via video or transcription.  Each group member must conduct an interview and submit the recording or transcription to the group repository.  Interviews can be conducted on your group members or someone external to your group or the class.  
 
-In ``BR-ProjectRequirementsDocument.md` build a set of Product Requirements for your group project that addresses learnings from the user interviews and considers the following elements of a Product Requirements Outline:
+In `BR-ProjectRequirementsDocument.md` build a set of Product Requirements for your group project that addresses learnings from the user interviews and considers the following elements of a Product Requirements Outline:
 - Context
 - Use Case(s)
 - Objective

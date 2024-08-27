@@ -1,4 +1,4 @@
-# Agile Project Planning - Group Project Additions
+# Agile Project Planning - Group Project Components
 
 ## Purpose / Objectives
 
@@ -9,41 +9,34 @@
 
 If you have not already, join your group's GitHub repository and clone the repository to your system.
 
-Define an MVP for your group themed project.  The MVP should focus on the user's perspective of the project deliverable and should not be technically dense.
+There are **two** worksheets templated in your group project repository that need to be complete.  The third is an exercise for **honors** students only, although it is recommended to complete it.
 
-Generate a project outline of work for your group themed topic that needs to be accomplished to create a fully functioning application.  Pick a tool that your group finds productive.  
+Required worksheets:
+- `Agile-MVP-BusinessNeedsAnalysis.md`
+- `Agile-MVP-CoreFeatures.md`
+- `Agile-MVP-Honors-CoreFeatures.md` - **Honors only**
 
-Tool options TODO - check for easy tools integration / limits / capabilities:
+It is recommended to have your group commit to a project planning tool (even if it is simple, like regular use of GitHub Issues) to track tasking in the project and responsibilities of team members.  Recommended tools include, but are not limited to:
 - Trello (recommended)
 - GitHub Projects / Issues
 - Excel
-
-Your outline of work must address a minimum of the following:
-- define different epics with an initial timeline on each epic
-  - Note: keep in mind that timeline **is the timeline of the class**
-- add a business case to each epic
-- assign two / three user stories to each epic
-- define one spike
+- Chat channel in MSTeams (inform instructor of record to have this created)
 
 ## Deliverable(s)
 
 Your group repository needs to include the following:
-- README.md with your MVP defined (TODO: README.md or mvp.md?)
-- Copy of project outline of work either linked OR uploaded to repo
-  - If you are using a cloud based collaboration tool, like an Excel sheet in OneDrive or Google Excel sheet, add Winsupply team members with a minimum of the ability to view.
+- `Agile-MVP-BusinessNeedsAnalysis.md` updated to your group project theme's information
+- `Agile-MVP-CoreFeatures.md` updated to your group project theme's information
+- **Honors only** `Agile-MVP-Honors-CoreFeatures.md` updated to your group project theme's information
 
 ## Rubric
 
-Contribution to the deliverable via commit history will not be factored into grading for this assignment - it is expected that your group collaborated in order to define the MVP and the project outline of work.
+Score: # out of 10 points
 
-- MVP addresses:
-  - understanding what the user is going to have as a deliverable (goal), but stays at elevator pitch level
-  - defines minumin set of expectations
-  - is accomplishable in the defined period of time (based on epics)
-  - perspective is of the user and is not technically dense
-  - customer value is defined
-- Outline of work addresses:
-  - different epics defined with an initial timeline on each epic
-  - business case assigned to each epic
-  - two / three user stories assigned to each epic
-  - one spike defined
+It is expected that your group collaborated on these documents, but contributions via commits will not be tracked.
+
+- Both documents cleanly present the requested information - good formatting (1 point / worksheet)
+- `Agile-MVP-BusinessNeedsAnalysis.md` addresses prompt in each section (1 point / section)
+- `Agile-MVP-CoreFeatures.md` address prompt in each section (1 point / section)
+  - 1 point of Extra Credit for addressing Feedback & Iteration
+- **Honors only** `Agile-MVP-Honors-CoreFeatures.md` addresses prompt in each section (1 point / section)
