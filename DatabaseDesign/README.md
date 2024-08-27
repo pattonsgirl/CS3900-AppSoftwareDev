@@ -1,33 +1,22 @@
-# Database Design
+# Database Design Content
 
-In an attempt to make it "seamless" to share information with students and to make the option of modifying resources at anytime 
-possible, it will be best for teams to add their content to this shared GitHub.  Students will be linked to this GitHub repository 
-from Pilot (the learning management system) rather than have a queue of things that need updated / synchronized.
+Key topics that will be presented in class:
 
-1. Create a module folder in this repository for content, assignments, and project requirements
-2. Create wither a singular README.md OR multiple files named background.md, content.md, assignment.md, project.md, etc.
+* Database Class 1 - Conceptual Model
+* Database Class 2 - Logical Model
+* Database Class 3 - Physical Model
+* Database Class 4 - Database Initialization Scripts To Create Database & Objects
+* Database Class 5 - SQL Essentials To Query Databases
 
 # Background
 
-Before we begin this unit, you need to read / watch the following videos / articles.
+Before we begin each class in this unit, you will need to watch / read the videos / articles listed in each assignment file.
 
-You will need to understand these key takeaways:
-- thing 1
-- thing 2
-- thing 3
-
-# Content
-
-Key points you will be presenting in class, any internet resources to share as companions.
-
-Powerpoint (or other slide deck tools):
-1. Export the slide deck to PDF
-2. Add the PDF to the module folder
+Each assignment file will also list the common terms / takeaways that you will need to understand for each class.
 
 # Assigments
 
-Uniquely named `.md` files within the module folder.  The intent is that assignments are generally begun in class and due the following class period (unless more time is needed)
-
-# Project Requirements
-
-Uniquely named `.md` files within the module folder.  The group project should have new requirements within each module based on lessons learned from the in-class work.
+Uniquely named `.md` files within the module folder.
+* The intent is that assignments are worked on prior to class and due by 5:00 pm the evening before class (unless more time is needed).
+* If more time is needed or you have outstanding questions, turn in assignments along with a short note.
+  - Dont forget you can ask your questions in the Microsoft Teams channels.
