@@ -12,7 +12,7 @@ The elements required in the group project will be contained in the module that 
 
 ## Unit 1: Containers as a Development Environment
 
-### Pre-Module
+### Class Pre-Content
 
 * [Git Refresher](https://www.youtube.com/watch?v=HVsySz-h9r4)
 * Install Docker on system
