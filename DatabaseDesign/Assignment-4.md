@@ -17,7 +17,7 @@ The intent is to learn about physical databases and build one using your group p
 3. Write a description of the following common physical database concepts:
 	- What can be included in a create table statement
 	- What are database constraints and what are the benefits of them
-	- Inserting data
+	- Ways to insert data
 	- What are database roles and what are they used for
 	- Different type of users
 4. Write Create scripts for your physical database for your group project theme
@@ -33,7 +33,7 @@ Submit to the assignment repository on GitHub.  Your README must include:
 - Describe each of the following common physical database concepts:
 	- What can be included in a create table statement
 	- What are database constraints and what are the benefits of them
-	- Inserting data
+	- Ways to insert data
 	- What are database roles and what are they used for
 	- Different type of users
 - Your scripts to create your physical database for your group project theme
