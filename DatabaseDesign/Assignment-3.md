@@ -17,10 +17,9 @@ The intent is to learn about physical models and build one using your group proj
 2. Watch the required videos (listed in the [Assignment-3-required.md](Assignment-3-required.md) file)
 3. Write a description of the following common physical model components:
 	- Key difference of the physical model compared to the conceptual and logical models
-	- What are the basic data types
+	- What are the common data types
 	- Default values / Null values
 	- Check constraints
-	- Database Access
 4. Create a physical model for your group project theme
 5. Describe your physical model
 
@@ -33,10 +32,9 @@ Submit to the assignment repository on GitHub.  Your README must include:
 - Your updated logical diagram
 - Describe each of the following common physical model components:
 	- Key difference of the physical model compared to the conceptual and logical models
-	- What are the basic data types
+	- What are the common data types
 	- Default values / Null values
 	- Check constraints
-	- Database Access
 - Your physical model using group project theme
 - Description of presented physical model
 
