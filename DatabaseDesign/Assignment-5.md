@@ -24,7 +24,7 @@ The intent is to learn about SQL queries, tables joins, and indexes to build a S
 
 In the 9/19 class session, your SQL scripts will undergo peer review which you will use to create a SQL Toolbox to assist in your next classes.
 
-## Deliverable(s) - ?????
+## Deliverable(s)
 
 Submit to the assignment repository on GitHub.  Your README must include:
 
@@ -37,7 +37,7 @@ Submit to the assignment repository on GitHub.  Your README must include:
 - Your SQL queries for your group project theme
 - Description of your SQL query scripts
 
-## Rubric - ?????
+## Rubric
 
 README contains:
 - Updated create scripts using peer review feedback (1 pt)
