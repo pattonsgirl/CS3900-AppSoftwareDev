@@ -31,6 +31,12 @@ To your assignment repository, include the following files:
   - Screenshot of running container process
   - Screenshot of SQL query validation
 
+## Submission
+
+Submit link to assignment repository to the Dropbox in Pilot. 
+
+URL looks like: https://github.com/WSU-kduncan/dbdesign-assignments-YOURGHUSERNAME
+
 ## Rubric
 
 Score: # out of 5 points
