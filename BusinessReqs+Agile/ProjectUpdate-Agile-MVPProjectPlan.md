@@ -29,6 +29,12 @@ Your group repository needs to include the following:
 - `Agile-MVP-CoreFeatures.md` updated to your group project theme's information
 - **Honors only** `Agile-MVP-Honors-CoreFeatures.md` updated to your group project theme's information
 
+## Submission
+
+Submit link to assignment repository in the Dropbox in Pilot.  Only ONE team member needs to remember to submit the link.
+
+URL looks like: https://github.com/WSU-kduncan/cs3900-YOURGROUPNAME
+
 ## Rubric
 
 Score: # out of 10 points
