@@ -12,15 +12,18 @@ The elements required in the group project will be contained in the module that 
 
 ## Unit 1: Containers as a Development Environment
 
-### Pre-Module 
+### Class Pre-Content
 
-- Videos / Content
-- Install Docker on system
-- CLI refresher
+* [Git Refresher](https://www.youtube.com/watch?v=HVsySz-h9r4)
+* Install Docker on system
+  * [Windows](https://docs.docker.com/desktop/install/windows-install/)
+  * [MacOS](https://docs.docker.com/desktop/install/mac-install/)
+  * [Linux](https://docs.docker.com/desktop/install/linux-install/)
+* CLI Refresher
+  * [Windows](https://www.youtube.com/watch?v=A3nwRCV-bTU)
+  * [Linux and MacOS](https://www.youtube.com/watch?v=yz7nYlnXLfE) (Watch up to 26:18)
 
 ### Slides / Content
-
-### Additional Info
 
 ### Assignment
 
@@ -30,7 +33,7 @@ The elements required in the group project will be contained in the module that 
 
 Group project requirements are included in the [Database Design group project requirements](ProjectUpdate-DBDesign.md).
 
-## Unit 2: GitHub Actions & AWS Tools
+## Unit 2: Continuous Deployment
 
 ### Pre-Unit 
 
@@ -48,7 +51,25 @@ Group project requirements are included in the [Database Design group project re
 
 Group project requirements are included in the [TODO group project requirements]().
 
-## Unit 3: Inner Development Loop
+## Unit 3: Continuous Integration
+
+### Pre-Unit 
+
+- Videos / Content
+
+### Slides / Content
+
+### Additional Info
+
+### Assignment
+
+[Inner Development Loop](Assignment3/Assignment3.md)
+
+### Project Requirements
+
+Group project requirements are included in the [TODO group project requirements]().
+
+## Unit 4: Frontend Web Application Deployment
 
 ### Pre-Unit 
 
