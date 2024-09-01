@@ -6,8 +6,6 @@
 - Understand purpose and audience of the conceptual model.
 - Understand basic conceptual model terms.
 - Build a conceptual model of your group project theme.
-- Improve your conceptual model via peer-review critiques.
-	- Review will be done in following class session and changes made when submitting Assignment 2
 
 ## Description
 
