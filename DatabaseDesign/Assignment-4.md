@@ -12,7 +12,7 @@
 
 The intent is to learn about physical databases and build one using your group project’s theme.
 
-1. In your `cs3900-unit1-username` repository, edit the file `DB-Assignment-4.md` in the `Assignments` folder.
+1. In your `dbdesign-assignments-YOURGHUSERNAME` repository, edit the file `DB-Assignment-4.md` in the `Assignments` folder.
 2. Watch the required videos (listed in the [Assignment-4-required.md](Assignment-4-required.md) file)
 3. Write a description of the following common physical database concepts:
 	- What can be included in a create table statement
@@ -38,6 +38,12 @@ Submit to the assignment repository on GitHub.  Your README must include:
 	- Different type of users
 - Your scripts to create your physical database for your group project theme
 - Description of your create scripts
+
+## Submission
+
+Submit link to assignment repository to the Dropbox in Pilot. 
+
+URL looks like: https://github.com/WSU-kduncan/dbdesign-assignments-YOURGHUSERNAME
 
 ## Rubric
 

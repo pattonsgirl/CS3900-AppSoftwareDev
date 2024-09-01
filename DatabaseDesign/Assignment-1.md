@@ -13,7 +13,9 @@
 
 The intent is to learn about conceptual models and build one using your group project’s theme.
 
-1. In your `cs3900-unit1-username` repository, edit the file `DB-Assignment-1.md` in the `Assignments` folder.
+In the 9/5 class session, your will collaborate with your group to (hopefully) agree to a common conceptual model, which you will then use to design a logical model ahead of the class session on 9/10.
+
+1. In your `dbdesign-assignments-YOURGHUSERNAME` repository, edit the file `DB-Assignment-1.md` in the `Assignments` folder.
 2. Watch the required videos (listed in the [Assignment-1-required.md](Assignment-1-required.md) file)
 3. Write a description of the following common conceptual model terms:
 	- Purpose of a conceptual model
@@ -23,7 +25,6 @@ The intent is to learn about conceptual models and build one using your group pr
 4. Build a conceptual model for your group project theme
 5. Describe your conceptual model
 
-In the 9/5 class session, your conceptual model will undergo peer review which you will use to improve your conceptual model ahead of the next assignment.
 
 ## Deliverable(s)
 
@@ -36,6 +37,12 @@ Submit to the assignment repository on GitHub.  Your README must include:
 	- Relationship
 - Your conceptual model diagram using your group project theme
 - Description of presented conceptual model
+
+## Submission
+
+Submit link to assignment repository to the Dropbox in Pilot. 
+
+URL looks like: https://github.com/WSU-kduncan/dbdesign-assignments-YOURGHUSERNAME
 
 ## Rubric
 

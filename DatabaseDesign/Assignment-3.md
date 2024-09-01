@@ -13,7 +13,7 @@
 
 The intent is to learn about physical models and build one using your group project’s theme.
 
-1. In your `cs3900-unit1-username` repository, edit the file `DB-Assignment-3.md` in the `Assignments` folder.
+1. In your `dbdesign-assignments-YOURGHUSERNAME` repository, edit the file `DB-Assignment-3.md` in the `Assignments` folder.
 2. Watch the required videos (listed in the [Assignment-3-required.md](Assignment-3-required.md) file)
 3. Write a description of the following common physical model components:
 	- Key difference of the physical model compared to the conceptual and logical models
@@ -24,6 +24,12 @@ The intent is to learn about physical models and build one using your group proj
 5. Describe your physical model
 
 In the 9/12 class session, your physical model will undergo peer review which you will use to improve your physical model ahead of the next assignment.
+
+## Submission
+
+Submit link to assignment repository to the Dropbox in Pilot. 
+
+URL looks like: https://github.com/WSU-kduncan/dbdesign-assignments-YOURGHUSERNAME
 
 ## Deliverable(s)
 
