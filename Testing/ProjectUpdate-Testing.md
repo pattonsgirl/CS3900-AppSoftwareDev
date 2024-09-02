@@ -1,0 +1,1 @@
+Define what group project must now include
