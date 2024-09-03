@@ -24,5 +24,5 @@ Uniquely named `.md` files within the module folder.
 * [Assignment 1 - Conceptual Model](Assignment-1.md)
 * [Assignment 2 - Logical Model](Assignment-2.md)
 * [Assignment 3 - Physical Model](Assignment-3.md)
-* Assignment 4 - Database Initialization Scripts To Create Database & Objects
-* Assignment 5 - SQL Essentials To Query Databases
+* [Assignment 4 - Database Initialization Scripts To Create Database & Objects](Assignment-3.md)
+* [Assignment 5 - SQL Essentials To Query Databases](Assignment-5.md)
