@@ -1,4 +1,4 @@
-1. Physical Database Design Learning Activity, Part 1 
+1. Physical Database Design Learning Activity, Part 1 - Physical Database Design overview
     - Linda DuHadway 3 min 10 seconds
     - https://www.youtube.com/watch?v=evb530SeTIA
 
@@ -6,7 +6,7 @@
     - Linda DuHadway 8 min 18 seconds
     - https://www.youtube.com/watch?v=HBImQoz3oHo
 
-3. Physical Database Design Learning Activity, Part 2b
+3. Physical Database Design Learning Activity, Part 2b - Decide on Data Types continued
     - Linda DuHadway 9 min 6 seconds
     - https://www.youtube.com/watch?v=ueA4J3Ac-WY
 
