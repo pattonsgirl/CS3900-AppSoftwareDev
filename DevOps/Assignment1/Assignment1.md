@@ -14,8 +14,8 @@ Clone the assignment repository.  The assignment repository will include a scrip
     - MariaDB as a base image (FROM)
     - COPY [initialization script](init.sql) to `/docker-entrypoint-initdb.d/`
 2. Build a container image using the Dockerfile
-3. Start / run a container using the container image with the [provided environment variables](variables.env) with port 3306.
-*Hint: See the [Docker CLI documentation](https://docs.docker.com/reference/cli/docker/](https://docs.docker.com/reference/cli/docker/container/run/#env) on how to use a file for environment variables.*
+3. Start / run a container using the container image with the [provided environment variables](variables.env) with port 3306.  
+    - *Hint: See the [Docker CLI documentation](https://docs.docker.com/reference/cli/docker/container/run/#env) on how to use a file for environment variables.*
 4. Run the following SQL query to validate connection `SELECT * from school.students`
 
 ## Deliverable(s)
