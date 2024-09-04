@@ -3,10 +3,10 @@
 1. Open DBeaver
 
 2. Right click in the left hand Database Navigator, then Create \> Connection  
-![image1](./images/1.png)
+![image1](./1.png)
 
 3. Click MariaDB, then Next  
-![image2](./images/2.png)
+![image2](./2.png)
 
 4. The only thing you’ll need to change here is username and password
 
@@ -14,10 +14,10 @@
     Password: password
 
 5. Then click finish  
-![image3](./images/3.png)
+![image3](./3.png)
 
 6. Right click the Connection in the left hand Database Navigator, Open SQL Editor \> click New SQL script
-![image4](./images/4.png)
+![image4](./4.png)
 
 7. Enter your script, then click the play button, and you should see results below and no error  
-![image](./images/5.png)
+![image](./5.png)
