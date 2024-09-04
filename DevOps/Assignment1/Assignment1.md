@@ -23,7 +23,7 @@ Clone the assignment repository.  The assignment repository will include a scrip
 To your assignment repository, include the following files:
 
 - Dockerfile
-- Project files required by Dockerfile
+- Project files required by Dockerfile (the `init.sql` and `variables.env` that should be in your assignment repo)
 - container-build.md file documenting:
   - Commands used to complete assignment
     - This should be done such that you can reference it throughout the course
