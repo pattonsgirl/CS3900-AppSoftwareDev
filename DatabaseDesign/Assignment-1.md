@@ -46,6 +46,8 @@ URL looks like: https://github.com/WSU-kduncan/dbdesign-assignments-YOURGHUSERNA
 
 README contains:
 
+DB Assignment 1 Grading
+
 Score:  /5 points
 - Definition of common conceptual model terms (1 pt)   /1
 - Conceptual model that has:
