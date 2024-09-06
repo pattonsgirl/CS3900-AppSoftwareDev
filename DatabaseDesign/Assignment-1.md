@@ -55,3 +55,5 @@ Score:  /5 points
 	- 4 attributes per entity (unless defended in description) (1 pt)   /1
 	- Relationship between entities properly defined (and justified in description) (1 pt)   /1
 - Effective description of conceptual model (1 pt)   /1
+
+Feedback: 
