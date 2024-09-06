@@ -45,6 +45,7 @@ URL looks like: https://github.com/WSU-kduncan/dbdesign-assignments-YOURGHUSERNA
 ## Rubric
 
 README contains:
+
 Score:  /5 points
 - Definition of common conceptual model terms (1 pt)   /1
 - Conceptual model that has:
