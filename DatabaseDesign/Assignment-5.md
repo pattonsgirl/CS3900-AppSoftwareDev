@@ -54,3 +54,5 @@ README contains:
 - Descriptions of common database concepts (1 pt) /1
 - SQL queries for your group project theme (3 pts) /3
 - Description of your SQL queries (1 pt) /1
+
+Feedback: 
