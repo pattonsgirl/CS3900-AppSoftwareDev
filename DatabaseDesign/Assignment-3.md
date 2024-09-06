@@ -57,3 +57,5 @@ README contains:
     - tables with proper data types including default values, check constraints as needed (1 pt) /1
     - tables with proper relationships defined (1 pt) /1
 - Effective description of physical model (1 pt) /1
+
+Feedback: 
