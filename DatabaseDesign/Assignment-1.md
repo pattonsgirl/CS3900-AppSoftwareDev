@@ -45,9 +45,10 @@ URL looks like: https://github.com/WSU-kduncan/dbdesign-assignments-YOURGHUSERNA
 ## Rubric
 
 README contains:
-- Definition of common conceptual model terms (1 pt)
+Score:  /5 points
+- Definition of common conceptual model terms (1 pt)   /1
 - Conceptual model that has:
-	- 3 entities (unless defended in description) (1 pt)
-	- 4 attributes per entity (unless defended in description) (1 pt)
-	- Relationship between entities properly defined (and justified in description) (1 pt)
-- Effective description of conceptual model (1 pt)
+	- 3 entities (unless defended in description) (1 pt)   /1
+	- 4 attributes per entity (unless defended in description) (1 pt)   /1
+	- Relationship between entities properly defined (and justified in description) (1 pt)   /1
+- Effective description of conceptual model (1 pt)   /1
