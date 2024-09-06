@@ -45,8 +45,12 @@ URL looks like: https://github.com/WSU-kduncan/dbdesign-assignments-YOURGHUSERNA
 
 ## Rubric
 
+DB Assignment 1 Grading
+
+Score: /6 points
+
 README contains:
-- Updated create scripts using peer review feedback (1 pt)
-- Descriptions of common database concepts (1 pt)
-- SQL queries for your group project theme (3 pts)
-- Description of your SQL queries (1 pt)
+- Updated create scripts using peer review feedback (1 pt) /1
+- Descriptions of common database concepts (1 pt) /1
+- SQL queries for your group project theme (3 pts) /3
+- Description of your SQL queries (1 pt) /1
