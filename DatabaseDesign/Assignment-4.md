@@ -47,8 +47,12 @@ URL looks like: https://github.com/WSU-kduncan/dbdesign-assignments-YOURGHUSERNA
 
 ## Rubric
 
+DB Assignment 4 Grading
+
+Score: /6 points
+
 README contains:
-- Updated physical model using peer review feedback (1 pt)
-- Descriptions of common physical database concepts (1 pt)
-- Scripts to create your physical database (3 pts)
-- Description of your create scripts (1 pt)
+- Updated physical model using peer review feedback (1 pt) /1
+- Descriptions of common physical database concepts (1 pt) /1
+- Scripts to create your physical database (3 pts) /3
+- Description of your create scripts (1 pt) /1
