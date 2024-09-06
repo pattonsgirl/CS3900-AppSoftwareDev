@@ -59,3 +59,5 @@ README contains:
 	- tables with proper primary keys (1 pt) /1
 	- tables with proper foreign keys (1 pt) /1
 - Effective description of logical model (1 pt) /1
+
+Feedback: 
