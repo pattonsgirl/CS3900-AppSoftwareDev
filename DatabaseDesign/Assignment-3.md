@@ -46,10 +46,14 @@ Submit to the assignment repository on GitHub.  Your README must include:
 
 ## Rubric
 
+DB Assignment 3 Grading
+
+Score: /5 points
+
 README contains:
-- Updated logical model using peer review feedback (1 pt)
-- Descriptions of common physical model components (1 pt)
+- Updated logical model using peer review feedback (1 pt) /1
+- Descriptions of common physical model components (1 pt) /1
 - Physical model that has:
-    - tables with proper data types including default values, check constraints as needed (1 pt)
-    - tables with proper relationships defined (1 pt)
-- Effective description of physical model (1 pt)
+    - tables with proper data types including default values, check constraints as needed (1 pt) /1
+    - tables with proper relationships defined (1 pt) /1
+- Effective description of physical model (1 pt) /1
