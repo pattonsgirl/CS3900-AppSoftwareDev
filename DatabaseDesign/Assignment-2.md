@@ -48,10 +48,14 @@ URL looks like: https://github.com/WSU-kduncan/dbdesign-assignments-YOURGHUSERNA
 
 ## Rubric
 
+DB Assignment 2 Grading
+
+Score: /5 points
+
 README contains:
-- Updated conceptual model using peer review feedback (1 pt)
-- Definition of common logical model terms (1 pt)
+- Updated conceptual model using peer review feedback (1 pt) /1
+- Definition of common logical model terms (1 pt) /1
 - Logical model that has:
-	- tables with proper primary keys (1 pt)
-	- tables with proper foreign keys (1 pt)
-- Effective description of logical model (1 pt)
+	- tables with proper primary keys (1 pt) /1
+	- tables with proper foreign keys (1 pt) /1
+- Effective description of logical model (1 pt) /1
