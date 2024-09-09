@@ -1,8 +1,8 @@
-# Assignment\#1
+# Microservices - Assignment 1 - GET Endpoint Response Test
 
 Students are expected to demonstrate the understanding of running SpringBoot application in local dev container using VSCode and will be able call their first GET endpoint (healthCheck). Quiz questions will be given to determine basic understanding of microservice and related concepts.
 
-\#\# Purpose / Objectives
+## Purpose / Objectives
 
 - Microservice Architecture  
 - Spring MVC Framework and Spring JPA  
@@ -11,7 +11,7 @@ Students are expected to demonstrate the understanding of running SpringBoot app
 - Setup dev container and VSCode 
 
 
-\#\# Assignment Description details.
+## Assignment Description details.
 
 * Clone the work-order-pro-service from the github repository using the below command  in a terminal.  
   * git clone \<GithubRepoURI\>  
@@ -24,7 +24,7 @@ Students are expected to demonstrate the understanding of running SpringBoot app
   * Add a screenshot of the network call to the readMe file.  
 * (Pre-class) Quiz assignment on these topics (10 single & multiple choice questions).
 
-\#\# Deliverable
+## Deliverable
 
 Submit work to GitHub repo  
 Add to README: 
@@ -33,8 +33,14 @@ Add to README:
 * Screenshot of health check GET endpoint response  
 * Complete the Quiz in Pilot
 
-\#\# Rubric
+## Rubric
+
+Microservices Assignment 1 Grading
+
+Score:  / 5 points
 
 - Open application in VSCode and configure docker dev container (2 pt)  
 - Able to run application successfully in local and able to access health check GET endpoint (1 pts)  
 - Assignment question’s answers (quiz) (2 pts)
+
+Feedback: 

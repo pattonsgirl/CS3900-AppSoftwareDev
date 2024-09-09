@@ -1,15 +1,15 @@
- # Assignment\#4
+# Microservices - Assignment 4 - Build PUT Endpoints
 
 Create /customers/{customerId} PUT endpoint and complete /workOrders POST endpoint
 
-\#\# Purpose / Objectives
+## Purpose / Objectives
 
 - Understanding of PUT endpoint including respective annotations  
 - Understanding of Entity class including lombok & Jakarta Persistence annotations.  
 - Understanding of JPA Repository.  
 - Understanding of Bean Validation.
 
-\#\# Assignment Description
+## Assignment Description
 
 * Create /customers/{customerId} PUT endpoint and add proper bean validation.  
 * The Request Body should be like below.
@@ -95,16 +95,22 @@ Create /customers/{customerId} PUT endpoint and complete /workOrders POST endpoi
     
 * Finish /workOrders POST endpoint and return response in expected format.
 
-\#\# Deliverable
+## Deliverable
 
 * Push /customers/{customerId} PUT endpoint into the Github repository.  
 * Push remaining changes of /workOrders POST endpoint into the Github repository.
 
-\#\# Bonus Feature  
+## Bonus Feature  
 	Create /customers/{customerID} DELETE endpoint to remove customer data from database, if it’s not associated with any work order.  
  
-\#\# Rubric
+## Rubric
+
+Microservices Assignment 4 Grading
+
+Score:  / 5 points
 
 - Create /customers PUT endpoint to update customer data in database, and return 200, 400 & 500 HTTP status response in given format. (2 pt)
 - Handle exception when customer doesn't exists then return 404 with valid message. (1 pt)  
 - Complete remaining changes of /workOrders POST endpoint to save work order in database, and return 200, 400 & 500 HTTP status response in given format. (2 pt)
+
+Feedback: 

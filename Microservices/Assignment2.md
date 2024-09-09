@@ -1,4 +1,4 @@
- # Assignment#2
+# Microservices - Assignment 2 - Build GET Endpoints
 
 Create /customers GET endpoint and correct /products GET endpoint
 
@@ -101,7 +101,13 @@ Create /customers GET endpoint and correct /products GET endpoint
 
 ## Rubric
 
+Microservices Assignment 2 Grading
+
+Score:  / 5 points
+
 - Create CustomerDTO class with proper field name & data type, and add required lombok annotations. (1pt)  
 - Create Controller, Service and DAO class for Customer with required annotations. (1pt)  
 - Create /customers GET endpoint to retrieve customers data from database, and return 200 & 500 HTTP status response in given format. (2 pt)  
 - Fixes of /products GET endpoint to retrieve products from database, and return 200 & 500 HTTP status response in given format. (1 pt)
+
+Feedback: 

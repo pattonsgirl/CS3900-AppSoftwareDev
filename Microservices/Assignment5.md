@@ -1,13 +1,13 @@
-  # Assignment\#5
+# Microservices - Assignment 5 - Finalizing Endpoints
 
 Create /workOrders/{workOrderId}/lineItems POST endpoint and complete /workOrders PUT endpoint changes
 
-\#\# Purpose / Objectives
+## Purpose / Objectives
 
 - Understanding of JPA Entity relationship  
 - Understanding of subresource REST API design pattern.
 
-\#\# Assignment Description
+## Assignment Description
 
 * Create /workOrders/{workOrderId}/lineItems POST endpoint and add proper bean validation.  
 * The Request Body should be like below.
@@ -69,14 +69,20 @@ Create /workOrders/{workOrderId}/lineItems POST endpoint and complete /workOrder
 * Finish /workOrders/{workOrderId} PUT endpoint remaining changes and return response in expected format.
 
 
-\#\# Deliverable
+## Deliverable
 
 * Push /workOrders/{workOrderId}/lineItem POST endpoint into the Github repository.  
 * Push remaining changes of /workOrders/{workOrderId} PUT endpoint into the Github repository.
 
 
-\#\# Rubric
+## Rubric
+
+Microservices Assignment 5 Grading
+
+Score:  / 5 points
 
 - Create /workOrders/{workOrderId}/{lineItem} POST endpoint to add new line item for work order in database, and return 201, 400 & 500 HTTP status response in given format. (2 pt)  
 - Handle exception when workOrder doesn't exists then return 404 with a valid message. (1 pt)  
 - Complete remaining changes of /workOrders/{workOrderId} PUT endpoint to update workorder details in database, and return 200, 400 & 500 HTTP status response in given format. (2 pt)
+
+Feedback:

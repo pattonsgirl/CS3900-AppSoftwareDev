@@ -44,8 +44,6 @@ URL looks like: https://github.com/WSU-kduncan/dbdesign-assignments-YOURGHUSERNA
 
 ## Rubric
 
-README contains:
-
 DB Assignment 1 Grading
 
 Score:  /5 points

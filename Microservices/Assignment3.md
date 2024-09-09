@@ -1,15 +1,15 @@
-  # Assignment#3
+# Microservices - Assignment 3 - Build POST Endpoints
 
 Create /customers POST endpoint and correct /states GET endpoint
 
-\#\# Purpose / Objectives
+## Purpose / Objectives
 
 - Understanding of POST endpoint including respective annotations  
 - Understanding of Entity class including lombok & Jakarta Persistence annotations.  
 - Understanding of JPA Repository.  
 - Understanding of Bean Validation.
 
-\#\# Assignment Description
+## Assignment Description
 
 * Create /customers POST endpoint and add proper bean validation.  
 * Create Customer entity model class and add all required Jakarta Persistence annotations.  
@@ -120,14 +120,20 @@ Create /customers POST endpoint and correct /states GET endpoint
    "Data": null  
 }  
 ```
-\#\# Deliverable
+## Deliverable
 
 * Push /customers POST endpoint into the Github repository.  
 * Push fixes of /states GET endpoint into the Github repository.
 
-\#\# Rubric
+## Rubric
+
+Microservices Assignment 3 Grading
+
+Score:  / 5 points
 
 - Add required fields validation and format validation on CustomerDTO class. (1pt)  
 - Create Customer entity model class with all required Jakarta persistence annotations and create CustomerRepository for the implementation. (1pt)  
 - Create /customers POST endpoint to save customer data in database, and return 201, 400 & 500 HTTP status response in given format. (2 pt)  
 - Fixes of /states GET endpoint to retrieve states from database, and return 200 & 500 HTTP status response in given format. (1 pt)
+
+Feedback: 
