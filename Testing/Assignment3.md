@@ -1,14 +1,14 @@
-# Assignment\#8
+# Testing - Assignment 3 - Integration Tests
 
 Create the Karate Test Suite for Endpoints.
 
-\#\# Purpose / Objectives
+## Purpose / Objectives
 
 - Karate API Testing  
 - Contract Verification  
 - Integration Testing
 
-\#\# Assignment Description
+## Assignment Description
 
 * Create a WorkOrder.feature class in the features folder of the test directory.   
 * Create the following scenarios to perform a GET, POST, & PUT for WorkOrders.  
@@ -47,15 +47,20 @@ Create the Karate Test Suite for Endpoints.
 
     
 
-\#\# Deliverable
+## Deliverable
 
 * Push WorkOrder test suite into the Github repository.  
 * Push Technician GET endpoint karate test suite into the Github repository.  
 * Push fixes of Product GET endpoint Karate test suite into the Github repository.
 
-\#\# Rubric
+## Rubric
+
+Testing Assignment 3 Grading
+
+Score:  / 5 points
 
 - Create a new Karate test suite for WorkOrder POST, PUT & GET endpoints. (3pt)  
 - Create a new Karate test suite for Technician GET endpoint. (1pt)  
 - Fixes in existing Karate test suite for product GET endpoint. (1pt)  
-- 
+
+Feedback:
