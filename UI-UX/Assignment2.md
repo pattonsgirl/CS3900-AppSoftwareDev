@@ -30,8 +30,9 @@ In the assignment repository, create a file named `wireframe.md` that includes a
 
 ## Rubric 
 
-Score: # out of 6 points
+Score: # out of 7 points
 
+- Exported Balsamic project & Export of PDFs (1 pt)
 - Screenshot of given wireframe (before changes) (1 pt.)
 - What changes were made to the given wireframe (minimum of two) (2 pt.)
 - Explanation of why changes were made based on Gestalt principles & Jakob’s Usability Heuristics (minimum of two) (2 pt.)
