@@ -29,7 +29,7 @@ In the 9/17 class session, your physical database will undergo peer review which
 
 Submit to the assignment repository on GitHub.  Your README must include:
 
-- Your updated physical model
+- Your group's physical model
 - Describe each of the following common physical database concepts:
 	- What can be included in a create table statement
 	- What are database constraints and what are the benefits of them
@@ -52,7 +52,7 @@ DB Assignment 4 Grading
 Score: /6 points
 
 README contains:
-- Updated physical model using peer review feedback (1 pt) /1
+- Your group's physical model (1 pt) /1
 - Descriptions of common physical database concepts (1 pt) /1
 - Scripts to create your physical database (3 pts) /3
 - Description of your create scripts (1 pt) /1
