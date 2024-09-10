@@ -33,7 +33,7 @@ URL looks like: https://github.com/WSU-kduncan/dbdesign-assignments-YOURGHUSERNA
 
 ## Deliverable(s)
 
-Submit to the assignment repository on GitHub.  Your README must include:
+Submit to the assignment repository on GitHub.  Your `DB-Assignment-3.md` must include:
 
 - Your group's logical model
 - Describe each of the following common physical model components:
@@ -50,7 +50,7 @@ DB Assignment 3 Grading
 
 Score: /5 points
 
-README contains:
+`DB-Assignment-3.md` contains:
 - Your group's logical model (1 pt) /1
 - Descriptions of common physical model components (1 pt) /1
 - Physical model that has:
