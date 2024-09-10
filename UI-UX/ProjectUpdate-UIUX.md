@@ -14,7 +14,7 @@ Create `uiux-design.md` in your group project repository.
 
 Each group member will pick an aspect of the group project to focus on for user flows and wireframing.
 
-Create user flows for the following features with respect to your group project - each team member should pick one feature.  For each user flow, include a description of what the application behavior should be based on user actions.
+Create user flows for the following features with respect to your group project - each team member should pick one feature.  For each user flow, include a description of what the application behavior should be based on user actions.  Each team member must submit a PDF or JPG or PNG of their assigned user flow.
     - Landing / main application page
     - Search
     - Create
@@ -26,7 +26,7 @@ Create user flows for the following features with respect to your group project 
 
 For each user flow, create a wireframe, then evaluate it using the [Heuristic Evaluation Workbook](https://media.nngroup.com/media/articles/attachments/Heuristic_Evaluation_Workbook_1_Fillable.pdf)  Identify what Heuristics apply to each wireframe.
 
-Based on the user flows, each team member will build a wireframe.  All wireframes should consider navigation within the application (think menus / sidebars).  A workable list of expected wireframes are below.
+Based on the user flows, each team member will build a wireframe.  All wireframes should consider navigation within the application (think menus / sidebars).  A workable list of expected wireframes are below.  Each team member must submit a PDF or JPG or PNG of their assigned wireframe.
     - Landing / main application page
     - Search
     - Create
@@ -64,5 +64,38 @@ Group contribution scores are calculated by number of members who contributed ov
 
 $$ c \over m $$
 
-- Each group member made a contribution to the TODO, as reflected in commit history. $c \over m$
+- Each group member uploaded a PDF or JPG or PNG of a user flow, as reflected in commit history. $c \over m$
+- Each group member uploaded a PDF or JPG or PNG of a wireframe, as reflected in commit history. $c \over m$
+- `uiux-design.md` presents:
+    - Landing / main application page ( / 4)
+        - user flow
+        - user flow description of behavior
+        - wireframe
+        - usability heuristics used in wireframe design
+    - Search ( / 4)
+        - user flow
+        - user flow description of behavior
+        - wireframe
+        - usability heuristics used in wireframe design
+    - Create ( / 4)
+        - user flow
+        - user flow description of behavior
+        - wireframe
+        - usability heuristics used in wireframe design
+    - Update ( / 4)
+        - user flow
+        - user flow description of behavior
+        - wireframe
+        - usability heuristics used in wireframe design
+    - Delete (Optional) ( / 4)
+        - user flow
+        - user flow description of behavior
+        - wireframe
+        - usability heuristics used in wireframe design
+    - Batch (Honors) ( / 4)
+        - user flow
+        - user flow description of behavior
+        - wireframe
+        - usability heuristics used in wireframe design
+
 
