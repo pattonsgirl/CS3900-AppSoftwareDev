@@ -33,9 +33,9 @@ URL looks like: https://github.com/WSU-kduncan/dbdesign-assignments-YOURGHUSERNA
 
 ## Deliverable(s)
 
-Submit to the assignment repository on GitHub.  Your README must include:
+Submit to the assignment repository on GitHub.  Your `DB-Assignment-3.md` must include:
 
-- Your updated logical diagram
+- Your group's logical model
 - Describe each of the following common physical model components:
 	- Key difference of the physical model compared to the conceptual and logical models
 	- What are the common data types
@@ -50,8 +50,8 @@ DB Assignment 3 Grading
 
 Score: /5 points
 
-README contains:
-- Updated logical model using peer review feedback (1 pt) /1
+`DB-Assignment-3.md` contains:
+- Your group's logical model (1 pt) /1
 - Descriptions of common physical model components (1 pt) /1
 - Physical model that has:
     - tables with proper data types including default values, check constraints as needed (1 pt) /1

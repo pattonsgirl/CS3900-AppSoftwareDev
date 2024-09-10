@@ -26,9 +26,9 @@ In the 9/19 class session, your SQL scripts will undergo peer review which you w
 
 ## Deliverable(s)
 
-Submit to the assignment repository on GitHub.  Your README must include:
+Submit to the assignment repository on GitHub.  Your `DB-Assignment-5.md` must include:
 
-- Your updated scripts to create your physical database
+- Your group's scripts to create your group's physical database
 - Describe each of the following common database concepts:
 	- What is a SQL query?
 	- Describe the parts of a SELECT statement
@@ -49,8 +49,8 @@ DB Assignment 5 Grading
 
 Score: /6 points
 
-README contains:
-- Updated create scripts using peer review feedback (1 pt) /1
+`DB-Assignment-5.md` contains:
+- Your group's scripts to create your group's physical database (1 pt) /1
 - Descriptions of common database concepts (1 pt) /1
 - SQL queries for your group project theme (3 pts) /3
 - Description of your SQL queries (1 pt) /1
