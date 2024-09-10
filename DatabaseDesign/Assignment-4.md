@@ -27,7 +27,7 @@ In the 9/17 class session, your physical database will undergo peer review which
 
 ## Deliverable(s)
 
-Submit to the assignment repository on GitHub.  Your README must include:
+Submit to the assignment repository on GitHub.  Your `DB-Assignment-4.md` must include:
 
 - Your group's physical model
 - Describe each of the following common physical database concepts:
@@ -51,7 +51,7 @@ DB Assignment 4 Grading
 
 Score: /6 points
 
-README contains:
+`DB-Assignment-4.md` contains:
 - Your group's physical model (1 pt) /1
 - Descriptions of common physical database concepts (1 pt) /1
 - Scripts to create your physical database (3 pts) /3
