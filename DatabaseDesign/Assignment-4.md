@@ -15,7 +15,7 @@ The intent is to learn about physical databases and build one using your group p
 1. In your `dbdesign-assignments-YOURGHUSERNAME` repository, edit the file `DB-Assignment-4.md` in the `Assignments` folder.
 2. Watch the required videos (listed in the [Assignment-4-required.md](Assignment-4-required.md) file)
 3. Write a description of the following common physical database concepts:
-	- What can be included in a create table statement
+	- What information should be included in a create table statement
 	- What are database constraints and what are the benefits of them
 	- Ways to insert data
 	- What are database roles and what are they used for
@@ -31,7 +31,7 @@ Submit to the assignment repository on GitHub.  Your `DB-Assignment-4.md` must i
 
 - Your group's physical model
 - Describe each of the following common physical database concepts:
-	- What can be included in a create table statement
+	- What information should be included in a create table statement
 	- What are database constraints and what are the benefits of them
 	- Ways to insert data
 	- What are database roles and what are they used for
