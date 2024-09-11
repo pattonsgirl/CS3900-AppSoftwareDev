@@ -10,7 +10,7 @@
 If you have not already, join your group's GitHub repository and clone the repository to your system.  Your contributions to the components required will be tracked via commits to your group's repository.
 
 Create `uiux-design.md` in your group project repository.  
-    - How you as a group choose to collect all required information and place it in the document is up to the group.
+- Note: How you as a group choose to collect all required information and place it in the document is up to the group.
 
 Each group member will pick an aspect of the group project to focus on for user flows and wireframing.
 
@@ -68,25 +68,25 @@ $$ c \over m $$
     - Landing / main application page ( / 3)
         - user flow
         - user flow description of behavior
-        - wireframe
+        - wireframe that relfects understanding of Jakob's Ten Usability Heuristics and Gestalt Principles
     - Search ( / 3)
         - user flow
         - user flow description of behavior
-        - wireframe
+        - wireframe that relfects understanding of Jakob's Ten Usability Heuristics and Gestalt Principles
     - Create ( / 3)
         - user flow
         - user flow description of behavior
-        - wireframe
+        - wireframe that relfects understanding of Jakob's Ten Usability Heuristics and Gestalt Principles
     - Update ( / 3)
         - user flow
         - user flow description of behavior
-        - wireframe
+        - wireframe that relfects understanding of Jakob's Ten Usability Heuristics and Gestalt Principles
     - Delete (Optional) ( / 3)
         - user flow
         - user flow description of behavior
-        - wireframe
+        - wireframe that relfects understanding of Jakob's Ten Usability Heuristics and Gestalt Principles
     - Batch (Honors) ( / 3)
         - user flow
         - user flow description of behavior
-        - wireframe
+        - wireframe that relfects understanding of Jakob's Ten Usability Heuristics and Gestalt Principles
 
