@@ -50,9 +50,9 @@ Users flows & wireframes for:
 - Batch (Honors)
     - utilize if your team has more than 4 team members
 
-Each user flow includes a description of what the application behavior should be based on user actions.
+Each user flow must include a description of what the application behavior should be based on user actions.
 
-Each wireframe identifies what usability Heuristics apply.
+Each wireframe should show thought towards / application of Jakob's Ten Usability Heuristics and Gestalt Principles.
 
 ## Rubric
 
@@ -65,35 +65,28 @@ $$ c \over m $$
 - Each group member uploaded a PDF or JPG or PNG of a user flow, as reflected in commit history. $c \over m$
 - Each group member uploaded a PDF or JPG or PNG of a wireframe, as reflected in commit history. $c \over m$
 - `uiux-design.md` presents:
-    - Landing / main application page ( / 4)
+    - Landing / main application page ( / 3)
         - user flow
         - user flow description of behavior
         - wireframe
-        - usability heuristics used in wireframe design
-    - Search ( / 4)
+    - Search ( / 3)
         - user flow
         - user flow description of behavior
         - wireframe
-        - usability heuristics used in wireframe design
-    - Create ( / 4)
+    - Create ( / 3)
         - user flow
         - user flow description of behavior
         - wireframe
-        - usability heuristics used in wireframe design
-    - Update ( / 4)
+    - Update ( / 3)
         - user flow
         - user flow description of behavior
         - wireframe
-        - usability heuristics used in wireframe design
-    - Delete (Optional) ( / 4)
+    - Delete (Optional) ( / 3)
         - user flow
         - user flow description of behavior
         - wireframe
-        - usability heuristics used in wireframe design
-    - Batch (Honors) ( / 4)
+    - Batch (Honors) ( / 3)
         - user flow
         - user flow description of behavior
         - wireframe
-        - usability heuristics used in wireframe design
-
 
