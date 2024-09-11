@@ -7,12 +7,13 @@
 
 ## Resources
 
-- https://www.interaction-design.org/literature/topics/ux-design?page=7 
-- https://www.youtube.com/watch?v=DNBIcBdKnQo 
-- https://www.coursera.org/articles/user-flow 
-- https://www.interaction-design.org/literature/topics/user-flows 
-- Balsamiq Cloud 101: https://www.youtube.com/watch?v=E5Z1QOly72E
-- Comparing wireframes with flow diagrams: https://balsamiq.com/learn/articles/wireflows/#flow-diagrams  
+- [Create Balsamic Account / Start Free Trial](https://balsamiq.com/)
+- [Video - Balsamiq Cloud 101](https://www.youtube.com/watch?v=E5Z1QOly72E)
+- [Article - What is User Experience?](https://www.interaction-design.org/literature/topics/ux-design?page=7)
+- [Article - Coursera - What is User Flow?](https://www.coursera.org/articles/user-flow)
+- [Article - Interaction Design - What are User Flows?](https://www.interaction-design.org/literature/topics/user-flows)
+- [Video - How to Make User Flow Diagram](https://www.youtube.com/watch?v=DNBIcBdKnQo)
+- [Article - Balsamic - Flow Diagrams](https://balsamiq.com/learn/articles/wireflows/#flow-diagrams)
 
 ## Description
 
