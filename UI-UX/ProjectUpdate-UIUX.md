@@ -54,6 +54,12 @@ Each user flow must include a description of what the application behavior shoul
 
 Each wireframe should show thought towards / application of Jakob's Ten Usability Heuristics and Gestalt Principles.
 
+## Submission
+
+Submit link to assignment repository in the Dropbox in Pilot.  Only ONE team member needs to remember to submit the link.
+
+URL looks like: https://github.com/WSU-kduncan/cs3900-YOURGROUPNAME
+
 ## Rubric
 
 Score: # of out TODO points
