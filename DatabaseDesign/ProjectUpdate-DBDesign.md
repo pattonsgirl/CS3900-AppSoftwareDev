@@ -34,14 +34,14 @@ These models should flow in agreement with each other.
 ## Deliverable(s)
 
 The group repository needs to include the following:
-- db-models.md containing:
+- `db-models.md` containing:
     - Conceptual Model
     - Logical Model
     - Physical Model
     - Description / Justification of presented models
-- Dockerfile that uses MariaDB for database & creates it using MariaDB initialization script
-- MariaDB initialization script
-    - Script is modified to create the group database OR set of SQL commands is written in `db-models.md`
+- `docker-compose.yml` to build container environment
+- `init_PROJECTNAME.sql` to build database per physical model
+- `README.md` with usage & SQL guidance
 
 ## Submission
 
@@ -64,9 +64,17 @@ In the `DB` folder:
     - is understandable by all parties (business to developers)
 - Logical Model
     - visualization provided
-    - ???
+    - shows primary key & non-key attributes of entities
+    - shows relationship between entities using foreign keys
 - Physical model
     - visualization provided
-    - ???
+    - platform specific, defines data types for attributes
+
+- `docker-compose.yml` to builds container environment
+- `init_PROJECTNAME.sql` to builds database per physical model
+- `README.md` contains:
+    - usage instructions to build & connect to database
+    - SQL command guidance
+
 
 
