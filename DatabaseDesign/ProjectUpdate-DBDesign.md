@@ -57,22 +57,25 @@ Since there has been in class discussion time to build each model and agree to t
 
 In the `DB` folder:
 
-`db-models.md` contains:
+- `db-models.md` contains:
+    - Conceptual Model ( / 3)
+        - visualization provided
+        - description provided
+        - is understandable by all parties (business to developers)
+    - Logical Model ( / 4)
+        - visualization provided
+        - description provided
+        - shows primary key & non-key attributes of entities
+        - shows relationship between entities using foreign keys
+    - Physical model ( / 4)
+        - visualization provided
+        - description provided
+        - platform specific
+        - defines data types for attributes
 
-- Conceptual Model
-    - visualization provided
-    - is understandable by all parties (business to developers)
-- Logical Model
-    - visualization provided
-    - shows primary key & non-key attributes of entities
-    - shows relationship between entities using foreign keys
-- Physical model
-    - visualization provided
-    - platform specific, defines data types for attributes
-
-- `docker-compose.yml` to builds container environment
-- `init_PROJECTNAME.sql` to builds database per physical model
-- `README.md` contains:
+- `docker-compose.yml` to builds container environment ( / 1)
+- `init_PROJECTNAME.sql` to builds database per physical model ( / 2)
+- `README.md` contains ( / 2)
     - usage instructions to build & connect to database
     - SQL command guidance
 
