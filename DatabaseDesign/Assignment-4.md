@@ -21,7 +21,8 @@ The intent is to learn about physical databases and build one using your group p
 	- What are database roles and what are they used for
 	- Different type of users
 4. Write Create scripts for your physical database for your group project theme
-5. Provide description your scripts.
+   	- THESE SCRIPTS ARE CURRENTLY TO BE COMPLETED AS DRAFTS.  Use DBeaver to avoid some syntax issues.
+6. Provide description your scripts.
 
 In the 9/17 class session, your physical database will undergo peer review which you will use to improve your physical database ahead of the next assignment.
 
@@ -37,6 +38,7 @@ Submit to the assignment repository on GitHub.  Your `DB-Assignment-4.md` must i
 	- What are database roles and what are they used for
 	- Different type of users
 - Your scripts to create your physical database for your group project theme
+  	- THESE SCRIPTS ARE CURRENTLY TO BE COMPLETED AS DRAFTS.  Use DBeaver to avoid some syntax issues.
 - Description of your create scripts
 
 ## Submission
