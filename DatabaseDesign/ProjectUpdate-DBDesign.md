@@ -26,11 +26,19 @@ These models should flow in agreement with each other and include descriptions a
 
 `init_PROJECTNAME.sql` that contains SQL statements to build the database per the physical model's specifications.
 
-`README.md` that contains how group members will start the container, connect to it, and core SQL phrases to interact with the group database.
+`README.md` that contains how group members will start the DB container and connect to the database / validate the database configuration.
 - NOTE: This should be written such that all of your group members are comfortable referring to this guide when starting the DB in the future
 - NOTE: I recommend picking ONE group member who's updates to `init_PROJECTNAME.sql` will get committed to GitHub.  The others should NOT commit their updates in order to avoid merge conflicts.
 
-`SQL Toolbox` that contains SQL queries to validate the database configuration and data for group database
+`SQL Toolbox` folder that contains SQL query scripts to query common business questions.  Some scopes to think of are below (your group must have 5 purpose-driven scripts): 
+- query to view all records
+    - Think: "View all customers"
+- track occurences of something
+    - Think: "How often are we doing..."
+- query count of something
+    - Think: "How many of these do we need?"
+- query between multiple tables
+    - Think: "How does x relate to y?"
 
 ## Deliverable(s)
 
