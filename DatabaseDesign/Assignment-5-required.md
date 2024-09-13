@@ -4,6 +4,9 @@ Articles
     - UC San Diego
     - https://blink.ucsd.edu/technology/help-desk/queries/SQL/index.html#4.-Review-your-select-statement
 
+2. Useful MariaDB Queries - (Use this as a reference to write some SQL queries)
+    - https://mariadb.com/kb/en/useful-mariadb-queries/
+
 
 Videos
 
@@ -47,9 +50,6 @@ Videos
     - CockroachDB 4 min 7 seconds
     - https://www.youtube.com/watch?v=BIlFTFrEFOI
 
-11. Useful MariaDB Queries - (Use this as a reference to write some SQL queries)
-    - https://mariadb.com/kb/en/useful-mariadb-queries/
-
-12. MySQL: CURRENT_DATE() & CURRENT_TIME()
+11. MySQL: CURRENT_DATE() & CURRENT_TIME()
     - 2 min 45 seconds
     - https://www.youtube.com/watch?v=YEGM_S8mQEI
