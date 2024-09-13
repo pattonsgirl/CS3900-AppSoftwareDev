@@ -11,7 +11,7 @@
 
 If you have not already, join your group's GitHub repository and clone the repository to your system.
 
-Through the DB Design unit, you have been given assignments to individual present your understanding of the different models and database tools.  The group project component will focus on collecting these to one group-agreed-on decision and collection to build on going forward.
+Through the DB Design unit, you have been given assignments to individually present your understanding of the different models and database tools.  The group project components will focus on collecting these to one group-agreed-on decision and collection to build on going forward.
 
 In your Group Project repository, create a folder named `DB` to contain the following elements.
 
@@ -20,7 +20,7 @@ Use a computer-based visualization tool (not pen and paper) to upload your group
 - Logical Model
 - Physical Model
 
-These models should flow in agreement with each other.
+These models should flow in agreement with each other and include descriptions and / or justifications of each model.
 
 `docker-compose.yml` that contains information needed to build the MariaDB container to your group project's database needs.
 
