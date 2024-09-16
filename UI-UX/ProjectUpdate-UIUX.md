@@ -74,25 +74,25 @@ $$ c \over m $$
     - Landing / main application page ( / 3)
         - user flow
         - user flow description of behavior
-        - wireframe that relfects understanding of Jakob's Ten Usability Heuristics and Gestalt Principles
+        - wireframe that reflects understanding of Jakob's Ten Usability Heuristics and Gestalt Principles
     - Search ( / 3)
         - user flow
         - user flow description of behavior
-        - wireframe that relfects understanding of Jakob's Ten Usability Heuristics and Gestalt Principles
+        - wireframe that reflects understanding of Jakob's Ten Usability Heuristics and Gestalt Principles
     - Create ( / 3)
         - user flow
         - user flow description of behavior
-        - wireframe that relfects understanding of Jakob's Ten Usability Heuristics and Gestalt Principles
+        - wireframe that reflects understanding of Jakob's Ten Usability Heuristics and Gestalt Principles
     - Update ( / 3)
         - user flow
         - user flow description of behavior
-        - wireframe that relfects understanding of Jakob's Ten Usability Heuristics and Gestalt Principles
+        - wireframe that reflects understanding of Jakob's Ten Usability Heuristics and Gestalt Principles
     - Delete (Optional) ( / 3)
         - user flow
         - user flow description of behavior
-        - wireframe that relfects understanding of Jakob's Ten Usability Heuristics and Gestalt Principles
+        - wireframe that reflects understanding of Jakob's Ten Usability Heuristics and Gestalt Principles
     - Batch (Honors) ( / 3)
         - user flow
         - user flow description of behavior
-        - wireframe that relfects understanding of Jakob's Ten Usability Heuristics and Gestalt Principles
+        - wireframe that reflects understanding of Jakob's Ten Usability Heuristics and Gestalt Principles
 
