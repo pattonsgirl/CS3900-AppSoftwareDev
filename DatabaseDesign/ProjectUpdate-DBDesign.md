@@ -25,10 +25,10 @@ These models should flow in agreement with each other and include descriptions a
 `docker-compose.yml` that contains information needed to build the MariaDB container to your group project's database needs.
 
 `init_PROJECTNAME.sql` that contains SQL statements to build the database per the physical model's specifications.
+- NOTE: I recommend picking ONE group member who's updates to `init_PROJECTNAME.sql` will get committed to GitHub.  The others should NOT commit their updates in order to avoid merge conflicts.
 
 `README.md` that contains how group members will start the DB container and connect to the database / validate the database configuration.  It should also serve as a table of contents with descriptions of and links to SQL query scripts in `SQL-Toolbox` folder.
 - NOTE: This should be written such that all of your group members are comfortable referring to this guide when starting the DB in the future
-- NOTE: I recommend picking ONE group member who's updates to `init_PROJECTNAME.sql` will get committed to GitHub.  The others should NOT commit their updates in order to avoid merge conflicts.
 
 `SQL-Toolbox` folder that contains SQL query scripts to query common business questions.  Some scopes to think of are below (your group must have 5 purpose-driven scripts): 
 - query to view all records
