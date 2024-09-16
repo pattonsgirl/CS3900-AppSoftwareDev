@@ -26,14 +26,14 @@ These models should flow in agreement with each other and include descriptions a
 
 `init_PROJECTNAME.sql` that contains SQL statements to build the database per the physical model's specifications.
 
-`README.md` that contains how group members will start the DB container and connect to the database / validate the database configuration.
+`README.md` that contains how group members will start the DB container and connect to the database / validate the database configuration.  It should also serve as a table of contents with descriptions of and links to SQL query scripts in `SQL-Toolbox` folder.
 - NOTE: This should be written such that all of your group members are comfortable referring to this guide when starting the DB in the future
 - NOTE: I recommend picking ONE group member who's updates to `init_PROJECTNAME.sql` will get committed to GitHub.  The others should NOT commit their updates in order to avoid merge conflicts.
 
-`SQL Toolbox` folder that contains SQL query scripts to query common business questions.  Some scopes to think of are below (your group must have 5 purpose-driven scripts): 
+`SQL-Toolbox` folder that contains SQL query scripts to query common business questions.  Some scopes to think of are below (your group must have 5 purpose-driven scripts): 
 - query to view all records
     - Think: "View all customers"
-- track occurences of something
+- track occurrences of something
     - Think: "How often are we doing..."
 - query count of something
     - Think: "How many of these do we need?"
@@ -50,8 +50,8 @@ The group repository needs to include the following:
     - Description / Justification of presented models
 - `docker-compose.yml` to build container environment
 - `init_PROJECTNAME.sql` to build database per physical model
-- `README.md` with usage & SQL guidance
-- `SQL Toolbox` folder with SQL queries
+- `README.md` with documentation on starting and connecting to DB, and descriptions of SQL query scripts in `SQL-Toolbox`
+- `SQL-Toolbox` folder with 5 SQL query scripts addressing common business queries
 
 ## Submission
 
@@ -80,14 +80,15 @@ In the `DB` folder:
     - Physical model ( / 4)
         - visualization provided
         - description provided
-        - platform specific
+        - MariaDB specific
         - defines data types for attributes
 
 - `docker-compose.yml` to builds container environment ( / 1)
 - `init_PROJECTNAME.sql` to builds database per physical model ( / 5)
-- `README.md` contains ( / 2)
-    - usage instructions to build & connect to database
-    - SQL command guidance
-- `SQL Toolbox` folder with SQL queries ( / 5)
+- `README.md` contains on how to ( / 2)
+    - start the DB container
+    - connect to the database / validate the database configuration
+    - description of each SQL query scripts in `SQL-Toolbox`
+- `SQL-Toolbox` folder with SQL query scripts addressing common business queries ( / 5)
 
 
