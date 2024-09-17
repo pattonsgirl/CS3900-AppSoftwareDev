@@ -14,7 +14,7 @@
 
 ## Description
 
-1. Continue in the assignment repository for this unit.
+1. TODO: PATCH: In your `uiux-assignments-YOURGHUSERNAME` repository, edit the file `UIUX-Assignment-2.md` in the `Assignments` folder.
 2. Import the starter wireframe for the WorkOrder Pro application into Balsamic.
 3. Using the Heuristic Evaluation Workbook (linked below), identify issues and explain corrections to the given wireframe using a minimum of two of Jakob’s Usability Heuristics.
     - [Heuristic Evaluation Workbook](https://media.nngroup.com/media/articles/attachments/Heuristic_Evaluation_Workbook_1_Fillable.pdf)
@@ -27,6 +27,12 @@ In the assignment repository, create a file named `wireframe.md` that includes a
 - What changes were made to the starter wireframe (minimum of two)
 - Explanation of why changes were made based on Gestalt principles & Jakob’s Usability Heuristics (minimum of two)
 - Screenshot of changed wireframe (post changes)
+
+## Submission
+
+Submit link to assignment repository to the Dropbox in Pilot. 
+
+URL looks like: https://github.com/WSU-kduncan/uiux-assignments-YOURGHUSERNAME
 
 ## Rubric 
 

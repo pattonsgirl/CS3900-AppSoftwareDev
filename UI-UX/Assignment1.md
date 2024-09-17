@@ -17,7 +17,7 @@
 
 ## Description
 
-1. Clone the assignment repository for this unit.
+1. TODO: PATCH: In your `uiux-assignments-YOURGHUSERNAME` repository, edit the file `UIUX-Assignment-1.md` in the `Assignments` folder.
 2. Create a Balsamic Cloud account - https://balsamiq.cloud/
 3. Import the balsamic starter (TODO - name) project for user flows for the WorkOrder Pro application.
 4. Use Balsamic to create user flows for the following features:
@@ -33,6 +33,12 @@ To the assignment repository add the following:
 - Exported Balsamic project file(s) with user flows
 - PDF(s) of the user flows
 - `user-flows.md` containing, for each user flow, an explanation of application behavior based on user interaction.
+
+## Submission
+
+Submit link to assignment repository to the Dropbox in Pilot. 
+
+URL looks like: https://github.com/WSU-kduncan/uiux-assignments-YOURGHUSERNAME
 
 ## Rubric 
 
