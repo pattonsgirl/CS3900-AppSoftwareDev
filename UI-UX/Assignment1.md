@@ -17,7 +17,7 @@
 
 ## Description
 
-1. TODO: PATCH: In your `uiux-assignments-YOURGHUSERNAME` repository, edit the file `UIUX-Assignment-1.md` in the `Assignments` folder.
+1. In your `uiux-assignments-YOURGHUSERNAME` repository, edit the file `UIUX-Assignment-1.md`.
 2. Create a Balsamic Cloud account - https://balsamiq.cloud/
 3. Import the balsamic starter (TODO - name) project for user flows for the WorkOrder Pro application.
 4. Use Balsamic to create user flows for the following features:
