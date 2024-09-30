@@ -13,25 +13,22 @@ Students are expected to demonstrate the understanding of running SpringBoot app
 
 ## Assignment Description details.
 
-* Clone the work-order-pro-service from the github repository using the below command  in a terminal.  
-  * git clone \<GithubRepoURI\>  
-* Open this Project in your Visual Studio Code.  
-* Run the application using WorkOrderProDockerRunConfig on VsCode’s Run & Debug tab:   
+1. Clone the Assignment 1 GitHub repository using the below command  in a terminal.  
+  * git clone \<git@github.com:WSU-kduncan/microservices-assignment-1-YOURGHUSERNAME.git\>  
+2. Open this Project in your Visual Studio Code.  
+3. Run the application using WorkOrderProDockerRunConfig on VsCode’s Run & Debug tab:   
   * Refer to this document for running applications in VSCode using Docker container: [https://docs.google.com/document/d/1mTbcP4V2jsSTKgHKeGGG4IxMOt6xstEinGopJi-cob0/edit](https://docs.google.com/document/d/1mTbcP4V2jsSTKgHKeGGG4IxMOt6xstEinGopJi-cob0/edit)  
-  * Upload a screenshot of the running application in VSCode to the github readme.md file.  
-* Once the application started, then call healthCheck GET endpoint and take a screenshot of the result:   
+  * Upload a screenshot of the running application in VSCode to the Assignment 1 GitHub repository in a file named `README.md`.  
+4. Once the application started, then call healthCheck GET endpoint and take a screenshot of the result:   
   *  curl \-X GET [http://localhost:8080/work-order-pro-service/healthcheck](http://localhost:8080/work-order-pro-service/healthcheck) (in a terminal)   
-  * Add a screenshot of the network call to the readMe file.  
-* (Pre-class) Quiz assignment on these topics (10 single & multiple choice questions).
+  * Add a screenshot of the network call to the Assignment 1 GitHub repository in the file named `README.md`.  
 
 ## Deliverable
 
-Submit work to GitHub repo  
-Add to README: 
-
+Submit work to the Microserivces Assignment 1 GitHub repository  
+Your `README.md` file should contain: 
 * Screenshot of running application in local  
 * Screenshot of health check GET endpoint response  
-* Complete the Quiz in Pilot
 
 ## Rubric
 
@@ -41,6 +38,6 @@ Score:  / 5 points
 
 - Open application in VSCode and configure docker dev container (2 pt)  
 - Able to run application successfully in local and able to access health check GET endpoint (1 pts)  
-- Assignment question’s answers (quiz) (2 pts)
+- Pre Class Knowledge Check Quiz Score (2 pts)
 
 Feedback: 
