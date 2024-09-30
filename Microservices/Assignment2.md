@@ -13,11 +13,12 @@ Create /customers GET endpoint and correct /products GET endpoint
 
 1. Clone the Assignment 2 GitHub repository using the below command  in a terminal.  
    * git clone \<GHrepo-URI\> 
-2. Create the following classes and a GET endpoints for `/customers`. Allow users to search by customer name, address, email - ex. `[/customers?search=]`  
+2. Create the following classes and a GET endpoints for `/customers`.
+   Allow users to search by customer name, address, email - ex. `[/customers?search=]`  
    * `CustomerController`  
    * `CustomerService`  
    * `CustomerDAO`  
-3. Create `CustomerDTO` class with following fields and add required lombok annotations.  
+4. Create `CustomerDTO` class with following fields and add required lombok annotations.  
    * id [Integer]  
    * firstName [String]  
    * lastName [String]  
@@ -31,7 +32,7 @@ Create /customers GET endpoint and correct /products GET endpoint
    * latestWorkOrderStatus [String]  
    * lastUpdatedDate [Date]
   
-4. Meet the below repsonse formats for `/customers` depending on the HTTP response code:  
+5. Meet the below repsonse formats for `/customers` depending on the HTTP response code:  
 
 - When HTTP status code is **200**.
 ```
