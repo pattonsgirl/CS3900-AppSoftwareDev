@@ -15,12 +15,13 @@ Students are expected to demonstrate the understanding of running SpringBoot app
 
 1. Clone the Assignment 1 GitHub repository using the below command  in a terminal.  
   * git clone \<GHrepo-URI\>  
-2. Open this Project in your Visual Studio Code.  
+2. Open this Project in your Visual Studio Code.
+  * Use `code .` if you cloned to WSL2 - this will open the current working directory in VS Code. 
 3. Run the application using WorkOrderProDockerRunConfig on VsCode’s Run & Debug tab:   
   * Refer to this document for running applications in VSCode using Docker container: TODO: add resource  
   * Upload a screenshot of the running application in VSCode to the Assignment 1 GitHub repository in a file named `README.md`.  
 4. Once the application started, then call healthCheck GET endpoint and take a screenshot of the result:   
-  *  curl \-X GET [http://localhost:8080/work-order-pro-service/healthcheck](http://localhost:8080/work-order-pro-service/healthcheck) (in a terminal)   
+  * `curl -X GET http://localhost:8080/work-order-pro-service/healthcheck` (in WSL2)   
   * Add a screenshot of the network call to the Assignment 1 GitHub repository in the file named `README.md`.  
 
 ## Deliverable
