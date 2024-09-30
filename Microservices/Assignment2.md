@@ -11,24 +11,29 @@ Create /customers GET endpoint and correct /products GET endpoint
 
 ## Assignment Description
 
-* Create the following below classes and a GET endpoint for customers. And allow users to search by customer name, address, email. \[/customers?search=\]  
-  * CustomerController  
-  * CustomerService  
-  * CustomerDAO  
-* Create CustomerDTO class with following fields and add required lombok annotations.  
-  * id [Integer]  
-  * firstName [String]  
-  * lastName [String]  
-  * addressLine1 [String]  
-  * addressLine2 [String]  
-  * city [String]  
-  * state [String]  
-  * zip [String]  
-  * phone [String]  
-  * email [String]  
-  * latestWorkOrderStatus [String]  
-  * lastUpdatedDate [Date]  
-* Response format should be like below when HTTP status code is 200.
+1. Clone the Assignment 2 GitHub repository using the below command  in a terminal.  
+   * git clone \<GHrepo-URI\> 
+2. Create the following classes and a GET endpoints for `/customers`. Allow users to search by customer name, address, email - ex. `[/customers?search=]`  
+   * `CustomerController`  
+   * `CustomerService`  
+   * `CustomerDAO`  
+3. Create `CustomerDTO` class with following fields and add required lombok annotations.  
+   * id [Integer]  
+   * firstName [String]  
+   * lastName [String]  
+   * addressLine1 [String]  
+   * addressLine2 [String]
+   * city [String]  
+   * state [String]  
+   * zip [String]  
+   * phone [String]  
+   * email [String]  
+   * latestWorkOrderStatus [String]  
+   * lastUpdatedDate [Date]
+  
+4. Meet the below repsonse formats for `/customers` depending on the HTTP response code:  
+
+- When HTTP status code is **200**.
 ```
   {  
      "meta": {  
@@ -52,7 +57,7 @@ Create /customers GET endpoint and correct /products GET endpoint
      ]  
   }
 ```
-* Response format should be like below when HTTP status code is 500.
+- When HTTP status code is **500**.
 ```
   {  
      "meta": {  
@@ -62,8 +67,10 @@ Create /customers GET endpoint and correct /products GET endpoint
      "Data": null  
   }
 ``` 
-* Understand and correct the /products GET endpoint and response format should be like below.  
-  200 HTTP Status Code
+
+5. **Understand and correct** the **/products** GET endpoint code such that it the **fixed** reponse format looks like the below examples:  
+
+- HTTP Status Code of **200**
 ```
   {  
      "meta": {  
@@ -83,7 +90,7 @@ Create /customers GET endpoint and correct /products GET endpoint
   }
 ```
 
-	500 HTTP Status Code  
+- HTTP Status Code of **500**
 ```
 {  
    "meta": {  
@@ -93,11 +100,12 @@ Create /customers GET endpoint and correct /products GET endpoint
    "Data": null  
 }
 ```
+
 ## Deliverable
 
-* Push /customers GET endpoint into the Github repository.  
-* Push fixes of /products GET endpoint into the Github repository.
-
+Push your changes to your Assignment 2 GitHub repository.  Changes should include:
+* `/customers` GET endpoint  
+* `/products` fixed GET endpoint
 
 ## Rubric
 
