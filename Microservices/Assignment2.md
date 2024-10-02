@@ -30,33 +30,51 @@ Create /customers GET endpoint and correct /products GET endpoint
    * phone [String]  
    * email [String]  
    * latestWorkOrderStatus [String]  
-   * lastUpdatedDate [Date]
+   * dateLastUpdated [Date]
   
 5. Meet the below repsonse formats for `/customers` depending on the HTTP response code:  
 
 - When HTTP status code is **200**.
 ```
-  {  
-     "meta": {  
-         "message": "Customers retrieved successfully."  
-     },  
-     "data": [  
-         {  
-             "id": 1,  
-             "firstName": "Test",  
-             "lastName": "User",  
-             "addressLine1": "noneOfYour",  
-             "addressLine2": "Bidness",  
-             "city": "Dayton",  
-             "state": "Ohio",  
-             "zip": "45322",  
-             "phone": "999-333-6677",  
-             "email": "test@gmail.com",  
-             "latestWorkOrderStatus": "Scheduled",  
-             "lastUpdatedDate": "07/28/2024 10:20:00 AM"  
-         }  
-     ]  
-  }
+  {
+    "meta": {
+        "resultCount": 501,
+        "message": "Customers retrieved successfully.",
+        "pageCount": 251
+    },
+    "data": [
+        {
+            "id": 501,
+            "firstName": "Pankaj",
+            "lastName": "Kumar",
+            "addressLine1": "123, XYZ",
+            "addressLine2": "ABC Community",
+            "city": "MIAMISBURG",
+            "state": "OH",
+            "zip": "12452",
+            "phone": "8545656312",
+            "email": "testpk12@gmail.com",
+            "dateAdded": "2024-10-02 11:49:10 PM",
+            "dateLastUpdated": "2024-10-02 11:49:10 PM",
+            "latestWorkOrderStatus": null
+        },
+        {
+            "id": 256,
+            "firstName": "Dottie",
+            "lastName": "Hellickson",
+            "addressLine1": "67 E Chestnut Hill Rd",
+            "addressLine2": "",
+            "city": "Seattle",
+            "state": "WA",
+            "zip": "98133",
+            "phone": "2065406076",
+            "email": "dottie@hellickson.org",
+            "dateAdded": "2024-10-01 07:19:28 PM",
+            "dateLastUpdated": "2024-10-01 07:19:28 PM",
+            "latestWorkOrderStatus": "Completed"
+        }
+    ]
+}
 ```
 - When HTTP status code is **500**.
 ```
@@ -73,22 +91,21 @@ Create /customers GET endpoint and correct /products GET endpoint
 
 - HTTP Status Code of **200**
 ```
-  {  
-     "meta": {  
-         "message": "Products retrieved successfully."  
-     },  
-     "data": [  
-         {  
-             "code": "PRODUCT100",  
-             "name": "Product",  
-             "unitCost":100.5,  
-             "typeCode": "A",  
-             "typeDescription": "Refrigerator",  
-             "universalCode": "TEST",  
-             "active": true,  
-         }  
-     ]  
-  }
+  {
+    "meta": {
+        "message": "Products retrieved successfully."
+    },
+    "data": [
+        {
+            "code": "348951",
+            "name": "Dishwasher Installation",
+            "unitCost": 150,
+            "typeCode": "P",
+            "universalProductCode": "",
+            "active": true
+        }
+    ]
+}
 ```
 
 - HTTP Status Code of **500**
