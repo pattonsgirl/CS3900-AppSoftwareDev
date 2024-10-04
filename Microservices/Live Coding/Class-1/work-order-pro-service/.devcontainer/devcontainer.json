@@ -1,0 +1,19 @@
+
+{
+    "name": "Java 17",
+    "build": {
+      "dockerfile": "Dockerfile",
+      "args": {
+        "GRADLE_VERSION": "8.9"
+      },
+      "remoteUser": "vscode",
+      "forwardPorts": [8080]
+    },
+    "customizations": {
+      "vscode": {
+        "settings": {
+          "remote.autoForwardPorts": true
+        }
+      }
+    }
+  }
