@@ -3,6 +3,9 @@
 
 ## What is SpringBoot?
 
+~~A hot mess until you've used it a few times.~~
+
+
 ## Understanding CRUD & REST APIs
 
 This article does **excellent** coverage on what a RESTful API is, explains GET, PUT, POST, and DELETE, and shows examples of the HTTP structure of each.
@@ -25,7 +28,13 @@ Right now, we are looking at how to interact with our database by building a RES
 
 In class, we will build this out for WorkOrder Pro.  We already have a database with information of work orders, technicians, and other entitites.  
 
-Now we are going to build out GET (retrieve / look up only), POST (create new), PUT (update existing), and DELETE (remove)
+Now we are going to build out GET (retrieve / look up only), POST (create new), PUT (update existing), and DELETE (remove) by processing HTTP requests, making database lookups or modifications (as appropriate), and returning structured responses.
+
+In the FRONTEND module of the course, we will take the need for structured data inputs and the return of structured responses and display them on proper pages.  For now, it's all data.
+
+In assignment 1, we test the GET response of the `/healthcheck` endpoint.  This is defined in `HealthController.java` in `controller`
+
+Our next step is to build the ability to query for and return reponses on the technicians table.  Since our first focus is querying, we will build a GET endpoint.  The assumption is there could be many pages of matches, and maybe only so many per page should show at a time.  The response is pre-built around this assumption.  This will help later when we are displaying the response nicely on web pages.
 
 ## ChatGPT Breaksdown Technicians Controller:
 
