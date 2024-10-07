@@ -1,0 +1,2344 @@
+openapi: 3.0.3
+info:
+  title: work-order-pro-service Copy
+  version: 1.0.0
+  contact: {}
+servers:
+  - url: 'http://localhost:8080/work-order-pro-service'
+paths:
+  /customers:
+    get:
+      tags:
+        - Customers
+      summary: Get Customers
+      description: Get Customers
+      operationId: getCustomers
+      parameters:
+        - name: search
+          in: query
+          schema:
+            type: string
+            example: Orlando
+          description: >-
+            It's an optional and allow to search by customer firstName,
+            lastName, city, state, WorkOrder status
+        - name: page
+          in: query
+          schema:
+            type: string
+            example: '2'
+          description: It's optional (default value is 1)
+        - name: rpp
+          in: query
+          schema:
+            type: string
+            example: '25'
+          description: results per page is optional (default value is 10)
+        - name: sortOrder
+          in: query
+          schema:
+            type: string
+            example: asc
+          description: sortOrder is an optional (default value is desc)
+        - name: sortField
+          in: query
+          schema:
+            type: string
+            example: firstName
+          description: sortField is an optional (default value is dateLastUpdated)
+      responses:
+        '200':
+          description: Success Response
+          headers:
+            Connection:
+              schema:
+                type: string
+                example: keep-alive
+            Date:
+              schema:
+                type: string
+                example: Tue, 27 Aug 2024 18:49:08 GMT
+            Keep-Alive:
+              schema:
+                type: string
+                example: timeout=60
+            Transfer-Encoding:
+              schema:
+                type: string
+                example: chunked
+            Vary:
+              schema:
+                type: string
+                example: Access-Control-Request-Headers
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  data:
+                    type: array
+                    items:
+                      type: object
+                      properties:
+                        addressLine1:
+                          type: string
+                          example: 67 E Chestnut Hill Rd
+                        addressLine2:
+                          type: string
+                          example: ''
+                        city:
+                          type: string
+                          example: Seattle
+                        dateAdded:
+                          type: string
+                          example: 2024-08-27 06:45:59 PM
+                        dateLastUpdated:
+                          type: string
+                          example: 2024-08-27 06:45:59 PM
+                        email:
+                          type: string
+                          example: dottie@hellickson.org
+                        firstName:
+                          type: string
+                          example: Dottie
+                        id:
+                          type: number
+                          example: 256
+                        lastName:
+                          type: string
+                          example: Hellickson
+                        latestWorkOrderStatus:
+                          type: string
+                          example: Completed
+                        phone:
+                          type: string
+                          example: '2065406076'
+                        state:
+                          type: string
+                          example: WA
+                        zip:
+                          type: string
+                          example: '98133'
+                    example:
+                      - addressLine1: 67 E Chestnut Hill Rd
+                        addressLine2: ''
+                        city: Seattle
+                        dateAdded: 2024-08-27 06:45:59 PM
+                        dateLastUpdated: 2024-08-27 06:45:59 PM
+                        email: dottie@hellickson.org
+                        firstName: Dottie
+                        id: 256
+                        lastName: Hellickson
+                        latestWorkOrderStatus: Completed
+                        phone: '2065406076'
+                        state: WA
+                        zip: '98133'
+                      - addressLine1: '33 Lewis Rd #46'
+                        addressLine2: ''
+                        city: Burlington
+                        dateAdded: 2024-08-27 06:45:59 PM
+                        dateLastUpdated: 2024-08-27 06:45:59 PM
+                        email: deandrea@yahoo.com
+                        firstName: Deandrea
+                        id: 257
+                        lastName: Hughey
+                        latestWorkOrderStatus: Completed
+                        phone: '3368227652'
+                        state: NC
+                        zip: '27215'
+                      - addressLine1: '8100 Jacksonville Rd #7'
+                        addressLine2: ''
+                        city: Hays
+                        dateAdded: 2024-08-27 06:45:59 PM
+                        dateLastUpdated: 2024-08-27 06:45:59 PM
+                        email: kimberlie_duenas@yahoo.com
+                        firstName: Kimberlie
+                        id: 258
+                        lastName: Duenas
+                        latestWorkOrderStatus: Cancelled
+                        phone: '7856298542'
+                        state: KS
+                        zip: '67601'
+                      - addressLine1: '7 W Wabansia Ave #227'
+                        addressLine2: ''
+                        city: Orlando
+                        dateAdded: 2024-08-27 06:45:59 PM
+                        dateLastUpdated: 2024-08-27 06:45:59 PM
+                        email: martina_staback@staback.com
+                        firstName: Martina
+                        id: 259
+                        lastName: Staback
+                        latestWorkOrderStatus: Completed
+                        phone: '4074716908'
+                        state: FL
+                        zip: '32822'
+                      - addressLine1: '25 Minters Chapel Rd #9'
+                        addressLine2: ''
+                        city: Minneapolis
+                        dateAdded: 2024-08-27 06:45:59 PM
+                        dateLastUpdated: 2024-08-27 06:45:59 PM
+                        email: skye_fillingim@yahoo.com
+                        firstName: Skye
+                        id: 260
+                        lastName: Fillingim
+                        latestWorkOrderStatus: Completed
+                        phone: '6125082655'
+                        state: MN
+                        zip: '55401'
+                      - addressLine1: 6882 Torresdale Ave
+                        addressLine2: ''
+                        city: Columbia
+                        dateAdded: 2024-08-27 06:45:59 PM
+                        dateLastUpdated: 2024-08-27 06:45:59 PM
+                        email: jade.farrar@yahoo.com
+                        firstName: Jade
+                        id: 261
+                        lastName: Farrar
+                        latestWorkOrderStatus: Cancelled
+                        phone: '8033525387'
+                        state: SC
+                        zip: '29201'
+                      - addressLine1: 985 E 6th Ave
+                        addressLine2: ''
+                        city: Santa Rosa
+                        dateAdded: 2024-08-27 06:45:59 PM
+                        dateLastUpdated: 2024-08-27 06:45:59 PM
+                        email: charlene.hamilton@hotmail.com
+                        firstName: Charlene
+                        id: 262
+                        lastName: Hamilton
+                        latestWorkOrderStatus: Unscheduled
+                        phone: '7073001771'
+                        state: CA
+                        zip: '95407'
+                      - addressLine1: '7 West Ave #1'
+                        addressLine2: ''
+                        city: Palatine
+                        dateAdded: 2024-08-27 06:45:59 PM
+                        dateLastUpdated: 2024-08-27 06:45:59 PM
+                        email: geoffrey@gmail.com
+                        firstName: Geoffrey
+                        id: 263
+                        lastName: Acey
+                        latestWorkOrderStatus: Completed
+                        phone: '8472221734'
+                        state: IL
+                        zip: '60067'
+                      - addressLine1: 26659 N 13th St
+                        addressLine2: ''
+                        city: Costa Mesa
+                        dateAdded: 2024-08-27 06:45:59 PM
+                        dateLastUpdated: 2024-08-27 06:45:59 PM
+                        email: stevie.westerbeck@yahoo.com
+                        firstName: Stevie
+                        id: 264
+                        lastName: Westerbeck
+                        latestWorkOrderStatus: Completed
+                        phone: '9498674077'
+                        state: CA
+                        zip: '92626'
+                      - addressLine1: '669 Packerland Dr #1438'
+                        addressLine2: ''
+                        city: Denver
+                        dateAdded: 2024-08-27 06:45:59 PM
+                        dateLastUpdated: 2024-08-27 06:45:59 PM
+                        email: pamella@fortino.com
+                        firstName: Pamella
+                        id: 265
+                        lastName: Fortino
+                        latestWorkOrderStatus: Completed
+                        phone: '3034042210'
+                        state: CO
+                        zip: '80212'
+                  meta:
+                    type: object
+                    properties:
+                      message:
+                        type: string
+                        example: Customers retrieved successfully.
+                      pageCount:
+                        type: number
+                        example: 50
+                      resultCount:
+                        type: number
+                        example: 500
+              examples:
+                Success Response:
+                  value:
+                    data:
+                      - addressLine1: 67 E Chestnut Hill Rd
+                        addressLine2: ''
+                        city: Seattle
+                        dateAdded: 2024-08-27 06:45:59 PM
+                        dateLastUpdated: 2024-08-27 06:45:59 PM
+                        email: dottie@hellickson.org
+                        firstName: Dottie
+                        id: 256
+                        lastName: Hellickson
+                        latestWorkOrderStatus: Completed
+                        phone: '2065406076'
+                        state: WA
+                        zip: '98133'
+                      - addressLine1: '33 Lewis Rd #46'
+                        addressLine2: ''
+                        city: Burlington
+                        dateAdded: 2024-08-27 06:45:59 PM
+                        dateLastUpdated: 2024-08-27 06:45:59 PM
+                        email: deandrea@yahoo.com
+                        firstName: Deandrea
+                        id: 257
+                        lastName: Hughey
+                        latestWorkOrderStatus: Completed
+                        phone: '3368227652'
+                        state: NC
+                        zip: '27215'
+                      - addressLine1: '8100 Jacksonville Rd #7'
+                        addressLine2: ''
+                        city: Hays
+                        dateAdded: 2024-08-27 06:45:59 PM
+                        dateLastUpdated: 2024-08-27 06:45:59 PM
+                        email: kimberlie_duenas@yahoo.com
+                        firstName: Kimberlie
+                        id: 258
+                        lastName: Duenas
+                        latestWorkOrderStatus: Cancelled
+                        phone: '7856298542'
+                        state: KS
+                        zip: '67601'
+                      - addressLine1: '7 W Wabansia Ave #227'
+                        addressLine2: ''
+                        city: Orlando
+                        dateAdded: 2024-08-27 06:45:59 PM
+                        dateLastUpdated: 2024-08-27 06:45:59 PM
+                        email: martina_staback@staback.com
+                        firstName: Martina
+                        id: 259
+                        lastName: Staback
+                        latestWorkOrderStatus: Completed
+                        phone: '4074716908'
+                        state: FL
+                        zip: '32822'
+                      - addressLine1: '25 Minters Chapel Rd #9'
+                        addressLine2: ''
+                        city: Minneapolis
+                        dateAdded: 2024-08-27 06:45:59 PM
+                        dateLastUpdated: 2024-08-27 06:45:59 PM
+                        email: skye_fillingim@yahoo.com
+                        firstName: Skye
+                        id: 260
+                        lastName: Fillingim
+                        latestWorkOrderStatus: Completed
+                        phone: '6125082655'
+                        state: MN
+                        zip: '55401'
+                      - addressLine1: 6882 Torresdale Ave
+                        addressLine2: ''
+                        city: Columbia
+                        dateAdded: 2024-08-27 06:45:59 PM
+                        dateLastUpdated: 2024-08-27 06:45:59 PM
+                        email: jade.farrar@yahoo.com
+                        firstName: Jade
+                        id: 261
+                        lastName: Farrar
+                        latestWorkOrderStatus: Cancelled
+                        phone: '8033525387'
+                        state: SC
+                        zip: '29201'
+                      - addressLine1: 985 E 6th Ave
+                        addressLine2: ''
+                        city: Santa Rosa
+                        dateAdded: 2024-08-27 06:45:59 PM
+                        dateLastUpdated: 2024-08-27 06:45:59 PM
+                        email: charlene.hamilton@hotmail.com
+                        firstName: Charlene
+                        id: 262
+                        lastName: Hamilton
+                        latestWorkOrderStatus: Unscheduled
+                        phone: '7073001771'
+                        state: CA
+                        zip: '95407'
+                      - addressLine1: '7 West Ave #1'
+                        addressLine2: ''
+                        city: Palatine
+                        dateAdded: 2024-08-27 06:45:59 PM
+                        dateLastUpdated: 2024-08-27 06:45:59 PM
+                        email: geoffrey@gmail.com
+                        firstName: Geoffrey
+                        id: 263
+                        lastName: Acey
+                        latestWorkOrderStatus: Completed
+                        phone: '8472221734'
+                        state: IL
+                        zip: '60067'
+                      - addressLine1: 26659 N 13th St
+                        addressLine2: ''
+                        city: Costa Mesa
+                        dateAdded: 2024-08-27 06:45:59 PM
+                        dateLastUpdated: 2024-08-27 06:45:59 PM
+                        email: stevie.westerbeck@yahoo.com
+                        firstName: Stevie
+                        id: 264
+                        lastName: Westerbeck
+                        latestWorkOrderStatus: Completed
+                        phone: '9498674077'
+                        state: CA
+                        zip: '92626'
+                      - addressLine1: '669 Packerland Dr #1438'
+                        addressLine2: ''
+                        city: Denver
+                        dateAdded: 2024-08-27 06:45:59 PM
+                        dateLastUpdated: 2024-08-27 06:45:59 PM
+                        email: pamella@fortino.com
+                        firstName: Pamella
+                        id: 265
+                        lastName: Fortino
+                        latestWorkOrderStatus: Completed
+                        phone: '3034042210'
+                        state: CO
+                        zip: '80212'
+                    meta:
+                      message: Customers retrieved successfully.
+                      pageCount: 50
+                      resultCount: 500
+    post:
+      tags:
+        - Customers
+      summary: Add Customer
+      description: Add Customer
+      operationId: addCustomer
+      requestBody:
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                addressLine1:
+                  type: string
+                  example: 123, XYZ
+                addressLine2:
+                  type: string
+                  example: ABC Community
+                city:
+                  type: string
+                  example: MIAMISBURG
+                email:
+                  type: string
+                  example: testpk1@gmail.com
+                firstName:
+                  type: string
+                  example: Pankaj
+                lastName:
+                  type: string
+                  example: Kumar
+                phone:
+                  type: string
+                  example: '8545656312'
+                state:
+                  type: string
+                  example: OH
+                zip:
+                  type: string
+                  example: '12452'
+            examples:
+              Add Customer:
+                value:
+                  addressLine1: 123, XYZ
+                  addressLine2: ABC Community
+                  city: MIAMISBURG
+                  email: testpk1@gmail.com
+                  firstName: Pankaj
+                  lastName: Kumar
+                  phone: '8545656312'
+                  state: OH
+                  zip: '12452'
+      responses:
+        '200':
+          description: Success Response
+          headers:
+            Connection:
+              schema:
+                type: string
+                example: keep-alive
+            Date:
+              schema:
+                type: string
+                example: Tue, 27 Aug 2024 19:28:43 GMT
+            Keep-Alive:
+              schema:
+                type: string
+                example: timeout=60
+            Transfer-Encoding:
+              schema:
+                type: string
+                example: chunked
+            Vary:
+              schema:
+                type: string
+                example: Access-Control-Request-Headers
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  data:
+                    type: object
+                    properties:
+                      addressLine1:
+                        type: string
+                        example: 123, XYZ
+                      addressLine2:
+                        type: string
+                        example: ABC Community
+                      city:
+                        type: string
+                        example: MIAMISBURG
+                      email:
+                        type: string
+                        example: testpk@gmail.com
+                      firstName:
+                        type: string
+                        example: Pankaj
+                      id:
+                        type: number
+                        example: 503
+                      lastName:
+                        type: string
+                        example: Kumar
+                      phoneNumber:
+                        type: string
+                        example: '8545656312'
+                      state:
+                        type: string
+                        example: OH
+                      zip:
+                        type: string
+                        example: '12452'
+                  meta:
+                    type: object
+                    properties:
+                      message:
+                        type: string
+                        example: Customer created successfully
+              examples:
+                Success Response:
+                  value:
+                    data:
+                      addressLine1: 123, XYZ
+                      addressLine2: ABC Community
+                      city: MIAMISBURG
+                      email: testpk@gmail.com
+                      firstName: Pankaj
+                      id: 503
+                      lastName: Kumar
+                      phoneNumber: '8545656312'
+                      state: OH
+                      zip: '12452'
+                    meta:
+                      message: Customer created successfully
+        '400':
+          description: Duplicate Customer Response / Invalid Payload Response
+          headers:
+            Connection:
+              schema:
+                type: string
+                example: close
+            Date:
+              schema:
+                type: string
+                example: Mon, 30 Sep 2024 09:42:31 GMT
+            Transfer-Encoding:
+              schema:
+                type: string
+                example: chunked
+            Vary:
+              schema:
+                type: string
+                example: Access-Control-Request-Headers
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  data:
+                    type: object
+                    nullable: true
+                    example: null
+                  meta:
+                    type: object
+                    properties:
+                      message:
+                        type: string
+                        example: Customer already exist with this email.
+              examples:
+                Duplicate Customer Response:
+                  value:
+                    data: null
+                    meta:
+                      message: Customer already exist with this email.
+                Invalid Payload Response:
+                  value:
+                    data:
+                      entity: customerDTO
+                      errors:
+                        - errorCode: NOT_BLANK
+                          field: email
+                          message: Email must not be null or blank
+                          rejectedValue: ''
+                        - errorCode: NOT_BLANK
+                          field: city
+                          message: City must not be null or blank
+                          rejectedValue: ''
+                        - errorCode: NOT_BLANK
+                          field: firstName
+                          message: First Name must not be null or blank
+                          rejectedValue: ''
+                        - errorCode: NOT_BLANK
+                          field: phone
+                          message: Phone number must not be null or blank
+                          rejectedValue: ''
+                        - errorCode: NOT_BLANK
+                          field: zip
+                          message: Zip must not be null or blank
+                          rejectedValue: ''
+                        - errorCode: NOT_BLANK
+                          field: state
+                          message: State must not be null or blank
+                          rejectedValue: ''
+                        - errorCode: NOT_BLANK
+                          field: lastName
+                          message: Last Name must not be null or blank
+                          rejectedValue: ''
+                        - errorCode: NOT_BLANK
+                          field: addressLine1
+                          message: Address Line1 must not be null or blank
+                          rejectedValue: ''
+                    meta:
+                      message: Validation Error
+        '500':
+          description: 500 Error Response
+          headers:
+            Connection:
+              schema:
+                type: string
+                example: close
+            Date:
+              schema:
+                type: string
+                example: Mon, 30 Sep 2024 09:58:50 GMT
+            Transfer-Encoding:
+              schema:
+                type: string
+                example: chunked
+            Vary:
+              schema:
+                type: string
+                example: Access-Control-Request-Headers
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  data:
+                    nullable: true
+                    example: null
+                  meta:
+                    type: object
+                    properties:
+                      errorMessage:
+                        type: string
+                        example: >-
+                          could not execute statement [(conn=86) Unknown column
+                          'customer_first_names' in 'field list'] [insert into
+                          customer
+                          (customer_address_1,customer_address_2,customer_city,customer_email_address,customer_first_names,customer_last_name,customer_phone,customer_state,customer_zip)
+                          values (?,?,?,?,?,?,?,?,?) returning customer_id]; SQL
+                          [insert into customer
+                          (customer_address_1,customer_address_2,customer_city,customer_email_address,customer_first_names,customer_last_name,customer_phone,customer_state,customer_zip)
+                          values (?,?,?,?,?,?,?,?,?) returning customer_id]
+                          could not execute statement [(conn=86) Unknown column
+                          'customer_first_names' in 'field list'] [insert into
+                          customer
+                          (customer_address_1,customer_address_2,customer_city,customer_email_address,customer_first_names,customer_last_name,customer_phone,customer_state,customer_zip)
+                          values (?,?,?,?,?,?,?,?,?) returning customer_id]
+                      message:
+                        type: string
+                        example: Failed to create new customer
+              examples:
+                500 Error Response:
+                  value:
+                    data: null
+                    meta:
+                      errorMessage: >-
+                        could not execute statement [(conn=86) Unknown column
+                        'customer_first_names' in 'field list'] [insert into
+                        customer
+                        (customer_address_1,customer_address_2,customer_city,customer_email_address,customer_first_names,customer_last_name,customer_phone,customer_state,customer_zip)
+                        values (?,?,?,?,?,?,?,?,?) returning customer_id]; SQL
+                        [insert into customer
+                        (customer_address_1,customer_address_2,customer_city,customer_email_address,customer_first_names,customer_last_name,customer_phone,customer_state,customer_zip)
+                        values (?,?,?,?,?,?,?,?,?) returning customer_id] could
+                        not execute statement [(conn=86) Unknown column
+                        'customer_first_names' in 'field list'] [insert into
+                        customer
+                        (customer_address_1,customer_address_2,customer_city,customer_email_address,customer_first_names,customer_last_name,customer_phone,customer_state,customer_zip)
+                        values (?,?,?,?,?,?,?,?,?) returning customer_id]
+                      message: Failed to create new customer
+  /customers/503:
+    put:
+      tags:
+        - Customers
+      summary: Update Customer
+      description: Update Customer
+      operationId: updateCustomer
+      requestBody:
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                addressLine1:
+                  type: string
+                  example: ''
+                addressLine2:
+                  type: string
+                  example: TEST Community
+                city:
+                  type: string
+                  example: ''
+                email:
+                  type: string
+                  example: ''
+                firstName:
+                  type: string
+                  example: ''
+                lastName:
+                  type: string
+                  example: ''
+                phone:
+                  type: string
+                  example: ''
+                state:
+                  type: string
+                  example: ''
+                zip:
+                  type: string
+                  example: ''
+            examples:
+              Update Customer:
+                value:
+                  addressLine1: ''
+                  addressLine2: TEST Community
+                  city: ''
+                  email: ''
+                  firstName: ''
+                  lastName: ''
+                  phone: ''
+                  state: ''
+                  zip: ''
+      responses:
+        '200':
+          description: Success Response
+          headers:
+            Connection:
+              schema:
+                type: string
+                example: keep-alive
+            Date:
+              schema:
+                type: string
+                example: Tue, 27 Aug 2024 19:40:16 GMT
+            Keep-Alive:
+              schema:
+                type: string
+                example: timeout=60
+            Transfer-Encoding:
+              schema:
+                type: string
+                example: chunked
+            Vary:
+              schema:
+                type: string
+                example: Access-Control-Request-Headers
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  data:
+                    type: object
+                    properties:
+                      addressLine1:
+                        type: string
+                        example: 123, XYZ
+                      addressLine2:
+                        type: string
+                        example: TEST Community
+                      city:
+                        type: string
+                        example: MIAMISBURG
+                      email:
+                        type: string
+                        example: pktest@gmail.com
+                      firstName:
+                        type: string
+                        example: Pankaj
+                      id:
+                        type: number
+                        example: 503
+                      lastName:
+                        type: string
+                        example: Kumar
+                      phoneNumber:
+                        type: string
+                        example: '8545656399'
+                      state:
+                        type: string
+                        example: OH
+                      zip:
+                        type: string
+                        example: '12452'
+                  meta:
+                    type: object
+                    properties:
+                      message:
+                        type: string
+                        example: Customer updated successfully
+              examples:
+                Success Response:
+                  value:
+                    data:
+                      addressLine1: 123, XYZ
+                      addressLine2: TEST Community
+                      city: MIAMISBURG
+                      email: pktest@gmail.com
+                      firstName: Pankaj
+                      id: 503
+                      lastName: Kumar
+                      phoneNumber: '8545656399'
+                      state: OH
+                      zip: '12452'
+                    meta:
+                      message: Customer updated successfully
+        '400':
+          description: Invalid Customer Id Response / Invalid Payload Response
+          headers:
+            Connection:
+              schema:
+                type: string
+                example: close
+            Date:
+              schema:
+                type: string
+                example: Mon, 30 Sep 2024 10:12:15 GMT
+            Transfer-Encoding:
+              schema:
+                type: string
+                example: chunked
+            Vary:
+              schema:
+                type: string
+                example: Access-Control-Request-Headers
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  data:
+                    type: object
+                    nullable: true
+                    example: null
+                  meta:
+                    type: object
+                    properties:
+                      message:
+                        type: string
+                        example: Invalid customer id.
+              examples:
+                Invalid Customer Id Response:
+                  value:
+                    data: null
+                    meta:
+                      message: Invalid customer id.
+                Invalid Payload Response:
+                  value:
+                    data:
+                      entity: customerDTO
+                      errors:
+                        - errorCode: NOT_BLANK
+                          field: phone
+                          message: Phone number must not be null or blank
+                          rejectedValue: ''
+                        - errorCode: NOT_BLANK
+                          field: email
+                          message: Email must not be null or blank
+                          rejectedValue: ''
+                        - errorCode: NOT_BLANK
+                          field: firstName
+                          message: First Name must not be null or blank
+                          rejectedValue: ''
+                        - errorCode: NOT_BLANK
+                          field: addressLine1
+                          message: Address Line1 must not be null or blank
+                          rejectedValue: ''
+                        - errorCode: NOT_BLANK
+                          field: city
+                          message: City must not be null or blank
+                          rejectedValue: ''
+                        - errorCode: NOT_BLANK
+                          field: state
+                          message: State must not be null or blank
+                          rejectedValue: ''
+                        - errorCode: NOT_BLANK
+                          field: zip
+                          message: Zip must not be null or blank
+                          rejectedValue: ''
+                        - errorCode: NOT_BLANK
+                          field: lastName
+                          message: Last Name must not be null or blank
+                          rejectedValue: ''
+                    meta:
+                      message: Validation Error
+  /customers/502:
+    delete:
+      tags:
+        - Customers
+      summary: Delete Customer
+      description: Delete Customer
+      operationId: deleteCustomer
+      responses:
+        '200':
+          description: Success Response
+          headers:
+            Connection:
+              schema:
+                type: string
+                example: keep-alive
+            Date:
+              schema:
+                type: string
+                example: Tue, 27 Aug 2024 19:45:21 GMT
+            Keep-Alive:
+              schema:
+                type: string
+                example: timeout=60
+            Transfer-Encoding:
+              schema:
+                type: string
+                example: chunked
+            Vary:
+              schema:
+                type: string
+                example: Access-Control-Request-Headers
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  data:
+                    nullable: true
+                    example: null
+                  meta:
+                    type: object
+                    properties:
+                      message:
+                        type: string
+                        example: Customer deleted successfully
+              examples:
+                Success Response:
+                  value:
+                    data: null
+                    meta:
+                      message: Customer deleted successfully
+        '400':
+          description: Invalid Customer Id Response
+          headers:
+            Connection:
+              schema:
+                type: string
+                example: close
+            Date:
+              schema:
+                type: string
+                example: Mon, 30 Sep 2024 10:13:58 GMT
+            Transfer-Encoding:
+              schema:
+                type: string
+                example: chunked
+            Vary:
+              schema:
+                type: string
+                example: Access-Control-Request-Headers
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  data:
+                    nullable: true
+                    example: null
+                  meta:
+                    type: object
+                    properties:
+                      message:
+                        type: string
+                        example: Invalid customer id.
+              examples:
+                Invalid Customer Id Response:
+                  value:
+                    data: null
+                    meta:
+                      message: Invalid customer id.
+  /technicians:
+    get:
+      tags:
+        - Technicians
+      summary: Get Technicians
+      description: Get Technicians
+      operationId: getTechnicians
+      parameters:
+        - name: search
+          in: query
+          schema:
+            type: string
+            example: NJ
+          description: >-
+            It's an optional and allow to typeahead search by technician
+            firstName, lastName, code, state, WorkOrder status, type
+        - name: page
+          in: query
+          schema:
+            type: string
+            example: '2'
+          description: It's optional (default value is 1)
+        - name: rpp
+          in: query
+          schema:
+            type: string
+            example: '25'
+          description: results per page is optional (default value is 10)
+        - name: sortOrder
+          in: query
+          schema:
+            type: string
+            example: asc
+          description: sortOrder is an optional (default value is desc)
+        - name: sortField
+          in: query
+          schema:
+            type: string
+            example: firstName
+          description: sortField is an optional (default value is technician code)
+      responses:
+        '200':
+          description: Success Response
+          headers:
+            Connection:
+              schema:
+                type: string
+                example: keep-alive
+            Date:
+              schema:
+                type: string
+                example: Wed, 02 Oct 2024 16:02:19 GMT
+            Keep-Alive:
+              schema:
+                type: string
+                example: timeout=60
+            Transfer-Encoding:
+              schema:
+                type: string
+                example: chunked
+            Vary:
+              schema:
+                type: string
+                example: Access-Control-Request-Headers
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  data:
+                    type: array
+                    items:
+                      type: object
+                      properties:
+                        code:
+                          type: string
+                          example: T10500
+                        firstName:
+                          type: string
+                          example: john
+                        lastName:
+                          type: string
+                          example: johnny
+                        latestWorkOrderStatus:
+                          type: string
+                          example: Completed
+                        type:
+                          type: string
+                          example: Plumber
+                        workPermits:
+                          items:
+                            type: object 
+                            properties:
+                              code:
+                                type: string
+                                example: OH1
+                    example:
+                      - code: T10500
+                        firstName: john
+                        lastName: johnny
+                        type: Plumber
+                        workPermits: null
+                      - code: T10499
+                        firstName: Jani
+                        lastName: Biddy
+                        type: Plumber
+                        workPermits: null
+                      - code: T10498
+                        firstName: Flo
+                        lastName: Bookamer
+                        type: Plumber
+                        workPermits: null
+                      - code: T10497
+                        firstName: Raylene
+                        lastName: Kampa
+                        type: Plumber
+                        workPermits: null
+                      - code: T10496
+                        firstName: Brittni
+                        lastName: Gillaspie
+                        type: Plumber
+                        workPermits: null
+                      - code: T10495
+                        firstName: Lai
+                        lastName: Harabedian
+                        type: Plumber
+                        workPermits: null
+                      - code: T10494
+                        firstName: Alesia
+                        lastName: Hixenbaugh
+                        type: Plumber
+                        workPermits: null
+                      - code: T10493
+                        firstName: Jovita
+                        lastName: Oles
+                        type: Plumber
+                        workPermits: null
+                      - code: T10492
+                        firstName: Thaddeus
+                        lastName: Ankeny
+                        type: Plumber
+                        workPermits: null
+                      - code: T10491
+                        firstName: Carlee
+                        lastName: Boulter
+                        latestWorkOrderStatus: Completed
+                        type: Plumber
+                        workPermits:
+                          - code: CA
+                          - code: NJ
+                          - code: WI
+                          - code: TX
+                          - code: MA
+                  meta:
+                    type: object
+                    properties:
+                      message:
+                        type: string
+                        example: Successfully retrieved technicians.
+                      pageCount:
+                        type: number
+                        example: 2
+                      resultCount:
+                        type: number
+                        example: 20
+              examples:
+                Success Response:
+                  value:
+                    data:
+                      - code: T10500
+                        firstName: john
+                        lastName: johnny
+                        type: Plumber
+                        workPermits: null
+                      - code: T10499
+                        firstName: Jani
+                        lastName: Biddy
+                        type: Plumber
+                        workPermits: null
+                      - code: T10498
+                        firstName: Flo
+                        lastName: Bookamer
+                        type: Plumber
+                        workPermits: null
+                      - code: T10497
+                        firstName: Raylene
+                        lastName: Kampa
+                        type: Plumber
+                        workPermits: null
+                      - code: T10496
+                        firstName: Brittni
+                        lastName: Gillaspie
+                        type: Plumber
+                        workPermits: null
+                      - code: T10495
+                        firstName: Lai
+                        lastName: Harabedian
+                        type: Plumber
+                        workPermits: null
+                      - code: T10494
+                        firstName: Alesia
+                        lastName: Hixenbaugh
+                        type: Plumber
+                        workPermits: null
+                      - code: T10493
+                        firstName: Jovita
+                        lastName: Oles
+                        type: Plumber
+                        workPermits: null
+                      - code: T10492
+                        firstName: Thaddeus
+                        lastName: Ankeny
+                        type: Plumber
+                        workPermits: null
+                      - code: T10491
+                        firstName: Carlee
+                        lastName: Boulter
+                        latestWorkOrderStatus: Completed
+                        type: Plumber
+                        workPermits:
+                          - code: CA
+                          - code: NJ
+                          - code: WI
+                          - code: TX
+                          - code: MA
+                    meta:
+                      message: Successfully retrieved technicians.
+                      pageCount: 2
+                      resultCount: 20
+    post:
+      tags:
+        - Technicians
+      summary: Add Technician
+      description: Add Technician
+      operationId: addTechnician
+      requestBody:
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                code:
+                  type: string
+                  example: TECH01
+                firstName:
+                  type: string
+                  example: Pankaj
+                lastName:
+                  type: string
+                  example: Kumar
+                type:
+                  type: string
+                  example: Electrician
+                workPermits:
+                  type: array
+                  items:
+                    type: object
+                    properties:
+                      code:
+                        type: string
+                        example: OH1
+                  example:
+                    - code: OH1
+            examples:
+              Add Technician:
+                value:
+                  code: TECH01
+                  firstName: Pankaj
+                  lastName: Kumar
+                  type: Electrician
+                  workPermits:
+                    - code: OH1
+      responses:
+        '201':
+          description: Success Response
+          headers:
+            Connection:
+              schema:
+                type: string
+                example: keep-alive
+            Date:
+              schema:
+                type: string
+                example: Wed, 02 Oct 2024 18:42:41 GMT
+            Keep-Alive:
+              schema:
+                type: string
+                example: timeout=60
+            Transfer-Encoding:
+              schema:
+                type: string
+                example: chunked
+            Vary:
+              schema:
+                type: string
+                example: Access-Control-Request-Headers
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  data:
+                    type: object
+                    properties:
+                      code:
+                        type: string
+                        example: TECH01
+                      firstName:
+                        type: string
+                        example: Pankaj
+                      lastName:
+                        type: string
+                        example: Kumar
+                      type:
+                        type: string
+                        example: Electrician
+                      workPermits:
+                        type: array
+                        items:
+                          type: object
+                          properties:
+                            code:
+                              type: string
+                              example: OH
+                            name:
+                              type: string
+                              example: Ohio
+                        example:
+                          - code: OH
+                            name: Ohio
+                  meta:
+                    type: object
+                    properties:
+                      message:
+                        type: string
+                        example: Successfully added technician
+              examples:
+                Success Response:
+                  value:
+                    data:
+                      code: TECH01
+                      firstName: Pankaj
+                      lastName: Kumar
+                      type: Electrician
+                      workPermits:
+                        - code: OH
+                          name: Ohio
+                    meta:
+                      message: Successfully added technician
+        '400':
+          description: Technician Code Missing / Invalid Payload / Duplicate Technician
+          headers:
+            Connection:
+              schema:
+                type: string
+                example: close
+            Date:
+              schema:
+                type: string
+                example: Wed, 02 Oct 2024 18:47:06 GMT
+            Transfer-Encoding:
+              schema:
+                type: string
+                example: chunked
+            Vary:
+              schema:
+                type: string
+                example: Access-Control-Request-Headers
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  data:
+                    type: object
+                    nullable: true
+                    example: null
+                  meta:
+                    type: object
+                    properties:
+                      message:
+                        type: string
+                        example: Technician code must be provided.
+              examples:
+                Duplicate Technician:
+                  value:
+                    data: null
+                    meta:
+                      message: Technician already exist with this code.
+                Invalid Payload:
+                  value:
+                    data:
+                      entity: technicianDTO
+                      errors:
+                        - errorCode: NOT_BLANK
+                          field: firstName
+                          message: First Name must not be null or blank
+                          rejectedValue: ''
+                        - errorCode: NOT_BLANK
+                          field: lastName
+                          message: Last Name must not be null or blank
+                          rejectedValue: ''
+                        - errorCode: NOT_BLANK
+                          field: type
+                          message: Technician Type must not be null or blank
+                          rejectedValue: ''
+                    meta:
+                      message: Validation Error
+                Technician Code Missing:
+                  value:
+                    data: null
+                    meta:
+                      message: Technician code must be provided.
+        '500':
+          description: 500 Internal Server Error
+          headers:
+            Connection:
+              schema:
+                type: string
+                example: close
+            Date:
+              schema:
+                type: string
+                example: Wed, 02 Oct 2024 18:46:04 GMT
+            Transfer-Encoding:
+              schema:
+                type: string
+                example: chunked
+            Vary:
+              schema:
+                type: string
+                example: Access-Control-Request-Headers
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  data:
+                    nullable: true
+                    example: null
+                  meta:
+                    type: object
+                    properties:
+                      errorMessage:
+                        type: string
+                        example: >-
+                          Unable to find com.wsu.workorderproservice.model.State
+                          with id OH1 Unable to find
+                          com.wsu.workorderproservice.model.State with id OH1
+                      message:
+                        type: string
+                        example: Failed to add technician.
+              examples:
+                500 Internal Server Error:
+                  value:
+                    data: null
+                    meta:
+                      errorMessage: >-
+                        Unable to find com.wsu.workorderproservice.model.State
+                        with id OH1 Unable to find
+                        com.wsu.workorderproservice.model.State with id OH1
+                      message: Failed to add technician.
+  /technicians/TECH01:
+    put:
+      tags:
+        - Technicians
+      summary: Update Technician
+      description: Update Technician
+      operationId: updateTechnician
+      requestBody:
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                firstName:
+                  type: string
+                  example: Pankaj
+                lastName:
+                  type: string
+                  example: Kumar
+                type:
+                  type: string
+                  example: Electrician
+                workPermits:
+                  type: array
+                  items:
+                    type: object
+                    properties:
+                      code:
+                        type: string
+                        example: NJ1
+                  example:
+                    - code: NJ1
+                    - code: OH
+            examples:
+              Update Technician:
+                value:
+                  firstName: Pankaj
+                  lastName: Kumar
+                  type: Electrician
+                  workPermits:
+                    - code: NJ1
+                    - code: OH
+      responses:
+        '200':
+          description: Success Response / Success Response - when remove state
+          headers:
+            Connection:
+              schema:
+                type: string
+                example: keep-alive
+            Date:
+              schema:
+                type: string
+                example: Wed, 02 Oct 2024 18:54:19 GMT
+            Keep-Alive:
+              schema:
+                type: string
+                example: timeout=60
+            Transfer-Encoding:
+              schema:
+                type: string
+                example: chunked
+            Vary:
+              schema:
+                type: string
+                example: Access-Control-Request-Headers
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  data:
+                    type: object
+                    properties:
+                      code:
+                        type: string
+                        example: TECH01
+                      firstName:
+                        type: string
+                        example: Pankaj
+                      lastName:
+                        type: string
+                        example: Kumar
+                      type:
+                        type: string
+                        example: Electrician
+                      workPermits:
+                        type: array
+                        items:
+                          type: object
+                          properties:
+                            code:
+                              type: string
+                              example: OH
+                            name:
+                              type: string
+                              example: Ohio
+                        example:
+                          - code: OH
+                            name: Ohio
+                          - code: NJ
+                            name: New Jersey
+                  meta:
+                    type: object
+                    properties:
+                      message:
+                        type: string
+                        example: Technician updated successfully
+              examples:
+                Success Response:
+                  value:
+                    data:
+                      code: TECH01
+                      firstName: Pankaj
+                      lastName: Kumar
+                      type: Electrician
+                      workPermits:
+                        - code: OH
+                          name: Ohio
+                        - code: NJ
+                          name: New Jersey
+                    meta:
+                      message: Technician updated successfully
+                Success Response - when remove state:
+                  value:
+                    data:
+                      code: TECH01
+                      firstName: Pankaj
+                      lastName: Kumar
+                      type: Electrician
+                      workPermits:
+                        - code: NJ
+                          name: New Jersey
+                    meta:
+                      message: Technician updated successfully
+        '400':
+          description: Invalid Technician Code / Invalid Payload
+          headers:
+            Connection:
+              schema:
+                type: string
+                example: close
+            Date:
+              schema:
+                type: string
+                example: Wed, 02 Oct 2024 19:01:19 GMT
+            Transfer-Encoding:
+              schema:
+                type: string
+                example: chunked
+            Vary:
+              schema:
+                type: string
+                example: Access-Control-Request-Headers
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  data:
+                    type: object
+                    nullable: true
+                    example: null
+                  meta:
+                    type: object
+                    properties:
+                      message:
+                        type: string
+                        example: Invalid technician code.
+              examples:
+                Invalid Payload:
+                  value:
+                    data:
+                      entity: technicianDTO
+                      errors:
+                        - errorCode: NOT_BLANK
+                          field: lastName
+                          message: Last Name must not be null or blank
+                          rejectedValue: ''
+                        - errorCode: NOT_BLANK
+                          field: firstName
+                          message: First Name must not be null or blank
+                          rejectedValue: ''
+                        - errorCode: NOT_BLANK
+                          field: type
+                          message: Technician Type must not be null or blank
+                          rejectedValue: ''
+                    meta:
+                      message: Validation Error
+                Invalid Technician Code:
+                  value:
+                    data: null
+                    meta:
+                      message: Invalid technician code.
+        '500':
+          description: Update Technician
+          headers:
+            Connection:
+              schema:
+                type: string
+                example: close
+            Date:
+              schema:
+                type: string
+                example: Wed, 02 Oct 2024 19:02:06 GMT
+            Transfer-Encoding:
+              schema:
+                type: string
+                example: chunked
+            Vary:
+              schema:
+                type: string
+                example: Access-Control-Request-Headers
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  data:
+                    nullable: true
+                    example: null
+                  meta:
+                    type: object
+                    properties:
+                      errorMessage:
+                        type: string
+                        example: >-
+                          Unable to find com.wsu.workorderproservice.model.State
+                          with id NJ1 Unable to find
+                          com.wsu.workorderproservice.model.State with id NJ1
+                      message:
+                        type: string
+                        example: Failed to update technician
+              examples:
+                Update Technician:
+                  value:
+                    data: null
+                    meta:
+                      errorMessage: >-
+                        Unable to find com.wsu.workorderproservice.model.State
+                        with id NJ1 Unable to find
+                        com.wsu.workorderproservice.model.State with id NJ1
+                      message: Failed to update technician
+    delete:
+      tags:
+        - Technicians
+      summary: Delete Technician
+      description: Delete Technician
+      operationId: deleteTechnician
+      responses:
+        '200':
+          description: Success Response
+          headers:
+            Connection:
+              schema:
+                type: string
+                example: keep-alive
+            Date:
+              schema:
+                type: string
+                example: Wed, 02 Oct 2024 19:03:15 GMT
+            Keep-Alive:
+              schema:
+                type: string
+                example: timeout=60
+            Transfer-Encoding:
+              schema:
+                type: string
+                example: chunked
+            Vary:
+              schema:
+                type: string
+                example: Access-Control-Request-Headers
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  data:
+                    nullable: true
+                    example: null
+                  meta:
+                    type: object
+                    properties:
+                      message:
+                        type: string
+                        example: Technician deleted successfully
+              examples:
+                Success Response:
+                  value:
+                    data: null
+                    meta:
+                      message: Technician deleted successfully
+        '400':
+          description: Delete Customer / Invalid Technician Code
+          headers:
+            Connection:
+              schema:
+                type: string
+                example: close
+            Date:
+              schema:
+                type: string
+                example: Wed, 02 Oct 2024 19:03:46 GMT
+            Transfer-Encoding:
+              schema:
+                type: string
+                example: chunked
+            Vary:
+              schema:
+                type: string
+                example: Access-Control-Request-Headers
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  data:
+                    nullable: true
+                    example: null
+                  meta:
+                    type: object
+                    properties:
+                      message:
+                        type: string
+                        example: Invalid technician code.
+              examples:
+                Delete Customer:
+                  value:
+                    data: null
+                    meta:
+                      message: Invalid technician code.
+                Invalid Technician Code:
+                  value:
+                    data: null
+                    meta:
+                      message: Invalid technician code.
+  /states:
+    get:
+      tags:
+        - States
+      summary: Get States
+      description: Get States
+      operationId: getStates
+      parameters:
+        - name: search
+          in: query
+          schema:
+            type: string
+            example: FL
+          description: It's an optional and allow typeahead search by state code & name
+      responses:
+        '200':
+          description: Success Response
+          headers:
+            Connection:
+              schema:
+                type: string
+                example: keep-alive
+            Date:
+              schema:
+                type: string
+                example: Wed, 02 Oct 2024 19:10:30 GMT
+            Keep-Alive:
+              schema:
+                type: string
+                example: timeout=60
+            Transfer-Encoding:
+              schema:
+                type: string
+                example: chunked
+            Vary:
+              schema:
+                type: string
+                example: Access-Control-Request-Headers
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  data:
+                    type: array
+                    items:
+                      type: object
+                      properties:
+                        code:
+                          type: string
+                          example: AK
+                        name:
+                          type: string
+                          example: Alaska
+                    example:
+                      - code: AK
+                        name: Alaska
+                      - code: AL
+                        name: Alabama
+                      - code: AR
+                        name: Arkansas
+                      - code: AZ
+                        name: Arizona
+                      - code: CA
+                        name: California
+                      - code: CO
+                        name: Colorado
+                      - code: CT
+                        name: Connecticut
+                      - code: DE
+                        name: Delaware
+                      - code: FL
+                        name: Florida
+                      - code: GA
+                        name: Georgia
+                      - code: HI
+                        name: Hawaii
+                      - code: IA
+                        name: Iowa
+                      - code: ID
+                        name: Idaho
+                      - code: IL
+                        name: Illinois
+                      - code: IN
+                        name: Indiana
+                      - code: KS
+                        name: Kansas
+                      - code: KY
+                        name: Kentucky
+                      - code: LA
+                        name: Louisiana
+                      - code: MA
+                        name: Massachusetts
+                      - code: MD
+                        name: Maryland
+                      - code: ME
+                        name: Maine
+                      - code: MI
+                        name: Michigan
+                      - code: MN
+                        name: Minnesota
+                      - code: MO
+                        name: Missouri
+                      - code: MS
+                        name: Mississippi
+                      - code: MT
+                        name: Montana
+                      - code: NC
+                        name: North Carolina
+                      - code: ND
+                        name: North Dakota
+                      - code: NE
+                        name: Nebraska
+                      - code: NH
+                        name: New Hampshire
+                      - code: NJ
+                        name: New Jersey
+                      - code: NM
+                        name: New Mexico
+                      - code: NV
+                        name: Nevada
+                      - code: NY
+                        name: New York
+                      - code: OH
+                        name: Ohio
+                      - code: OK
+                        name: Oklahoma
+                      - code: OR
+                        name: Oregon
+                      - code: PA
+                        name: Pennsylvania
+                      - code: RI
+                        name: Rhode Island
+                      - code: SC
+                        name: South Carolina
+                      - code: SD
+                        name: South Dakota
+                      - code: TN
+                        name: Tennessee
+                      - code: TX
+                        name: Texas
+                      - code: UT
+                        name: Utah
+                      - code: VA
+                        name: Virginia
+                      - code: VT
+                        name: Vermont
+                      - code: WA
+                        name: Washington
+                      - code: WI
+                        name: Wisconsin
+                      - code: WV
+                        name: West Virginia
+                      - code: WY
+                        name: Wyoming
+                  meta:
+                    type: object
+                    properties:
+                      message:
+                        type: string
+                        example: States retrieved successfully.
+              examples:
+                Success Response:
+                  value:
+                    data:
+                      - code: AK
+                        name: Alaska
+                      - code: AL
+                        name: Alabama
+                      - code: AR
+                        name: Arkansas
+                      - code: AZ
+                        name: Arizona
+                      - code: CA
+                        name: California
+                      - code: CO
+                        name: Colorado
+                      - code: CT
+                        name: Connecticut
+                      - code: DE
+                        name: Delaware
+                      - code: FL
+                        name: Florida
+                      - code: GA
+                        name: Georgia
+                      - code: HI
+                        name: Hawaii
+                      - code: IA
+                        name: Iowa
+                      - code: ID
+                        name: Idaho
+                      - code: IL
+                        name: Illinois
+                      - code: IN
+                        name: Indiana
+                      - code: KS
+                        name: Kansas
+                      - code: KY
+                        name: Kentucky
+                      - code: LA
+                        name: Louisiana
+                      - code: MA
+                        name: Massachusetts
+                      - code: MD
+                        name: Maryland
+                      - code: ME
+                        name: Maine
+                      - code: MI
+                        name: Michigan
+                      - code: MN
+                        name: Minnesota
+                      - code: MO
+                        name: Missouri
+                      - code: MS
+                        name: Mississippi
+                      - code: MT
+                        name: Montana
+                      - code: NC
+                        name: North Carolina
+                      - code: ND
+                        name: North Dakota
+                      - code: NE
+                        name: Nebraska
+                      - code: NH
+                        name: New Hampshire
+                      - code: NJ
+                        name: New Jersey
+                      - code: NM
+                        name: New Mexico
+                      - code: NV
+                        name: Nevada
+                      - code: NY
+                        name: New York
+                      - code: OH
+                        name: Ohio
+                      - code: OK
+                        name: Oklahoma
+                      - code: OR
+                        name: Oregon
+                      - code: PA
+                        name: Pennsylvania
+                      - code: RI
+                        name: Rhode Island
+                      - code: SC
+                        name: South Carolina
+                      - code: SD
+                        name: South Dakota
+                      - code: TN
+                        name: Tennessee
+                      - code: TX
+                        name: Texas
+                      - code: UT
+                        name: Utah
+                      - code: VA
+                        name: Virginia
+                      - code: VT
+                        name: Vermont
+                      - code: WA
+                        name: Washington
+                      - code: WI
+                        name: Wisconsin
+                      - code: WV
+                        name: West Virginia
+                      - code: WY
+                        name: Wyoming
+                    meta:
+                      message: States retrieved successfully.
+  /products:
+    get:
+      tags:
+        - Products
+      summary: Get Products
+      description: Get Products
+      operationId: getProducts
+      parameters:
+        - name: isActive
+          in: query
+          schema:
+            type: string
+            example: 'true'
+          description: It's optional and used to filter only active products
+      responses:
+        '200':
+          description: Success Response
+          headers:
+            Connection:
+              schema:
+                type: string
+                example: keep-alive
+            Date:
+              schema:
+                type: string
+                example: Wed, 02 Oct 2024 19:38:39 GMT
+            Keep-Alive:
+              schema:
+                type: string
+                example: timeout=60
+            Transfer-Encoding:
+              schema:
+                type: string
+                example: chunked
+            Vary:
+              schema:
+                type: string
+                example: Access-Control-Request-Headers
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  data:
+                    type: array
+                    items:
+                      type: object
+                      properties:
+                        active:
+                          type: boolean
+                          example: true
+                        code:
+                          type: string
+                          example: '348951'
+                        name:
+                          type: string
+                          example: Dishwasher Installation
+                        typeCode:
+                          type: string
+                          example: P
+                        unitCost:
+                          type: number
+                          example: 150
+                        universalProductCode:
+                          type: string
+                          example: ''
+                    example:
+                      - active: true
+                        code: '348951'
+                        name: Dishwasher Installation
+                        typeCode: P
+                        unitCost: 150
+                        universalProductCode: ''
+                      - active: true
+                        code: '348952'
+                        name: Dishwasher Installation Kit
+                        typeCode: S
+                        unitCost: 30
+                        universalProductCode: '839457175082'
+                      - active: true
+                        code: '348956'
+                        name: Dishwasher Removal
+                        typeCode: U
+                        unitCost: 50
+                        universalProductCode: ''
+                      - active: true
+                        code: '348961'
+                        name: Washing Machine Installation
+                        typeCode: P
+                        unitCost: 175
+                        universalProductCode: ''
+                      - active: true
+                        code: '348962'
+                        name: Washer Installation Kit
+                        typeCode: S
+                        unitCost: 30
+                        universalProductCode: '548675218634'
+                      - active: true
+                        code: '348966'
+                        name: Washing Machine Removal
+                        typeCode: U
+                        unitCost: 50
+                        universalProductCode: ''
+                      - active: true
+                        code: '348971'
+                        name: Dryer Installation
+                        typeCode: P
+                        unitCost: 175
+                        universalProductCode: ''
+                      - active: true
+                        code: '348972'
+                        name: Dryer Installation Kit
+                        typeCode: S
+                        unitCost: 30
+                        universalProductCode: '756249124586'
+                      - active: true
+                        code: '348976'
+                        name: Dryer Removal
+                        typeCode: U
+                        unitCost: 50
+                        universalProductCode: ''
+                      - active: true
+                        code: '348977'
+                        name: Filter Pipe Cleaning
+                        typeCode: U
+                        unitCost: 80
+                        universalProductCode: ''
+                      - active: true
+                        code: '348981'
+                        name: Refrigerator Installation
+                        typeCode: P
+                        unitCost: 145
+                        universalProductCode: ''
+                      - active: true
+                        code: '348982'
+                        name: Refrigerator Installation Kit
+                        typeCode: S
+                        unitCost: 45
+                        universalProductCode: '584216782146'
+                      - active: true
+                        code: '348986'
+                        name: Refrigerator Removal
+                        typeCode: U
+                        unitCost: 100
+                        universalProductCode: ''
+                      - active: true
+                        code: '405501'
+                        name: Cancellation Charge
+                        typeCode: S
+                        unitCost: 50
+                        universalProductCode: ''
+                      - active: true
+                        code: '406501'
+                        name: Trip Charge
+                        typeCode: S
+                        unitCost: 50
+                        universalProductCode: ''
+                      - active: true
+                        code: '406502'
+                        name: Extended Trip Charge
+                        typeCode: S
+                        unitCost: 100
+                        universalProductCode: ''
+                      - active: true
+                        code: '406503'
+                        name: Extra Labor Charge
+                        typeCode: S
+                        unitCost: 50
+                        universalProductCode: ''
+                  meta:
+                    type: object
+                    properties:
+                      message:
+                        type: string
+                        example: Products retrieved successfully.
+              examples:
+                Success Response:
+                  value:
+                    data:
+                      - active: true
+                        code: '348951'
+                        name: Dishwasher Installation
+                        typeCode: P
+                        unitCost: 150
+                        universalProductCode: ''
+                      - active: true
+                        code: '348952'
+                        name: Dishwasher Installation Kit
+                        typeCode: S
+                        unitCost: 30
+                        universalProductCode: '839457175082'
+                      - active: true
+                        code: '348956'
+                        name: Dishwasher Removal
+                        typeCode: U
+                        unitCost: 50
+                        universalProductCode: ''
+                      - active: true
+                        code: '348961'
+                        name: Washing Machine Installation
+                        typeCode: P
+                        unitCost: 175
+                        universalProductCode: ''
+                      - active: true
+                        code: '348962'
+                        name: Washer Installation Kit
+                        typeCode: S
+                        unitCost: 30
+                        universalProductCode: '548675218634'
+                      - active: true
+                        code: '348966'
+                        name: Washing Machine Removal
+                        typeCode: U
+                        unitCost: 50
+                        universalProductCode: ''
+                      - active: true
+                        code: '348971'
+                        name: Dryer Installation
+                        typeCode: P
+                        unitCost: 175
+                        universalProductCode: ''
+                      - active: true
+                        code: '348972'
+                        name: Dryer Installation Kit
+                        typeCode: S
+                        unitCost: 30
+                        universalProductCode: '756249124586'
+                      - active: true
+                        code: '348976'
+                        name: Dryer Removal
+                        typeCode: U
+                        unitCost: 50
+                        universalProductCode: ''
+                      - active: true
+                        code: '348977'
+                        name: Filter Pipe Cleaning
+                        typeCode: U
+                        unitCost: 80
+                        universalProductCode: ''
+                      - active: true
+                        code: '348981'
+                        name: Refrigerator Installation
+                        typeCode: P
+                        unitCost: 145
+                        universalProductCode: ''
+                      - active: true
+                        code: '348982'
+                        name: Refrigerator Installation Kit
+                        typeCode: S
+                        unitCost: 45
+                        universalProductCode: '584216782146'
+                      - active: true
+                        code: '348986'
+                        name: Refrigerator Removal
+                        typeCode: U
+                        unitCost: 100
+                        universalProductCode: ''
+                      - active: true
+                        code: '405501'
+                        name: Cancellation Charge
+                        typeCode: S
+                        unitCost: 50
+                        universalProductCode: ''
+                      - active: true
+                        code: '406501'
+                        name: Trip Charge
+                        typeCode: S
+                        unitCost: 50
+                        universalProductCode: ''
+                      - active: true
+                        code: '406502'
+                        name: Extended Trip Charge
+                        typeCode: S
+                        unitCost: 100
+                        universalProductCode: ''
+                      - active: true
+                        code: '406503'
+                        name: Extra Labor Charge
+                        typeCode: S
+                        unitCost: 50
+                        universalProductCode: ''
+                    meta:
+                      message: Products retrieved successfully.
+tags:
+  - name: Customers
+  - name: Technicians
+  - name: States
+  - name: Products
