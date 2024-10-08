@@ -709,3 +709,203 @@ state.setName("California");
 - It uses JPA annotations to map the fields `code` and `name` to the corresponding columns `state_code` and `state_name`.
 - The class uses Lombok annotations to reduce boilerplate code by automatically generating getters, setters, and constructors.
 - The `code` field is the primary key of the table, while `name` holds the state’s name.
+
+# Now with Database Queries!
+
+## ChatGPT Explains the Technicians SQL Query / Script
+
+This SQL query retrieves detailed information about a specific technician, including their latest work order status and the states where they are permitted to work. Let's break it down step by step.
+
+### 1. **Select Clause**
+```sql
+Select t.technician_code as code,
+       t.technician_first_name as firstName,
+       t.technician_last_name as lastName,
+       wos.work_order_status_desc as workOrderStatus,
+       t.technician_type as type,
+       GROUP_CONCAT(twp.state_code SEPARATOR ',') as states
+```
+- **t.technician_code as code**: This retrieves the technician’s unique code (ID) from the `technician` table and aliases it as `code`.
+- **t.technician_first_name as firstName**: Retrieves the technician’s first name and aliases it as `firstName`.
+- **t.technician_last_name as lastName**: Retrieves the technician’s last name and aliases it as `lastName`.
+- **wos.work_order_status_desc as workOrderStatus**: Retrieves the description of the most recent work order’s status and aliases it as `workOrderStatus`.
+- **t.technician_type as type**: Retrieves the technician’s type (e.g., full-time, part-time) and aliases it as `type`.
+- **GROUP_CONCAT(twp.state_code SEPARATOR ',') as states**: This aggregates the list of states where the technician has a work permit. The `GROUP_CONCAT` function concatenates all `state_code` values (from the `technician_work_permit` table) into a single string, with each state code separated by a comma.
+
+### 2. **FROM Clause**
+```sql
+from work_order_pro.technician t
+```
+- The query pulls data from the `technician` table, which is aliased as `t`.
+
+### 3. **LEFT JOINs**
+#### a. Technician Work Permits Join:
+```sql
+left join work_order_pro.technician_work_permit twp
+on twp.technician_code = t.technician_code
+```
+- This joins the `technician_work_permit` table (`twp`) on the technician's code. It retrieves all states where the technician holds a permit. Since it's a `LEFT JOIN`, even if no work permits exist for the technician, the technician's details will still be returned (the `states` field will be `NULL` or empty).
+
+#### b. Latest Work Order Join:
+```sql
+left join work_order_pro.work_order wo on wo.work_order_number =
+(Select max(wo1.work_order_number) from work_order_pro.work_order wo1 where wo1.technician_code = t.technician_code)
+```
+- This subquery finds the **most recent work order** for the technician by selecting the `work_order_number` with the maximum value (`max(wo1.work_order_number)`) from the `work_order` table (`wo1`). It filters only those work orders where the `technician_code` matches the current technician (`t.technician_code`).
+- The `LEFT JOIN` ensures that if a technician has no work orders, the technician will still be included in the results, but the work order details will be `NULL`.
+
+#### c. Work Order Status Join:
+```sql
+left join work_order_pro.work_order_status wos on wos.work_order_status_code = wo.work_order_status_code
+```
+- This joins the `work_order_status` table (`wos`) to retrieve the **description** of the status of the most recent work order. The join is performed using the `work_order_status_code` field from the `work_order` (`wo`) and `work_order_status` (`wos`) tables.
+- Again, it's a `LEFT JOIN`, meaning if there's no work order, the status description will be `NULL`.
+
+### 4. **WHERE Clause**
+```sql
+where t.technician_code = 'T10481'
+```
+- This filters the query to only return data for the technician with the code `'T10481'`. This is likely a specific technician whose information is being queried.
+
+### 5. **GROUP BY Clause**
+```sql
+group by t.technician_code;
+```
+- The `GROUP BY` is necessary because the query uses `GROUP_CONCAT`, which aggregates multiple rows into a single row. Here, it groups the results by `technician_code` to ensure that the work permits (in `twp.state_code`) are properly concatenated for each technician.
+
+### **Summary of the Query Output**
+For the technician with code `'T10481'`, the query will return:
+- Technician code (as `code`),
+- First name (as `firstName`),
+- Last name (as `lastName`),
+- The description of the most recent work order status (as `workOrderStatus`),
+- The technician type (as `type`),
+- A comma-separated list of state codes representing the states where the technician has valid work permits (as `states`).
+
+### Example Output:
+| code   | firstName | lastName | workOrderStatus | type      | states       |
+|--------|-----------|----------|-----------------|-----------|--------------|
+| T10481 | John      | Doe      | Completed       | Full-time | CA, NY, TX   |
+
+In this example:
+- **code**: The technician’s unique identifier.
+- **firstName** and **lastName**: The technician’s name.
+- **workOrderStatus**: The status of the most recent work order (e.g., "Completed").
+- **type**: The technician’s type (e.g., "Full-time").
+- **states**: The list of states where the technician is licensed to work (e.g., "CA, NY, TX").
+
+## ChaptGPT Explains Technicians Repository
+
+This code defines a **Spring Data JPA repository** interface named `TechnicianRepository`, which is responsible for managing database operations related to the `Technician` entity. Let's go through the details of the code step by step:
+
+### 1. **Interface Definition**
+```java
+public interface TechnicianRepository extends JpaRepository<Technician, String>
+```
+- **`TechnicianRepository`**: This is the repository interface for the `Technician` entity.
+- **`extends JpaRepository<Technician, String>`**: 
+  - `JpaRepository` is a JPA-specific extension of the Spring Data repository. It provides built-in methods for CRUD operations, such as saving, deleting, and finding entities.
+  - `Technician`: This is the entity that this repository will manage.
+  - `String`: This is the type of the primary key for the `Technician` entity (`technician_code` is presumably a `String`).
+
+### 2. **JpaRepository**
+The repository inherits the full API of `JpaRepository`, which includes:
+- CRUD methods like `save()`, `delete()`, `findById()`, `findAll()`.
+- Paging and sorting capabilities (from `PagingAndSortingRepository`).
+- By extending `JpaRepository`, this interface allows Spring Data to generate concrete implementations for standard database operations automatically, without you needing to write any SQL or JPQL for basic queries.
+
+### 3. **Custom Query with `@Query` Annotation**
+```java
+@Query(nativeQuery = true, value = "SELECT t.technician_code AS technicianCode, t.technician_first_name AS firstName, "
+        + "t.technician_last_name AS lastName, wos.work_order_status_desc AS workOrderStatus, t.technician_type as type, GROUP_CONCAT(twp.state_code SEPARATOR ',') AS states "
+        + "FROM technician t LEFT JOIN technician_work_permit twp on twp.technician_code = t.technician_code LEFT JOIN work_order wo ON wo.work_order_number = "
+        + "(SELECT MAX(wo1.work_order_number) FROM work_order wo1 WHERE wo1.technician_code = t.technician_code) "
+        + "LEFT JOIN work_order_status wos ON wo.work_order_status_code = wos.work_order_status_code "
+        + "WHERE :search IS NULL OR (t.technician_code LIKE %:search% OR t.technician_first_name LIKE %:search% OR t.technician_type LIKE %:search% "
+        + "OR t.technician_last_name LIKE %:search% OR wos.work_order_status_desc LIKE %:search% OR twp.state_code LIKE %:search%) group by t.technician_code")
+Page<Object[]> findBySearch(String search, Pageable pageable);
+```
+- **`@Query`**: This annotation allows you to define a custom query that will be executed when this method (`findBySearch`) is called.
+  - `nativeQuery = true`: This tells Spring Data JPA that the query is a **native SQL query**. Native queries use the syntax of the underlying database, as opposed to JPQL (Java Persistence Query Language), which is object-oriented.
+  - `value = "SELECT ..."`: This is the actual SQL query that will be executed.
+
+#### Query Breakdown:
+1. **Select Clause**:
+    ```sql
+    SELECT t.technician_code AS technicianCode,
+           t.technician_first_name AS firstName,
+           t.technician_last_name AS lastName,
+           wos.work_order_status_desc AS workOrderStatus,
+           t.technician_type as type,
+           GROUP_CONCAT(twp.state_code SEPARATOR ',') AS states
+    ```
+    - Retrieves the technician's code (`technician_code`), first name, last name, type, the description of their most recent work order status, and the states where the technician holds work permits (as a comma-separated string).
+
+2. **FROM and JOIN Clauses**:
+    ```sql
+    FROM technician t
+    LEFT JOIN technician_work_permit twp ON twp.technician_code = t.technician_code
+    LEFT JOIN work_order wo ON wo.work_order_number = 
+        (SELECT MAX(wo1.work_order_number) FROM work_order wo1 WHERE wo1.technician_code = t.technician_code)
+    LEFT JOIN work_order_status wos ON wo.work_order_status_code = wos.work_order_status_code
+    ```
+    - The query retrieves data from the `technician` table (`t`).
+    - **LEFT JOIN** on the `technician_work_permit` table (`twp`) to fetch work permit states associated with the technician. The technician's code (`technician_code`) is used as the joining condition.
+    - **LEFT JOIN** on the `work_order` table to fetch the most recent work order for each technician. The most recent work order is found by selecting the maximum work order number (`MAX(wo1.work_order_number)`).
+    - **LEFT JOIN** on the `work_order_status` table (`wos`) to get the description of the latest work order's status.
+
+3. **WHERE Clause**:
+    ```sql
+    WHERE :search IS NULL OR (
+        t.technician_code LIKE %:search% OR
+        t.technician_first_name LIKE %:search% OR
+        t.technician_last_name LIKE %:search% OR
+        t.technician_type LIKE %:search% OR
+        wos.work_order_status_desc LIKE %:search% OR
+        twp.state_code LIKE %:search%
+    )
+    ```
+    - This condition allows for **search functionality**. The `:search` parameter is dynamically provided when the method is called. If `:search` is `NULL`, the query will retrieve all technicians.
+    - If `:search` is provided, the query looks for technicians where any of the following fields **partially match** (`LIKE %:search%`):
+      - `technician_code`
+      - `technician_first_name`
+      - `technician_last_name`
+      - `technician_type`
+      - `work_order_status_desc`
+      - `state_code` (work permit state)
+
+4. **GROUP BY Clause**:
+    ```sql
+    group by t.technician_code
+    ```
+    - The `GROUP BY` ensures that the `GROUP_CONCAT` function aggregates the `state_code` for each technician.
+
+### 4. **Method Declaration**
+```java
+Page<Object[]> findBySearch(String search, Pageable pageable);
+```
+- This method accepts two parameters:
+  - `String search`: A search keyword that is dynamically injected into the `WHERE` clause of the query.
+  - `Pageable pageable`: A Spring Data interface that provides pagination information, such as the page number and the number of results per page.
+  
+- **Return Type**:
+  - `Page<Object[]>`: The result is returned as a `Page` of `Object[]` arrays.
+    - Each row in the result set will be represented as an `Object[]` array, where each element corresponds to a column (e.g., technicianCode, firstName, workOrderStatus, etc.).
+  - The `Page` object contains not only the results but also metadata like the total number of pages, the total number of elements, and information about the current page.
+
+### How It Works:
+- When you call `findBySearch`, you provide a `search` string and a `Pageable` object.
+- The method executes the custom SQL query, retrieving a paginated list of technicians based on the search criteria.
+- If `search` is `NULL`, the query will return all technicians, otherwise it will filter technicians based on the search term across various fields.
+
+### Example Call:
+```java
+Page<Object[]> result = technicianRepository.findBySearch("John", PageRequest.of(0, 10));
+```
+- This query searches for technicians where "John" appears in any of the following fields: technician code, first name, last name, type, work order status, or work permit state. 
+- The results are paginated, with 10 results per page, starting from the first page.
+
+### Summary:
+- This repository interface manages `Technician` entities using Spring Data JPA.
+- It provides a custom native SQL query to search for technicians based on a flexible `search` term and supports pagination through the `Pageable` interface.
+- The query aggregates multiple work permits into a comma-separated list and retrieves the latest work order status for each technician.
