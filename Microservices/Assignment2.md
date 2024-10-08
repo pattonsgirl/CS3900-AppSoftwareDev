@@ -17,7 +17,9 @@ Create /customers GET endpoint and correct /products GET endpoint
    Allow users to search by customer name, address, email - ex. `[/customers?search=]`  
    * `CustomerController`  
    * `CustomerService`  
-   * `CustomerDTO`  
+   * `CustomerDTO`
+   * `Customer` [Entity Model Class]
+   * `CustomerRepository` 
 4. Create `CustomerDTO` class with following fields and add required lombok annotations.  
    * id [Integer]  
    * firstName [String]  
@@ -131,8 +133,8 @@ Microservices Assignment 2 Grading
 
 Score:  / 5 points
 
-- Create CustomerDTO class with proper field name & data type, and add required lombok annotations. (1pt)  
-- Create Controller, Service and DTO class for Customer with required annotations. (1pt)  
+- Create CustomerDTO and Customer Entity Model class with proper field name & data type, and add required lombok annotations. (1pt)  
+- Create Controller, Service class and Repository interface for Customer with required annotations. (1pt)  
 - Create /customers GET endpoint to retrieve customers data from database, and return 200 & 500 HTTP status response in given format. (2 pt)  
 - Fixes of /products GET endpoint to retrieve products from database, and return 200 & 500 HTTP status response in given format. (1 pt)
 
