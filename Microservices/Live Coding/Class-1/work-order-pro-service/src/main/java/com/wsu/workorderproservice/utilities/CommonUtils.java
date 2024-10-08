@@ -3,6 +3,7 @@ package com.wsu.workorderproservice.utilities;
 import lombok.experimental.UtilityClass;
 import org.springframework.data.domain.Sort;
 
+//@UtilityClass annotation is a tool in Lombok that automatically turns a class into a utility class
 @UtilityClass
 public class CommonUtils {
 
