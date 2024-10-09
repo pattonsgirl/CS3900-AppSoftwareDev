@@ -70,6 +70,7 @@ Create /customers POST endpoint and correct /states GET endpoint
   }
 ```
 * Response format should be like below when HTTP Status code is 400\.
+1. Invalid Payload:
 ```
   {  
       "meta": {  
@@ -93,6 +94,15 @@ Create /customers POST endpoint and correct /states GET endpoint
           ]  
       }  
   }
+```
+2. Customer already exist.
+```
+{
+    "meta": {
+        "message": "Customer already exist with this email."
+    },
+    "data": null
+}
 ```
     
 * Understand and correct the /states GET endpoint and response format should be like below.  
@@ -131,7 +141,8 @@ Microservices Assignment 3 Grading
 
 Score:  / 5 points
 
-- Add required fields validation and format validation on CustomerDTO class. (2pt)  
+- Add required fields validation and format validation on CustomerDTO class. (1pt)
+- Add validation to check if customer exist by email. (1pt)
 - Create /customers POST endpoint to save customer data into database, and return 201, 400 & 500 HTTP status response in given format. (2 pt)  
 - Fixes of /states GET endpoint to retrieve states from database, and return 200 & 500 HTTP status response in given format. (1 pt)
 
