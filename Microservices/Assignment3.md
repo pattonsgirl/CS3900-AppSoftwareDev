@@ -22,8 +22,8 @@ Create /customers POST endpoint and correct /states GET endpoint
   * city \[Not Null, max (25)\]  
   * state \[Not Null, max (2)\]  
   * zip \[Not Null, max (5)\]  
-  * phone \[Not Null, max (10)\] \- \[allow only numbers with valid phone format\]  
-  * email \[Not Null, max (100)\] \- \[allow only valid email format\]  
+  * phone \[Not Null, max (10)\] 
+  * email \[Not Null, max (100)\] 
 * The Request Body should be like below.
 ```
    {  
@@ -34,7 +34,7 @@ Create /customers POST endpoint and correct /states GET endpoint
              "city": "Dayton",  
              "state": "Ohio",  
              "zip": "45322",  
-             "phone": "999-333-6677",  
+             "phoneNumber": "8545656312",  
              "email": "test@gmail.com"  
    }
 ```
@@ -54,7 +54,7 @@ Create /customers POST endpoint and correct /states GET endpoint
              "city": "Dayton",  
              "state": "Ohio",  
              "zip": "45322",  
-             "phone": "999-333-6677",  
+             "phone": "8545656312",  
              "email": "test@gmail.com"  
          }  
   }
@@ -131,9 +131,8 @@ Microservices Assignment 3 Grading
 
 Score:  / 5 points
 
-- Add required fields validation and format validation on CustomerDTO class. (1pt)  
-- Create Customer entity model class with all required Jakarta persistence annotations and create CustomerRepository for the implementation. (1pt)  
-- Create /customers POST endpoint to save customer data in database, and return 201, 400 & 500 HTTP status response in given format. (2 pt)  
+- Add required fields validation and format validation on CustomerDTO class. (2pt)  
+- Create /customers POST endpoint to save customer data into database, and return 201, 400 & 500 HTTP status response in given format. (2 pt)  
 - Fixes of /states GET endpoint to retrieve states from database, and return 200 & 500 HTTP status response in given format. (1 pt)
 
 Feedback: 
