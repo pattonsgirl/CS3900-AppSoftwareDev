@@ -1,0 +1,73 @@
+plugins {
+	id 'java'
+	id 'org.springframework.boot' version '3.3.1'
+	id 'io.spring.dependency-management' version '1.1.5'
+	id 'checkstyle'
+	id 'jacoco'
+}
+
+group = 'com.wsu'
+
+checkstyle {
+	toolVersion = '8.1'
+	configFile = new File(rootDir, 'config/checkstyle/checkstyle.xml')
+}
+
+java {
+	toolchain {
+		languageVersion = JavaLanguageVersion.of(17)
+	}
+}
+
+repositories {
+	mavenCentral()
+}
+
+dependencies {
+	implementation 'org.springframework.boot:spring-boot-starter-web'
+	implementation 'org.springframework.boot:spring-boot-starter-validation'
+    implementation 'org.springframework.boot:spring-boot-starter-data-jpa'
+	implementation 'org.springframework.boot:spring-boot-starter-actuator'
+	implementation 'org.projectlombok:lombok'
+	implementation 'org.mariadb.jdbc:mariadb-java-client:3.4.1'
+	implementation 'org.hibernate.orm:hibernate-core:6.6.1.Final'
+
+	annotationProcessor 'org.projectlombok:lombok'
+	runtimeOnly 'com.microsoft.sqlserver:mssql-jdbc'
+
+	testImplementation 'org.springframework.boot:spring-boot-starter-test'
+	testImplementation 'com.h2database:h2'
+	testImplementation group: 'com.intuit.karate', name: 'karate-junit5', version: '1.4.1'
+	testRuntimeOnly 'org.junit.platform:junit-platform-launcher'
+}
+
+tasks.named('test') {
+	useJUnitPlatform()
+	systemProperty "karate.options", System.properties.getProperty("karate.options")
+	systemProperty "karate.env", System.properties.getProperty("karate.env")
+	outputs.upToDateWhen { false }
+	testLogging.showStandardStreams = true
+}
+
+jacocoTestReport {
+	dependsOn test // tests are required to run before generating the report
+	reports {
+		xml.required = true
+		html.outputLocation = layout.buildDirectory.dir('jacocoHtml')
+		xml.outputLocation = layout.buildDirectory.dir('reports/').get().file('jacoco.xml')
+	}
+}
+
+sourceSets {
+	test {
+		resources {
+			srcDir file('src/test/java')
+			exclude '**/*.java'
+		}
+
+	}
+}
+
+tasks.withType(JavaCompile) {
+    options.compilerArgs << "-parameters"
+}

@@ -1,0 +1,24 @@
+{
+  "configurations": [
+    {
+      "type": "java",
+      "name": "WorkOrderProServiceApplication",
+      "request": "launch",
+      "cwd": "${workspaceFolder}",
+      "console": "internalConsole",
+      "mainClass": "com.wsu.workorderproservice.WorkOrderProServiceApplication",
+      "projectName": "work-order-pro-service",
+      "args": "",
+      "env": {
+        "SERVER_PORT": "8080",
+        "SERVER_CONTEXT_PATH": "/work-order-pro-service",
+        "DATABASE_URL": "jdbc:mariadb://host.docker.internal:3306/work_order_pro",
+        "DATABASE_USERNAME": "user",
+        "DATABASE_PASSWORD": "password",
+        "DATABASE_DRIVER": "org.mariadb.jdbc.Driver"
+        
+      }
+    }
+  ]
+}
+
