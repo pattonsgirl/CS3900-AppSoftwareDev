@@ -44,8 +44,8 @@ This outline is a proposed ordering.
 | 5 - Sept 23 | UX/UI - User Flows      | UX/UI - Wireframes    |
 | 6 - Sept 30 | Microservices | Microservices |
 | 7 - Oct 7   | Microservices | Microservices |
-| 8 - Oct 14  | Microservices | Unit testing  |
-| 9 - Oct 21  | Unit testing | Automation testing  |
+| 8 - Oct 14  | Microservices | Microservices |
+| 9 - Oct 21  | Unit testing | Unit testing  |
 | 10 - Oct 28 | Dev Ops - Pipelines     | Dev Ops - Pipelines   |
 | 11 - Nov 4  | Hand off day <br> Agile check-in   | Web Design    |
 | 12 - Nov 11 | Web Design  | Web Design     |
