@@ -1,6 +1,6 @@
 # Microservices - Assignment 4 - Build PUT Endpoints
 
-Create /customers/{customerId} PUT endpoint and complete /workOrders POST endpoint
+Create /customers/{customerId} PUT endpoint
 
 ## Purpose / Objectives
 
@@ -11,7 +11,23 @@ Create /customers/{customerId} PUT endpoint and complete /workOrders POST endpoi
 
 ## Assignment Description
 
-* Create /customers/{customerId} PUT endpoint and add proper bean validation.  
+* Create /customers/{customerId} PUT endpoint and add Bean Validation.
+  1. Add **updateCustomer** method in CustomerController.
+     ```
+     a) Pass customer id as PathVariable.
+     b) Apply Bean Validation by using @Valid annotation.
+     c) Call CustomerService update() method by passing customer Id & CustomerDTO.
+     d) Return ResponseEntity with HTTP Status 200 and updated CustomerDTO by building ServiceResponseDTO.
+     ```
+  2. Add **update** method in Customer Service class.
+     ```
+     a) If Customer does not exist by customer id then throw InvalidRequest Exception. (Call existsById method from Repository)
+     b) Add try-catch block (throw DatabaseErrorException when any exception occurs).
+     c) Convert CustomerDTO to Customer entity model class.
+     d) Set customer id on Customer entity model class.
+     e) Call CustomerRepository save() method by passing customer entity model class.
+     f) Convert Customer entity model class returned by CustomerRespository's save method in CustomerDTO class.
+     ```
 * The Request Body should be like below.
 ```
    {  
@@ -92,16 +108,10 @@ Create /customers/{customerId} PUT endpoint and complete /workOrders POST endpoi
       }  
   }
 ```
-    
-* Finish /workOrders POST endpoint and return response in expected format.
 
 ## Deliverable
 
 * Push /customers/{customerId} PUT endpoint into the Github repository.  
-* Push remaining changes of /workOrders POST endpoint into the Github repository.
-
-## Bonus Feature  
-	Create /customers/{customerID} DELETE endpoint to remove customer data from database, if it’s not associated with any work order.  
  
 ## Rubric
 
@@ -109,8 +119,7 @@ Microservices Assignment 4 Grading
 
 Score:  / 5 points
 
-- Create /customers PUT endpoint to update customer data in database, and return 200, 400 & 500 HTTP status response in given format. (2 pt)
-- Handle exception when customer doesn't exists then return 404 with valid message. (1 pt)  
-- Complete remaining changes of /workOrders POST endpoint to save work order in database, and return 200, 400 & 500 HTTP status response in given format. (2 pt)
+- Add **updateCustomer** method in CustomerController class as explained above in details . (2 pt)
+- Add **update** method in CustomerService class as explained above in details. (3 pt)
 
 Feedback: 
