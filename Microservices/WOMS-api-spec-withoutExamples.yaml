@@ -1,0 +1,565 @@
+openapi: 3.0.3
+info:
+  title: work-order-pro-service Copy
+  version: 1.0.0
+  contact: {}
+servers:
+  - url: 'http://localhost:8080/work-order-pro-service'
+paths:
+  /customers:
+    get:
+      tags:
+        - Customers
+      summary: Get Customers
+      description: Get Customers
+      operationId: getCustomers
+      parameters:
+        - name: search
+          in: query
+          schema:
+            type: string
+          description: >-
+            It's an optional and allow to search by customer firstName,
+            lastName, city, state, WorkOrder status
+        - name: page
+          in: query
+          schema:
+            type: string
+          description: It's optional (default value is 1)
+        - name: rpp
+          in: query
+          schema:
+            type: string
+          description: results per page is optional (default value is 10)
+        - name: sortOrder
+          in: query
+          schema:
+            type: string
+          description: sortOrder is an optional (default value is desc)
+        - name: sortField
+          in: query
+          schema:
+            type: string
+          description: sortField is an optional (default value is dateLastUpdated)
+      responses:
+        '200':
+          description: Success Response
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  data:
+                    type: array
+                    items:
+                      type: object
+                      properties:
+                        addressLine1:
+                          type: string
+                        addressLine2:
+                          type: string
+                        city:
+                          type: string
+                        dateAdded:
+                          type: string
+                        dateLastUpdated:
+                          type: string
+                        email:
+                          type: string
+                        firstName:
+                          type: string
+                        id:
+                          type: number
+                        lastName:
+                          type: string
+                        latestWorkOrderStatus:
+                          type: string
+                        phone:
+                          type: string
+                        state:
+                          type: string
+                        zip:
+                          type: string
+                  meta:
+                    type: object
+                    properties:
+                      message:
+                        type: string
+                      pageCount:
+                        type: number
+                      resultCount:
+                        type: number
+    post:
+      tags:
+        - Customers
+      summary: Add Customer
+      description: Add Customer
+      operationId: addCustomer
+      requestBody:
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                addressLine1:
+                  type: string
+                addressLine2:
+                  type: string
+                city:
+                  type: string
+                email:
+                  type: string
+                firstName:
+                  type: string
+                lastName:
+                  type: string
+                phone:
+                  type: string
+                state:
+                  type: string
+                zip:
+                  type: string
+      responses:
+        '200':
+          description: Success Response
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  data:
+                    type: object
+                    properties:
+                      addressLine1:
+                        type: string
+                      addressLine2:
+                        type: string
+                      city:
+                        type: string
+                      email:
+                        type: string
+                      firstName:
+                        type: string
+                      id:
+                        type: number
+                      lastName:
+                        type: string
+                      phoneNumber:
+                        type: string
+                      state:
+                        type: string
+                      zip:
+                        type: string
+                  meta:
+                    type: object
+                    properties:
+                      message:
+                        type: string
+  /customers/{id}:
+    put:
+      parameters:
+        - name: id
+          in: path
+          required: true
+          schema:
+            type: integer
+      tags:
+        - Customers
+      summary: Update Customer
+      description: Update Customer
+      operationId: updateCustomer
+      requestBody:
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                addressLine1:
+                  type: string
+                addressLine2:
+                  type: string
+                city:
+                  type: string
+                email:
+                  type: string
+                firstName:
+                  type: string
+                lastName:
+                  type: string
+                phone:
+                  type: string
+                state:
+                  type: string
+                zip:
+                  type: string
+      responses:
+        '200':
+          description: Success Response
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  data:
+                    type: object
+                    properties:
+                      addressLine1:
+                        type: string
+                      addressLine2:
+                        type: string
+                      city:
+                        type: string
+                      email:
+                        type: string
+                      firstName:
+                        type: string
+                      id:
+                        type: number
+                      lastName:
+                        type: string
+                      phoneNumber:
+                        type: string
+                      state:
+                        type: string
+                      zip:
+                        type: string
+                  meta:
+                    type: object
+                    properties:
+                      message:
+                        type: string
+    delete:
+      parameters:
+        - name: id
+          in: path
+          required: true
+          schema:
+            type: integer
+      tags:
+        - Customers
+      summary: Delete Customer
+      description: Delete Customer
+      operationId: deleteCustomer
+      responses:
+        '200':
+          description: Success Response
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  data:
+                    nullable: true
+                  meta:
+                    type: object
+                    properties:
+                      message:
+                        type: string
+  /technicians:
+    get:
+      tags:
+        - Technicians
+      summary: Get Technicians
+      description: Get Technicians
+      operationId: getTechnicians
+      parameters:
+        - name: search
+          in: query
+          schema:
+            type: string
+          description: >-
+            It's an optional and allow to typeahead search by technician
+            firstName, lastName, code, state, WorkOrder status, type
+        - name: page
+          in: query
+          schema:
+            type: string
+          description: It's optional (default value is 1)
+        - name: rpp
+          in: query
+          schema:
+            type: string
+          description: results per page is optional (default value is 10)
+        - name: sortOrder
+          in: query
+          schema:
+            type: string
+          description: sortOrder is an optional (default value is desc)
+        - name: sortField
+          in: query
+          schema:
+            type: string
+          description: sortField is an optional (default value is technician code)
+      responses:
+        '200':
+          description: Success Response
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  data:
+                    type: array
+                    items:
+                      type: object
+                      properties:
+                        code:
+                          type: string
+                        firstName:
+                          type: string
+                        lastName:
+                          type: string
+                        latestWorkOrderStatus:
+                          type: string
+                        type:
+                          type: string
+                        workPermits:
+                          items:
+                            type: object 
+                            properties:
+                              code:
+                                type: string
+                  meta:
+                    type: object
+                    properties:
+                      message:
+                        type: string
+                      pageCount:
+                        type: number
+                      resultCount:
+                        type: number
+    post:
+      tags:
+        - Technicians
+      summary: Add Technician
+      description: Add Technician
+      operationId: addTechnician
+      requestBody:
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                code:
+                  type: string
+                firstName:
+                  type: string
+                lastName:
+                  type: string
+                type:
+                  type: string
+                workPermits:
+                  type: array
+                  items:
+                    type: object
+                    properties:
+                      code:
+                        type: string
+      responses:
+        '201':
+          description: Success Response
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  data:
+                    type: object
+                    properties:
+                      code:
+                        type: string
+                      firstName:
+                        type: string
+                      lastName:
+                        type: string
+                      type:
+                        type: string
+                      workPermits:
+                        type: array
+                        items:
+                          type: object
+                          properties:
+                            code:
+                              type: string
+                            name:
+                              type: string
+                  meta:
+                    type: object
+                    properties:
+                      message:
+                        type: string
+  /technicians/{technicianCode}:
+    put:
+      parameters:
+        - name: technicianCode
+          in: path
+          required: true
+          schema:
+            type: string
+      tags:
+        - Technicians
+      summary: Update Technician
+      description: Update Technician
+      operationId: updateTechnician
+      requestBody:
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                firstName:
+                  type: string
+                lastName:
+                  type: string
+                type:
+                  type: string
+                workPermits:
+                  type: array
+                  items:
+                    type: object
+                    properties:
+                      code:
+                        type: string
+      responses:
+        '200':
+          description: Success Response / Success Response - when remove state
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  data:
+                    type: object
+                    properties:
+                      code:
+                        type: string
+                      firstName:
+                        type: string
+                      lastName:
+                        type: string
+                      type:
+                        type: string
+                      workPermits:
+                        type: array
+                        items:
+                          type: object
+                          properties:
+                            code:
+                              type: string
+                            name:
+                              type: string
+                  meta:
+                    type: object
+                    properties:
+                      message:
+                        type: string
+    delete:
+      parameters:
+        - name: technicianCode
+          in: path
+          required: true
+          schema:
+            type: string
+      tags:
+        - Technicians
+      summary: Delete Technician
+      description: Delete Technician
+      operationId: deleteTechnician
+      responses:
+        '200':
+          description: Success Response
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  data:
+                    nullable: true
+                  meta:
+                    type: object
+                    properties:
+                      message:
+                        type: string
+  /states:
+    get:
+      tags:
+        - States
+      summary: Get States
+      description: Get States
+      operationId: getStates
+      parameters:
+        - name: search
+          in: query
+          schema:
+            type: string
+          description: It's an optional and allow typeahead search by state code & name
+      responses:
+        '200':
+          description: Success Response
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  data:
+                    type: array
+                    items:
+                      type: object
+                      properties:
+                        code:
+                          type: string
+                        name:
+                          type: string
+                  meta:
+                    type: object
+                    properties:
+                      message:
+                        type: string
+  /products:
+    get:
+      tags:
+        - Products
+      summary: Get Products
+      description: Get Products
+      operationId: getProducts
+      parameters:
+        - name: isActive
+          in: query
+          schema:
+            type: string
+          description: It's optional and used to filter only active products
+      responses:
+        '200':
+          description: Success Response
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  data:
+                    type: array
+                    items:
+                      type: object
+                      properties:
+                        active:
+                          type: boolean
+                        code:
+                          type: string
+                        name:
+                          type: string
+                        typeCode:
+                          type: string
+                        unitCost:
+                          type: number
+                        universalProductCode:
+                          type: string
+                  meta:
+                    type: object
+                    properties:
+                      message:
+                        type: string
+tags:
+  - name: Customers
+  - name: Technicians
+  - name: States
+  - name: Products

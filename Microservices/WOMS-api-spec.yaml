@@ -683,8 +683,14 @@ paths:
                         (customer_address_1,customer_address_2,customer_city,customer_email_address,customer_first_names,customer_last_name,customer_phone,customer_state,customer_zip)
                         values (?,?,?,?,?,?,?,?,?) returning customer_id]
                       message: Failed to create new customer
-  /customers/503:
+  /customers/{id}:
     put:
+      parameters:
+        - name: id
+          in: path
+          required: true
+          schema:
+            type: integer
       tags:
         - Customers
       summary: Update Customer
@@ -898,8 +904,14 @@ paths:
                           rejectedValue: ''
                     meta:
                       message: Validation Error
-  /customers/502:
+
     delete:
+      parameters:
+        - name: id
+          in: path
+          required: true
+          schema:
+            type: integer
       tags:
         - Customers
       summary: Delete Customer
@@ -1450,8 +1462,14 @@ paths:
                         with id OH1 Unable to find
                         com.wsu.workorderproservice.model.State with id OH1
                       message: Failed to add technician.
-  /technicians/TECH01:
+  /technicians/{technicianCode}:
     put:
+      parameters:
+        - name: technicianCode
+          in: path
+          required: true
+          schema:
+            type: string
       tags:
         - Technicians
       summary: Update Technician
@@ -1694,6 +1712,12 @@ paths:
                         com.wsu.workorderproservice.model.State with id NJ1
                       message: Failed to update technician
     delete:
+      parameters:
+        - name: technicianCode
+          in: path
+          required: true
+          schema:
+            type: string
       tags:
         - Technicians
       summary: Delete Technician
