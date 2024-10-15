@@ -13,17 +13,17 @@ Create `/customers/{customerId}` PUT endpoint
 
 * Create /customers/{customerId} PUT endpoint and add Bean Validation.
   1. Add **updateCustomer** method in CustomerController.
-     a) Pass customer id as PathVariable.
-     b) Apply Bean Validation by using @Valid annotation.
-     c) Call CustomerService update() method by passing customer Id & CustomerDTO.
-     d) Return ResponseEntity with HTTP Status 200 and updated CustomerDTO by building ServiceResponseDTO.
+     1. Pass customer id as PathVariable.
+     2. Apply Bean Validation by using @Valid annotation.
+     3. Call CustomerService update() method by passing customer Id & CustomerDTO.
+     4. Return ResponseEntity with HTTP Status 200 and updated CustomerDTO by building ServiceResponseDTO.
   2. Add **update** method in Customer Service class.
-     a) If Customer does not exist by customer id then throw InvalidRequest Exception. (Call existsById method from Repository)
-     b) Add try-catch block (throw DatabaseErrorException when any exception occurs).
-     c) Convert CustomerDTO to Customer entity model class.
-     d) Set customer id on Customer entity model class.
-     e) Call CustomerRepository save() method by passing customer entity model class.
-     f) Convert Customer entity model class returned by CustomerRespository's save method in CustomerDTO class.
+     1. If Customer does not exist by customer id then throw InvalidRequest Exception. (Call existsById method from Repository)
+     2. Add try-catch block (throw DatabaseErrorException when any exception occurs).
+     3. Convert CustomerDTO to Customer entity model class.
+     4. Set customer id on Customer entity model class.
+     5. Call CustomerRepository save() method by passing customer entity model class.
+     6. Convert Customer entity model class returned by CustomerRespository's save method in CustomerDTO class.
 * The Request Body should be like below.
 ```
    {  
