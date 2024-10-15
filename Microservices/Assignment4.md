@@ -11,7 +11,7 @@ Create `/customers/{customerId}` PUT endpoint
 
 ## Assignment Description
 
-* Create /customers/{customerId} PUT endpoint and add Bean Validation.
+* Create `/customers/{customerId}` PUT endpoint and add Bean Validation.
   1. Add **updateCustomer** method in CustomerController.
      1. Pass customer id as PathVariable.
      2. Apply Bean Validation by using @Valid annotation.
