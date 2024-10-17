@@ -1,4 +1,4 @@
-# # Microservices - Assignment 6 - Group Project Planning
+# Microservices - Assignment 6 - Group Project Planning
 
 ## Purpose / Objectives
 
