@@ -1,4 +1,4 @@
-# # Microservices - Assignment 7 - Endpoint Implementation Planning
+# Microservices - Assignment 7 - Endpoint Implementation Planning
 
 ## Purpose / Objectives
 
