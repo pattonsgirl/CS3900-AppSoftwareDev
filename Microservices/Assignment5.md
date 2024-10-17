@@ -1,7 +1,7 @@
-# Microservices - Assignment 5 - Finalizing Endpoints
+# Microservices - Assignment 5 
 
-Create /customers/{id} DELETE endpoint
-Create WorkOrderDTO & WorkOrderLineItemDTO and use them instead of entity model class
+* Create /customers/{id} DELETE endpoint
+* Create WorkOrderDTO & WorkOrderLineItemDTO and use them instead of entity model class
 
 ## Purpose / Objectives
 
@@ -39,19 +39,21 @@ Create WorkOrderDTO & WorkOrderLineItemDTO and use them instead of entity model 
        - BigDecimal unitCost
        - Boolean taxable
        - BigDecimal tax
-  2. Convert the **addWorkOrder()** to have a WorkOrderDTO in the method parameters as a @RequestBody instead of a WorkOrder entity class in the controller. 
-       1. Make sure the WorkOrderDTO passed in as a request body is passed to the WorkOrderService to process the request and add the Valid annotaion. 
-  3. Convert the **add()** method to have a WorkOrderDTO inside of the method parameters instead of the WorkOrderPro entity class in the service.
-       1. Transform the WorkOrderDTO to a WorkOrder entity class in order to use the workOrderRepository to save the new entity.
-       2. Convert the **add()** method to return a WorkOrderDTO instead of a WorkOrder entity model class. 
-       3. Once the newly saved WorkOrder entity object is saved, map the returned WorkOrder object to a WorkOrderDTO object and return it.
-  4.  Convert the **updateWorkOrder()** method to have a WorkOrderDTO inside of the method parameters instead of the WorkOrderPro entity class in the service.
-       1. Make sure the WorkOrderDTO passed in as a request body is passed to the WorkOrderService to process the request.
-  5. Convert the **update()** method to have a WorkOrderDTO inside of the method parameters instead of the WorkOrderPro entity class in the service.
-       1. Transform the WorkOrderDTO to a WorkOrder entity class in order to use the workOrderRepository to save the new entity.
-       2. Convert the **update()** method to return a WorkOrderDTO instead of a WorkOrder entity model class.
-       3. Once the newly updated WorkOrder entity object is saved, map the returned WorkOrder object to a WorkOrderDTO object and return it.
-
+2. Convert the **addWorkOrder()** to have a WorkOrderDTO in the method parameters as a @RequestBody instead of a WorkOrder entity class in the controller. 
+    1. Make sure the WorkOrderDTO passed in as a request body is passed to the WorkOrderService to process the request and add the Valid annotaion. 
+3. Convert the **add()** method to have a WorkOrderDTO inside of the method parameters instead of the WorkOrder entity class in the service.
+    1. Transform the WorkOrderDTO to a WorkOrder entity class in order to use the workOrderRepository to save the new entity.
+    2. Convert the **add()** method to return a WorkOrderDTO instead of a WorkOrder entity model class. 
+    3. Once the newly saved WorkOrder entity object is saved, map the returned WorkOrder object to a WorkOrderDTO object and return it.
+4.  Convert the **updateWorkOrder()** method to have a WorkOrderDTO inside of the method parameters instead of the WorkOrder entity class in the service.
+    1. Make sure the WorkOrderDTO passed in as a request body is passed to the WorkOrderService to process the request.
+5. Convert the **update()** method to have a WorkOrderDTO inside of the method parameters instead of the WorkOrder entity class in the service.
+    1. Transform the WorkOrderDTO to a WorkOrder entity class in order to use the workOrderRepository to save the new entity.
+    2. Convert the **update()** method to return a WorkOrderDTO instead of a WorkOrder entity model class.
+    3. Once the newly updated WorkOrder entity object is saved, map the returned WorkOrder object to a WorkOrderDTO object and return it.
+6. Convert the **get()** method to return a WorkOrderDTO inside of the response instead of the WorkOrder entity class in the service.
+    1. Make sure the WorkOrder and WorkOrderLineItem that is retrieved from the database are mapped to the corresponding DTOs before returning.
+    2. Convert the return type of the **get()** method to WorkOrderDTO from WorkOrder. 
 
 ## Deliverable
 
