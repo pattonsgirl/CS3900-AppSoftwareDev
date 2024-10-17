@@ -2361,8 +2361,951 @@ paths:
                         universalProductCode: ''
                     meta:
                       message: Products retrieved successfully.
+  /workOrderSummaries:
+    get:
+      tags:
+        - WorkOrders
+      summary: Get Summary
+      description: Get Summary
+      operationId: getSummary
+      parameters:
+        - name: customerLastName
+          in: query
+          schema:
+            type: string
+            example: Madarang
+        - name: technicianLastName
+          in: query
+          schema:
+            type: string
+            example: Asar
+        - name: workOrderStatus
+          in: query
+          schema:
+            type: string
+            example: Completed
+        - name: page
+          in: query
+          schema:
+            type: string
+            example: '1'
+        - name: rpp
+          in: query
+          schema:
+            type: string
+            example: '15'
+        - name: sortOrder
+          in: query
+          schema:
+            type: string
+            example: asc
+        - name: sortField
+          in: query
+          schema:
+            type: string
+            example: customerFirstName
+      responses:
+        '200':
+          description: SuccessResponse
+          headers:
+            Connection:
+              schema:
+                type: string
+                example: keep-alive
+            Date:
+              schema:
+                type: string
+                example: Thu, 17 Oct 2024 00:47:54 GMT
+            Keep-Alive:
+              schema:
+                type: string
+                example: timeout=60
+            Transfer-Encoding:
+              schema:
+                type: string
+                example: chunked
+            Vary:
+              schema:
+                type: string
+                example: Access-Control-Request-Headers
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  data:
+                    type: array
+                    items:
+                      type: object
+                      properties:
+                        customerFirstName:
+                          type: string
+                          example: Kimbery
+                        customerLastName:
+                          type: string
+                          example: Madarang
+                        dateLastUpdated:
+                          type: string
+                          example: '2024-09-03T16:00:00.000+00:00'
+                        dateScheduled:
+                          type: string
+                          example: '2024-09-03T04:00:00.000+00:00'
+                        technicianCode:
+                          type: string
+                          example: T10482
+                        technicianFirstName:
+                          type: string
+                          example: Mona
+                        technicianLastName:
+                          type: string
+                          example: Delasancha
+                        workOrderNumber:
+                          type: number
+                          example: 147875
+                        workOrderStatus:
+                          type: string
+                          example: Unscheduled
+                    example:
+                      - customerFirstName: Kimbery
+                        customerLastName: Madarang
+                        dateLastUpdated: '2024-09-03T16:00:00.000+00:00'
+                        dateScheduled: '2024-09-03T04:00:00.000+00:00'
+                        technicianCode: T10482
+                        technicianFirstName: Mona
+                        technicianLastName: Delasancha
+                        workOrderNumber: 147875
+                        workOrderStatus: Unscheduled
+                      - customerFirstName: Tonette
+                        customerLastName: Wenner
+                        dateLastUpdated: '2024-09-03T16:00:00.000+00:00'
+                        dateScheduled: '2024-09-03T04:00:00.000+00:00'
+                        technicianCode: T10482
+                        technicianFirstName: Mona
+                        technicianLastName: Delasancha
+                        workOrderNumber: 147874
+                        workOrderStatus: Unscheduled
+                      - customerFirstName: Jennie
+                        customerLastName: Drymon
+                        dateLastUpdated: '2024-09-03T16:00:00.000+00:00'
+                        dateScheduled: '2024-09-03T04:00:00.000+00:00'
+                        technicianCode: T10481
+                        technicianFirstName: Shawnda
+                        technicianLastName: Yori
+                        workOrderNumber: 147872
+                        workOrderStatus: Unscheduled
+                      - customerFirstName: Laticia
+                        customerLastName: Merced
+                        dateLastUpdated: '2024-09-03T16:00:00.000+00:00'
+                        dateScheduled: '2024-09-03T04:00:00.000+00:00'
+                        technicianCode: T10481
+                        technicianFirstName: Shawnda
+                        technicianLastName: Yori
+                        workOrderNumber: 147869
+                        workOrderStatus: Unscheduled
+                      - customerFirstName: Micaela
+                        customerLastName: Rhymes
+                        dateLastUpdated: '2024-09-03T16:00:00.000+00:00'
+                        dateScheduled: '2024-09-03T04:00:00.000+00:00'
+                        technicianCode: T10481
+                        technicianFirstName: Shawnda
+                        technicianLastName: Yori
+                        workOrderNumber: 147868
+                        workOrderStatus: Cancelled
+                      - customerFirstName: Herminia
+                        customerLastName: Nicolozakes
+                        dateLastUpdated: '2024-09-03T16:00:00.000+00:00'
+                        dateScheduled: '2024-09-03T04:00:00.000+00:00'
+                        technicianCode: T10482
+                        technicianFirstName: Mona
+                        technicianLastName: Delasancha
+                        workOrderNumber: 147877
+                        workOrderStatus: Cancelled
+                      - customerFirstName: Dick
+                        customerLastName: Wenzinger
+                        dateLastUpdated: '2024-09-02T16:00:00.000+00:00'
+                        dateScheduled: '2024-09-02T04:00:00.000+00:00'
+                        technicianCode: T10481
+                        technicianFirstName: Shawnda
+                        technicianLastName: Yori
+                        workOrderNumber: 147748
+                        workOrderStatus: Unscheduled
+                      - customerFirstName: Ashlyn
+                        customerLastName: Pinilla
+                        dateLastUpdated: '2024-09-02T16:00:00.000+00:00'
+                        dateScheduled: '2024-09-02T04:00:00.000+00:00'
+                        technicianCode: T10481
+                        technicianFirstName: Shawnda
+                        technicianLastName: Yori
+                        workOrderNumber: 147745
+                        workOrderStatus: Unscheduled
+                      - customerFirstName: Garry
+                        customerLastName: Keetch
+                        dateLastUpdated: '2024-09-02T16:00:00.000+00:00'
+                        dateScheduled: '2024-09-02T04:00:00.000+00:00'
+                        technicianCode: T10481
+                        technicianFirstName: Shawnda
+                        technicianLastName: Yori
+                        workOrderNumber: 147746
+                        workOrderStatus: Cancelled
+                      - customerFirstName: Ammie
+                        customerLastName: Corrio
+                        dateLastUpdated: '2024-09-02T16:00:00.000+00:00'
+                        dateScheduled: '2024-09-02T04:00:00.000+00:00'
+                        technicianCode: T10482
+                        technicianFirstName: Mona
+                        technicianLastName: Delasancha
+                        workOrderNumber: 147749
+                        workOrderStatus: Unscheduled
+                  meta:
+                    type: object
+                    properties:
+                      message:
+                        type: string
+                        example: WorkOrder Summaries retrieved successfully.
+                      pageCount:
+                        type: number
+                        example: 256
+                      resultCount:
+                        type: number
+                        example: 2560
+              examples:
+                SuccessResponse:
+                  value:
+                    data:
+                      - customerFirstName: Kimbery
+                        customerLastName: Madarang
+                        dateLastUpdated: '2024-09-03T16:00:00.000+00:00'
+                        dateScheduled: '2024-09-03T04:00:00.000+00:00'
+                        technicianCode: T10482
+                        technicianFirstName: Mona
+                        technicianLastName: Delasancha
+                        workOrderNumber: 147875
+                        workOrderStatus: Unscheduled
+                      - customerFirstName: Tonette
+                        customerLastName: Wenner
+                        dateLastUpdated: '2024-09-03T16:00:00.000+00:00'
+                        dateScheduled: '2024-09-03T04:00:00.000+00:00'
+                        technicianCode: T10482
+                        technicianFirstName: Mona
+                        technicianLastName: Delasancha
+                        workOrderNumber: 147874
+                        workOrderStatus: Unscheduled
+                      - customerFirstName: Jennie
+                        customerLastName: Drymon
+                        dateLastUpdated: '2024-09-03T16:00:00.000+00:00'
+                        dateScheduled: '2024-09-03T04:00:00.000+00:00'
+                        technicianCode: T10481
+                        technicianFirstName: Shawnda
+                        technicianLastName: Yori
+                        workOrderNumber: 147872
+                        workOrderStatus: Unscheduled
+                      - customerFirstName: Laticia
+                        customerLastName: Merced
+                        dateLastUpdated: '2024-09-03T16:00:00.000+00:00'
+                        dateScheduled: '2024-09-03T04:00:00.000+00:00'
+                        technicianCode: T10481
+                        technicianFirstName: Shawnda
+                        technicianLastName: Yori
+                        workOrderNumber: 147869
+                        workOrderStatus: Unscheduled
+                      - customerFirstName: Micaela
+                        customerLastName: Rhymes
+                        dateLastUpdated: '2024-09-03T16:00:00.000+00:00'
+                        dateScheduled: '2024-09-03T04:00:00.000+00:00'
+                        technicianCode: T10481
+                        technicianFirstName: Shawnda
+                        technicianLastName: Yori
+                        workOrderNumber: 147868
+                        workOrderStatus: Cancelled
+                      - customerFirstName: Herminia
+                        customerLastName: Nicolozakes
+                        dateLastUpdated: '2024-09-03T16:00:00.000+00:00'
+                        dateScheduled: '2024-09-03T04:00:00.000+00:00'
+                        technicianCode: T10482
+                        technicianFirstName: Mona
+                        technicianLastName: Delasancha
+                        workOrderNumber: 147877
+                        workOrderStatus: Cancelled
+                      - customerFirstName: Dick
+                        customerLastName: Wenzinger
+                        dateLastUpdated: '2024-09-02T16:00:00.000+00:00'
+                        dateScheduled: '2024-09-02T04:00:00.000+00:00'
+                        technicianCode: T10481
+                        technicianFirstName: Shawnda
+                        technicianLastName: Yori
+                        workOrderNumber: 147748
+                        workOrderStatus: Unscheduled
+                      - customerFirstName: Ashlyn
+                        customerLastName: Pinilla
+                        dateLastUpdated: '2024-09-02T16:00:00.000+00:00'
+                        dateScheduled: '2024-09-02T04:00:00.000+00:00'
+                        technicianCode: T10481
+                        technicianFirstName: Shawnda
+                        technicianLastName: Yori
+                        workOrderNumber: 147745
+                        workOrderStatus: Unscheduled
+                      - customerFirstName: Garry
+                        customerLastName: Keetch
+                        dateLastUpdated: '2024-09-02T16:00:00.000+00:00'
+                        dateScheduled: '2024-09-02T04:00:00.000+00:00'
+                        technicianCode: T10481
+                        technicianFirstName: Shawnda
+                        technicianLastName: Yori
+                        workOrderNumber: 147746
+                        workOrderStatus: Cancelled
+                      - customerFirstName: Ammie
+                        customerLastName: Corrio
+                        dateLastUpdated: '2024-09-02T16:00:00.000+00:00'
+                        dateScheduled: '2024-09-02T04:00:00.000+00:00'
+                        technicianCode: T10482
+                        technicianFirstName: Mona
+                        technicianLastName: Delasancha
+                        workOrderNumber: 147749
+                        workOrderStatus: Unscheduled
+                    meta:
+                      message: WorkOrder Summaries retrieved successfully.
+                      pageCount: 256
+                      resultCount: 2560
+  /workOrders/{WORK_ORDER_NUMBER}:
+    get:
+      tags:
+        - WorkOrders
+      summary: Get WorkOrder Details
+      description: Get WorkOrder Details
+      operationId: getWorkorderDetails
+      responses:
+        '200':
+          description: Success Response
+          headers:
+            Connection:
+              schema:
+                type: string
+                example: keep-alive
+            Date:
+              schema:
+                type: string
+                example: Thu, 17 Oct 2024 13:02:01 GMT
+            Keep-Alive:
+              schema:
+                type: string
+                example: timeout=60
+            Transfer-Encoding:
+              schema:
+                type: string
+                example: chunked
+            Vary:
+              schema:
+                type: string
+                example: Access-Control-Request-Headers
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  data:
+                    type: object
+                    properties:
+                      customerId:
+                        type: number
+                        example: 77
+                      dateOrdered:
+                        type: string
+                        example: '2023-12-01T05:00:00.000+00:00'
+                      dateTimeCompleted:
+                        type: string
+                        example: '2023-12-04'
+                      dateTimeLastUpdated:
+                        type: string
+                        example: '2023-12-04'
+                      dateTimeScheduled:
+                        type: string
+                        example: '2023-12-04'
+                      lineItems:
+                        type: array
+                        items:
+                          type: object
+                          properties:
+                            quantity:
+                              type: number
+                              example: 1
+                            skuCode:
+                              type: string
+                              example: '348981'
+                            tax:
+                              type: number
+                              example: 7.25
+                            taxable:
+                              type: boolean
+                              example: true
+                            unitCost:
+                              type: number
+                              example: 135
+                            workOrderNumber:
+                              type: number
+                              example: 118571
+                        example:
+                          - quantity: 1
+                            skuCode: '348981'
+                            tax: 7.25
+                            taxable: true
+                            unitCost: 135
+                            workOrderNumber: 118571
+                          - quantity: 1
+                            skuCode: '348986'
+                            tax: 5
+                            taxable: true
+                            unitCost: 90
+                            workOrderNumber: 118571
+                          - quantity: 1
+                            skuCode: '348982'
+                            tax: 2.25
+                            taxable: true
+                            unitCost: 35
+                            workOrderNumber: 118571
+                      statusCode:
+                        type: string
+                        example: CP
+                      technicianCode:
+                        type: string
+                        example: T10481
+                      workOrderNumber:
+                        type: number
+                        example: 118571
+                  meta:
+                    type: object
+                    properties:
+                      message:
+                        type: string
+                        example: Work Order retrieved successfully.
+              examples:
+                Success Response:
+                  value:
+                    data:
+                      customerId: 77
+                      dateOrdered: '2023-12-01T05:00:00.000+00:00'
+                      dateTimeCompleted: '2023-12-04'
+                      dateTimeLastUpdated: '2023-12-04'
+                      dateTimeScheduled: '2023-12-04'
+                      lineItems:
+                        - quantity: 1
+                          skuCode: '348981'
+                          tax: 7.25
+                          taxable: true
+                          unitCost: 135
+                          workOrderNumber: 118571
+                        - quantity: 1
+                          skuCode: '348986'
+                          tax: 5
+                          taxable: true
+                          unitCost: 90
+                          workOrderNumber: 118571
+                        - quantity: 1
+                          skuCode: '348982'
+                          tax: 2.25
+                          taxable: true
+                          unitCost: 35
+                          workOrderNumber: 118571
+                      statusCode: CP
+                      technicianCode: T10481
+                      workOrderNumber: 118571
+                    meta:
+                      message: Work Order retrieved successfully.
+        '400':
+          description: Invalid WorkOrder Number
+          headers:
+            Connection:
+              schema:
+                type: string
+                example: close
+            Date:
+              schema:
+                type: string
+                example: Thu, 17 Oct 2024 00:49:24 GMT
+            Transfer-Encoding:
+              schema:
+                type: string
+                example: chunked
+            Vary:
+              schema:
+                type: string
+                example: Access-Control-Request-Headers
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  data:
+                    nullable: true
+                    example: null
+                  meta:
+                    type: object
+                    properties:
+                      message:
+                        type: string
+                        example: Invalid WorkOrder number
+              examples:
+                Invalid WorkOrder Number:
+                  value:
+                    data: null
+                    meta:
+                      message: Invalid WorkOrder number
+    put:
+      tags:
+        - WorkOrders
+      summary: Update WorkOrder
+      description: Update WorkOrder
+      operationId: updateWorkorder
+      requestBody:
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                customerId:
+                  type: number
+                  example: 77
+                dateOrdered:
+                  type: string
+                  example: '2024-10-17'
+                dateTimeCompleted:
+                  type: string
+                  example: '2024-10-17'
+                lineItems:
+                  type: array
+                  items:
+                    type: object
+                    properties:
+                      quantity:
+                        type: number
+                        example: 1
+                      skuCode:
+                        type: string
+                        example: '348986'
+                      tax:
+                        type: number
+                        example: 5
+                      taxable:
+                        type: boolean
+                        example: true
+                      unitCost:
+                        type: number
+                        example: 90
+                  example:
+                    - quantity: 1
+                      skuCode: '348986'
+                      tax: 5
+                      taxable: true
+                      unitCost: 90
+                    - quantity: 2
+                      skuCode: '348981'
+                      tax: 14.5
+                      taxable: true
+                      unitCost: 135
+                statusCode:
+                  type: string
+                  example: CP
+                technicianCode:
+                  type: string
+                  example: T10481
+            examples:
+              Update WorkOrder:
+                value:
+                  customerId: 77
+                  dateOrdered: '2024-10-17'
+                  dateTimeCompleted: '2024-10-17'
+                  lineItems:
+                    - quantity: 1
+                      skuCode: '348986'
+                      tax: 5
+                      taxable: true
+                      unitCost: 90
+                    - quantity: 2
+                      skuCode: '348981'
+                      tax: 14.5
+                      taxable: true
+                      unitCost: 135
+                  statusCode: CP
+                  technicianCode: T10481
+      responses:
+        '200':
+          description: Success Response / Remove Line Item / Add Line Item
+          headers:
+            Connection:
+              schema:
+                type: string
+                example: keep-alive
+            Date:
+              schema:
+                type: string
+                example: Thu, 17 Oct 2024 13:41:40 GMT
+            Keep-Alive:
+              schema:
+                type: string
+                example: timeout=60
+            Transfer-Encoding:
+              schema:
+                type: string
+                example: chunked
+            Vary:
+              schema:
+                type: string
+                example: Access-Control-Request-Headers
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  data:
+                    type: object
+                    properties:
+                      customerId:
+                        type: number
+                        example: 77
+                      dateOrdered:
+                        type: string
+                        example: '2024-10-17T00:00:00.000+00:00'
+                      dateTimeCompleted:
+                        type: string
+                        example: '2024-10-17'
+                      dateTimeLastUpdated:
+                        type: string
+                        example: '2024-10-17'
+                      dateTimeScheduled:
+                        nullable: true
+                        example: null
+                      lineItems:
+                        type: array
+                        items:
+                          type: object
+                          properties:
+                            quantity:
+                              type: number
+                              example: 2
+                            skuCode:
+                              type: string
+                              example: '348981'
+                            tax:
+                              type: number
+                              example: 14.5
+                            taxable:
+                              type: boolean
+                              example: true
+                            unitCost:
+                              type: number
+                              example: 135
+                            workOrderNumber:
+                              type: number
+                              example: 147896
+                        example:
+                          - quantity: 2
+                            skuCode: '348981'
+                            tax: 14.5
+                            taxable: true
+                            unitCost: 135
+                            workOrderNumber: 147896
+                          - quantity: 1
+                            skuCode: '348986'
+                            tax: 5
+                            taxable: true
+                            unitCost: 90
+                            workOrderNumber: 147896
+                      statusCode:
+                        type: string
+                        example: CP
+                      technicianCode:
+                        type: string
+                        example: T10481
+                      workOrderNumber:
+                        type: number
+                        example: 147896
+                  meta:
+                    type: object
+                    properties:
+                      message:
+                        type: string
+                        example: WorkOrder updated successfully.
+              examples:
+                Add Line Item:
+                  value:
+                    data:
+                      customerId: 77
+                      dateOrdered: '2024-10-17T00:00:00.000+00:00'
+                      dateTimeCompleted: '2024-10-17'
+                      dateTimeLastUpdated: '2024-10-17'
+                      dateTimeScheduled: null
+                      lineItems:
+                        - quantity: 2
+                          skuCode: '348981'
+                          tax: 14.5
+                          taxable: true
+                          unitCost: 135
+                          workOrderNumber: 147896
+                        - quantity: 1
+                          skuCode: '348986'
+                          tax: 5
+                          taxable: true
+                          unitCost: 90
+                          workOrderNumber: 147896
+                      statusCode: CP
+                      technicianCode: T10481
+                      workOrderNumber: 147896
+                    meta:
+                      message: WorkOrder updated successfully.
+                Remove Line Item:
+                  value:
+                    data:
+                      customerId: 77
+                      dateOrdered: '2024-10-17T00:00:00.000+00:00'
+                      dateTimeCompleted: '2024-10-17'
+                      dateTimeLastUpdated: '2024-10-17'
+                      dateTimeScheduled: null
+                      lineItems:
+                        - quantity: 1
+                          skuCode: '348986'
+                          tax: 5
+                          taxable: true
+                          unitCost: 90
+                          workOrderNumber: 147896
+                      statusCode: CP
+                      technicianCode: T10481
+                      workOrderNumber: 147896
+                    meta:
+                      message: WorkOrder updated successfully.
+                Success Response:
+                  value:
+                    data:
+                      customerId: 77
+                      dateOrdered: '2024-10-17T00:00:00.000+00:00'
+                      dateTimeCompleted: '2024-10-17'
+                      dateTimeLastUpdated: '2024-10-17'
+                      dateTimeScheduled: null
+                      lineItems:
+                        - quantity: 2
+                          skuCode: '348981'
+                          tax: 14.5
+                          taxable: true
+                          unitCost: 135
+                          workOrderNumber: 147896
+                        - quantity: 1
+                          skuCode: '348986'
+                          tax: 5
+                          taxable: true
+                          unitCost: 90
+                          workOrderNumber: 147896
+                      statusCode: CP
+                      technicianCode: T10481
+                      workOrderNumber: 147896
+                    meta:
+                      message: WorkOrder updated successfully.
+    parameters:
+      - name: WORK_ORDER_NUMBER
+        in: path
+        required: true
+        schema:
+          type: string
+  /workOrders:
+    post:
+      tags:
+        - WorkOrders
+      summary: Add WorkOrder
+      description: Add WorkOrder
+      operationId: addWorkorder
+      requestBody:
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                customerId:
+                  type: number
+                  example: 77
+                dateOrdered:
+                  type: string
+                  example: '2024-10-17'
+                lineItems:
+                  type: array
+                  items:
+                    type: object
+                    properties:
+                      quantity:
+                        type: number
+                        example: 1
+                      skuCode:
+                        type: string
+                        example: '348986'
+                      tax:
+                        type: number
+                        example: 5
+                      taxable:
+                        type: boolean
+                        example: true
+                      unitCost:
+                        type: number
+                        example: 90
+                  example:
+                    - quantity: 1
+                      skuCode: '348986'
+                      tax: 5
+                      taxable: true
+                      unitCost: 90
+                    - quantity: 2
+                      skuCode: '348981'
+                      tax: 14.5
+                      taxable: true
+                      unitCost: 135
+                statusCode:
+                  type: string
+                  example: UN
+                technicianCode:
+                  type: string
+                  example: T10481
+            examples:
+              Add WorkOrder:
+                value:
+                  customerId: 77
+                  dateOrdered: '2024-10-17'
+                  lineItems:
+                    - quantity: 1
+                      skuCode: '348986'
+                      tax: 5
+                      taxable: true
+                      unitCost: 90
+                    - quantity: 2
+                      skuCode: '348981'
+                      tax: 14.5
+                      taxable: true
+                      unitCost: 135
+                  statusCode: UN
+                  technicianCode: T10481
+      responses:
+        '201':
+          description: Success Response
+          headers:
+            Connection:
+              schema:
+                type: string
+                example: keep-alive
+            Date:
+              schema:
+                type: string
+                example: Thu, 17 Oct 2024 13:21:29 GMT
+            Keep-Alive:
+              schema:
+                type: string
+                example: timeout=60
+            Transfer-Encoding:
+              schema:
+                type: string
+                example: chunked
+            Vary:
+              schema:
+                type: string
+                example: Access-Control-Request-Headers
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  data:
+                    type: object
+                    properties:
+                      customerId:
+                        type: number
+                        example: 77
+                      dateOrdered:
+                        type: string
+                        example: '2024-10-17T00:00:00.000+00:00'
+                      dateTimeCompleted:
+                        nullable: true
+                        example: null
+                      dateTimeLastUpdated:
+                        nullable: true
+                        example: null
+                      dateTimeScheduled:
+                        nullable: true
+                        example: null
+                      lineItems:
+                        type: array
+                        items:
+                          type: object
+                          properties:
+                            quantity:
+                              type: number
+                              example: 1
+                            skuCode:
+                              type: string
+                              example: '348986'
+                            tax:
+                              type: number
+                              example: 5
+                            taxable:
+                              type: boolean
+                              example: true
+                            unitCost:
+                              type: number
+                              example: 90
+                            workOrderNumber:
+                              type: number
+                              example: 147896
+                        example:
+                          - quantity: 1
+                            skuCode: '348986'
+                            tax: 5
+                            taxable: true
+                            unitCost: 90
+                            workOrderNumber: 147896
+                          - quantity: 2
+                            skuCode: '348981'
+                            tax: 14.5
+                            taxable: true
+                            unitCost: 135
+                            workOrderNumber: 147896
+                      statusCode:
+                        type: string
+                        example: UN
+                      technicianCode:
+                        type: string
+                        example: T10481
+                      workOrderNumber:
+                        type: number
+                        example: 147896
+                  meta:
+                    type: object
+                    properties:
+                      message:
+                        type: string
+                        example: WorkOrder added successfully.
+              examples:
+                Success Response:
+                  value:
+                    data:
+                      customerId: 77
+                      dateOrdered: '2024-10-17T00:00:00.000+00:00'
+                      dateTimeCompleted: null
+                      dateTimeLastUpdated: null
+                      dateTimeScheduled: null
+                      lineItems:
+                        - quantity: 1
+                          skuCode: '348986'
+                          tax: 5
+                          taxable: true
+                          unitCost: 90
+                          workOrderNumber: 147896
+                        - quantity: 2
+                          skuCode: '348981'
+                          tax: 14.5
+                          taxable: true
+                          unitCost: 135
+                          workOrderNumber: 147896
+                      statusCode: UN
+                      technicianCode: T10481
+                      workOrderNumber: 147896
+                    meta:
+                      message: WorkOrder added successfully.
 tags:
   - name: Customers
   - name: Technicians
   - name: States
   - name: Products
+  - name: WorkOrders
+

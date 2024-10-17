@@ -558,8 +558,318 @@ paths:
                     properties:
                       message:
                         type: string
+  /workOrderSummaries:
+    get:
+      tags:
+        - WorkOrders
+      summary: Get Summary
+      description: Get Summary
+      operationId: getSummary
+      parameters:
+        - name: customerLastName
+          in: query
+          schema:
+            type: string
+        - name: technicianLastName
+          in: query
+          schema:
+            type: string
+        - name: workOrderStatus
+          in: query
+          schema:
+            type: string
+        - name: page
+          in: query
+          schema:
+            type: string
+        - name: rpp
+          in: query
+          schema:
+            type: string
+        - name: sortOrder
+          in: query
+          schema:
+            type: string
+        - name: sortField
+          in: query
+          schema:
+            type: string
+      responses:
+        '200':
+          description: SuccessResponse
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  data:
+                    type: array
+                    items:
+                      type: object
+                      properties:
+                        customerFirstName:
+                          type: string
+                        customerLastName:
+                          type: string
+                        dateLastUpdated:
+                          type: string
+                        dateScheduled:
+                          type: string
+                        technicianCode:
+                          type: string
+                        technicianFirstName:
+                          type: string
+                        technicianLastName:
+                          type: string
+                        workOrderNumber:
+                          type: number
+                        workOrderStatus:
+                          type: string
+                  meta:
+                    type: object
+                    properties:
+                      message:
+                        type: string
+                      pageCount:
+                        type: number
+                      resultCount:
+                        type: number
+  /workOrders/{WORK_ORDER_NUMBER}:
+    get:
+      tags:
+        - WorkOrders
+      summary: Get WorkOrder Details
+      description: Get WorkOrder Details
+      operationId: getWorkorderDetails
+      responses:
+        '200':
+          description: Success Response
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  data:
+                    type: object
+                    properties:
+                      customerId:
+                        type: number
+                      dateOrdered:
+                        type: string
+                      dateTimeCompleted:
+                        type: string
+                      dateTimeLastUpdated:
+                        type: string
+                      dateTimeScheduled:
+                        type: string
+                      lineItems:
+                        type: array
+                        items:
+                          type: object
+                          properties:
+                            quantity:
+                              type: number
+                            skuCode:
+                              type: string
+                            tax:
+                              type: number
+                            taxable:
+                              type: boolean
+                            unitCost:
+                              type: number
+                            workOrderNumber:
+                              type: number
+                      statusCode:
+                        type: string
+                      technicianCode:
+                        type: string
+                      workOrderNumber:
+                        type: number
+                  meta:
+                    type: object
+                    properties:
+                      message:
+                        type: string
+    put:
+      tags:
+        - WorkOrders
+      summary: Update WorkOrder
+      description: Update WorkOrder
+      operationId: updateWorkorder
+      requestBody:
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                customerId:
+                  type: number
+                dateOrdered:
+                  type: string
+                dateTimeCompleted:
+                  type: string
+                lineItems:
+                  type: array
+                  items:
+                    type: object
+                    properties:
+                      quantity:
+                        type: number
+                      skuCode:
+                        type: string
+                      tax:
+                        type: number
+                      taxable:
+                        type: boolean
+                      unitCost:
+                        type: number
+                statusCode:
+                  type: string
+                technicianCode:
+                  type: string
+      responses:
+        '200':
+          description: Success Response / Remove Line Item / Add Line Item
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  data:
+                    type: object
+                    properties:
+                      customerId:
+                        type: number
+                      dateOrdered:
+                        type: string
+                      dateTimeCompleted:
+                        type: string
+                      dateTimeLastUpdated:
+                        type: string
+                      dateTimeScheduled:
+                        nullable: true
+                      lineItems:
+                        type: array
+                        items:
+                          type: object
+                          properties:
+                            quantity:
+                              type: number
+                            skuCode:
+                              type: string
+                            tax:
+                              type: number
+                            taxable:
+                              type: boolean
+                            unitCost:
+                              type: number
+                            workOrderNumber:
+                              type: number
+                      statusCode:
+                        type: string
+                      technicianCode:
+                        type: string
+                      workOrderNumber:
+                        type: number
+                  meta:
+                    type: object
+                    properties:
+                      message:
+                        type: string
+    parameters:
+      - name: WORK_ORDER_NUMBER
+        in: path
+        required: true
+        schema:
+          type: string
+  /workOrders:
+    post:
+      tags:
+        - WorkOrders
+      summary: Add WorkOrder
+      description: Add WorkOrder
+      operationId: addWorkorder
+      requestBody:
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                customerId:
+                  type: number
+                dateOrdered:
+                  type: string
+                lineItems:
+                  type: array
+                  items:
+                    type: object
+                    properties:
+                      quantity:
+                        type: number
+                      skuCode:
+                        type: string
+                      tax:
+                        type: number
+                      taxable:
+                        type: boolean
+                      unitCost:
+                        type: number
+                statusCode:
+                  type: string
+                technicianCode:
+                  type: string
+      responses:
+        '201':
+          description: Success Response
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  data:
+                    type: object
+                    properties:
+                      customerId:
+                        type: number
+                      dateOrdered:
+                        type: string
+                      dateTimeCompleted:
+                        nullable: true
+                      dateTimeLastUpdated:
+                        nullable: true
+                      dateTimeScheduled:
+                        nullable: true
+                      lineItems:
+                        type: array
+                        items:
+                          type: object
+                          properties:
+                            quantity:
+                              type: number
+                            skuCode:
+                              type: string
+                            tax:
+                              type: number
+                            taxable:
+                              type: boolean
+                            unitCost:
+                              type: number
+                            workOrderNumber:
+                              type: number
+                      statusCode:
+                        type: string
+                      technicianCode:
+                        type: string
+                      workOrderNumber:
+                        type: number
+                  meta:
+                    type: object
+                    properties:
+                      message:
+                        type: string
 tags:
   - name: Customers
   - name: Technicians
   - name: States
   - name: Products
+  - name: WorkOrders
