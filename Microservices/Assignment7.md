@@ -20,7 +20,7 @@ Minimum requirements for credit:
     - sketch out methods for GET, POST, PUT, and DELETE request mappings at the Controller layer
     - sketch out helper methods at the Service layer
     - sketch out DTO class with datatypes & values needed, noting which need to be `@NotBlank`
-    - sketch help methods at the Repository layer, noting needs for custom `nativeQuery` or what `JPARepository` built in methods you should be able to leverage (ex. `deleteById`, `saveById`)
+    - sketch help methods at the Repository layer, noting needs for custom `nativeQuery` or what `JPARepository` built in methods you should be able to leverage (ex. `deleteById`, `save`)
     - sketch out entity models based on the DB table columns and needed table joins to present all info about an entity
     - Additional considerations
         - where, and at what layers, are you going to throw exceptions
