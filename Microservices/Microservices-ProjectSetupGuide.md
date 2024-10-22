@@ -3,12 +3,12 @@ Using Assignment 7 as a basis (which is the same setup as the WorkOrder Pro Assi
 1. Change project name using terminal / File explorer.
 2. Update `.vscode/launch.json` file for following changes.
   1. Update context path name
-	2. Add database configuration with required changes (URL, username & password).
-	```
+  2. Add database configuration with required changes (URL, username & password).
+  ```
   "DATABASE_URL": "jdbc:mariadb://host.docker.internal:3306/work_order_pro",
-	"DATABASE_USERNAME": "user",
-	"DATABASE_PASSWORD": "password",
-	"DATABASE_DRIVER": "org.mariadb.jdbc.Driver"
+  "DATABASE_USERNAME": "user",
+  "DATABASE_PASSWORD": "password",
+  "DATABASE_DRIVER": "org.mariadb.jdbc.Driver"
   ```
 3. Import / open application in VSCode and make following changes.
 	1. Update package name based on group project name.
