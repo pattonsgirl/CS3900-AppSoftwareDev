@@ -1,3 +1,4 @@
+# go to https://editor.swagger.io/
 openapi: 3.0.3
 info:
   title: gardening-service
