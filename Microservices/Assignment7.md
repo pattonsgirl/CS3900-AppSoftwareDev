@@ -15,7 +15,7 @@ In class Tuesday, you built your project using the Assignment 7 repository. For 
 
 To prepare, you are going to sketch out the design plan for **one** endpoint in code.  By sketching, we are expecting comments and comment blocks of larger logical chunks, and methods to be stamped.
 
-Minimum requirements for credit:
+- Minimum requirements for credit:
     - build folders for the layers and flesh out the required Java class files for the Controller, Service, Repository, DTO, and Model for the endpoint you are focusing on. 
     - sketch out methods for GET, POST, PUT, and DELETE request mappings at the Controller layer
     - sketch out helper methods at the Service layer
