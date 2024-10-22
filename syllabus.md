@@ -45,7 +45,7 @@ This outline is a proposed ordering.
 | 6 - Sept 30 | Microservices | Microservices |
 | 7 - Oct 7   | Microservices | Microservices |
 | 8 - Oct 14  | Microservices | Microservices |
-| 9 - Oct 21  | Unit testing | Unit testing  |
+| 9 - Oct 21  | Microservices - Group Project Planning | Microservices - Group Project Planning  |
 | 10 - Oct 28 | Dev Ops - Pipelines     | Dev Ops - Pipelines   |
 | 11 - Nov 4  | Hand off day <br> Agile check-in   | Web Design    |
 | 12 - Nov 11 | Web Design  | Web Design     |
@@ -60,13 +60,13 @@ This outline is a proposed ordering.
 
 | Category   | Weight | Sub-Category   | Sub-Category Weight |
 |------------|--------|----------------|---------------------|
-| Business Requirements <br>& Agile Methods Module | 11.43% | Group Project Component x 4 | 25% of module weight each  |
-| DevOps Module     | 11.43% | Individual Assignments x 3 <br>*Group Project Component will be tied to other modules* | 33.33% of module weight each  |
-| Database Design Module | 11.43% | Individual Assignments x 5 <br> Group Project Component | 70% <br> 30%  |
-| UI / UX Module | 11.43% | Individual Assignments x 2 <br> Group Project Component | 70% <br> 30%  |
-| Microservices Module | 11.43% | Individual Assignments x 5 <br> Group Project Component | 70% <br> 30%  |
-| Unit & Automation Testing Module | 11.43% | Individual Assignments x 3 <br> Group Project Component | 70% <br> 30%  |
-| Web Design Module | 11.43% | Individual Assignments x 4 <br> Group Project Component | 70% <br> 30%  |
+| Business Requirements <br>& Agile Methods Module | 13.33% | Group Project Component x 4 | 25% of module weight each  |
+| DevOps Module     | 13.33% | Individual Assignments x 3 <br>*Group Project Component will be tied to other modules* | 33.33% of module weight each  |
+| Database Design Module | 13.33% | Individual Assignments x 5 <br> Group Project Component | 70% <br> 30%  |
+| UI / UX Module | 13.33% | Individual Assignments x 2 <br> Group Project Component | 70% <br> 30%  |
+| Microservices Module | 13.33% | Individual Assignments x 5 <br> Group Project Component | 70% <br> 30%  |
+| Unit & Automation Testing Module | 13.33% | Individual Assignments x 3 <br> Group Project Component | 70% <br> 30%  |
+| Web Design Module | 13.33% | Individual Assignments x 4 <br> Group Project Component | 70% <br> 30%  |
 | Final Project  | 10%  |   |  |
 | Retrospective  | 10%  |   |  |
 
