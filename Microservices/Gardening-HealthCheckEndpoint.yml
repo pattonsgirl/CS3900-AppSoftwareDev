@@ -1,0 +1,19 @@
+openapi: 3.0.3
+info:
+  title: gardening-service
+  version: 1.0.0
+  contact: {}
+servers:
+  - url: 'http://localhost:8080/gardening-service'
+paths:
+  /healthcheck:
+    get:
+      tags:
+        - HealthCheck
+      summary: get healthcheck message
+      responses:
+        '200':
+          description: Success Response
+  
+tags:
+  - name: HealthCheck
