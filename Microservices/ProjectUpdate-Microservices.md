@@ -18,9 +18,9 @@ Revisit your team's proposed wireframes and apply feedback from the UIUX team.  
 Through the microservices unit, you have been detangling layers & mappings for endpoints.  The group project will have you defining and implementing endpoints for your group project.
 
 In your group project GitHub repository, create a folder named `PROJECTTHEME-service`, replacing PROJECTHEME with your group's project theme.  
-    - Add a folder named `READMES` to the `PROJECTTHEME-service` folder.  
-    - Have **ONE TEAM MEMBER** copy in their Assignment 7 code to the `PROJECTTHEME-service` folder, at minimum with a working `healthcheck` GET endpoint.  Verify all team members can pull this base and run the project on their system.
-    - Add common exception class files from the [WorkOrder Pro `exception` folder](https://github.com/pattonsgirl/CS3900-AppSoftwareDev/tree/main/Microservices/work-order-pro-service/src/main/java/com/wsu/workorderproservice/exception) - adjust to refer to your project package.
+- Add a folder named `READMES` to the `PROJECTTHEME-service` folder.  
+- Have **ONE TEAM MEMBER** copy in their Assignment 7 code to the `PROJECTTHEME-service` folder, at minimum with a working `healthcheck` GET endpoint.  Verify all team members can pull this base and run the project on their system.
+- Add common exception class files from the [WorkOrder Pro `exception` folder](https://github.com/pattonsgirl/CS3900-AppSoftwareDev/tree/main/Microservices/work-order-pro-service/src/main/java/com/wsu/workorderproservice/exception) - adjust to refer to your project package.
 
 This is where GitHub repository version management is going to come in clutch.
 > [!TIP] 
@@ -54,7 +54,7 @@ Not every resource will need GET, POST, PUT, and DELETE.  For example, in the co
 You may lean on the WorkOrder Pro service the microservices team built. Cite by link or filename what file you got your code idea / snippet from (this will help the team when detangled how you arrived at certain logic).
 
 Resource Controller class contains:
-- add required springframework & lombok annotations
+- add required SpringFramework & Lombok annotations
 - request mapping
 - GET, POST, PUT, and / or DELETE mappings (with additional mapping info if needed, such as how PUT needs to ingest which entry to update)
 - For appropriate mapping add `if` statements only where Bean Validation not applied
@@ -63,7 +63,7 @@ Resource Controller class contains:
 - [WorkOrder Pro Endpoint Controller files](https://github.com/pattonsgirl/CS3900-AppSoftwareDev/blob/main/Microservices/work-order-pro-service/src/main/java/com/wsu/workorderproservice/controller/) 
 
 Resource Service class contains:
-- add required springframework & lombok annotations
+- add required SpringFramework & Lombok annotations
 - add `if` statement(s) in case if needed
 - add `try / catch` blocks to execute business logic and handle exceptions.
 - appropriate mapper methods to convert entity model class to DTO and vice versa
@@ -75,28 +75,28 @@ Resource Repository interface contains:
 - [WorkOrder Pro Endpoint Repository files](https://github.com/pattonsgirl/CS3900-AppSoftwareDev/tree/main/Microservices/work-order-pro-service/src/main/java/com/wsu/workorderproservice/repository)
 
 Resource DTO class contains:
-- add required lombok annotations 
+- add required Lombok annotations 
 - declare fields with appropriate datatype based on endpoint design.
 - add `@NotBlank` with appropriate message where fields cannot be `null` or blank
 - [WorkOrder Pro Endpoint DTO files](https://github.com/pattonsgirl/CS3900-AppSoftwareDev/tree/main/Microservices/work-order-pro-service/src/main/java/com/wsu/workorderproservice/dto)
 
 Resource Model class contains:
-- Add required jakarta & lombok annotations
+- Add required Jakarta & Lombok annotations
 - `@Table` annotation to customize the mapping between an entity class and the corresponding database table
 - mappings to table columns and entity fields
 - add JPA relationship mapping where appropriate if entity information is combination of information from other tables
 - [WorkOrder Pro Endpoint Model files](https://github.com/pattonsgirl/CS3900-AppSoftwareDev/tree/main/Microservices/work-order-pro-service/src/main/java/com/wsu/workorderproservice/model)
 
-### Github repository Expectations
+### GitHub repository Expectations
 
 `main` branch contains only **working** endpoints.  If the endpoint does not work, leave it in its branch or repository for continued development.  For their contributions to count, have documentation make clear to the microservices team about where to find the work.  Your code on the `main` branch should always be operational (as in the application will start and working endpoints will respond)
 
 ### Honors / Bonus Requirements
 
 For a **minimum of one endpoint**:
-    - GET mapping uses pagination
-    - endpoint has a working Swagger `.yml` file that tests the endpoint's mappings
-        - add this to a folder named `SWAGGER` in your group project folder
+- GET mapping uses pagination
+- endpoint has a working Swagger `.yml` file that tests the endpoint's mappings
+    - add this to a folder named `SWAGGER` in your group project folder
 
 ## Deliverables
 
