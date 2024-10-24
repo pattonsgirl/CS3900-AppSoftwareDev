@@ -97,6 +97,7 @@ For a **minimum of one endpoint**:
 - GET mapping uses pagination
 - endpoint has a working Swagger `.yml` file that tests the endpoint's mappings
     - add this to a folder named `SWAGGER` in your group project folder
+    - [WorkOrder Pro Swagger `.yml`](https://github.com/pattonsgirl/CS3900-AppSoftwareDev/blob/main/Microservices/WOMS-api-spec-withoutExamples.yaml)
 
 ## Deliverables
 
