@@ -5,7 +5,7 @@
 - Defining API endpoints
 - Defining method taskings at layers - Controller, Service, Repository, DTO, and Model
 - Building GET, POST, PUT, and DELETE endpoints for resource
-- Testing API endpoints with tool (Swagger)
+- (Bonus / Honors) Testing API endpoints with tool (Swagger)
 
 ## Description
 
