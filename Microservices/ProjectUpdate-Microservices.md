@@ -120,7 +120,8 @@ If a team member helps another team member within polishing / debugging an endpo
 
 If an endpoint is not working (incomplete), partial credit is available for the work that was done.
 
-Score: Total points among complete & incomplete endpoints
+### Score: Total points among complete & incomplete endpoints / total earnable complete & incomplete points
+### Honors / Bonus Score: 2 pts completed requirements per resource / endpoint
 
 For each completed endpoint:
 - Endpoint README contains reasonable mapping plans aligned with code implementation - 1 pt
@@ -139,11 +140,6 @@ For each incomplete endpoint:
 - Resource Model class outlines mapping of entity to database tables - 1 pt
 
 Honors / Bonus requirements:
-- For a **minimum of one endpoint**:
+- For a **minimum of one resource / endpoint**:
     - GET mapping uses pagination
     - endpoint has a **working** Swagger `.yml` file that tests the endpoint's mappings
-
-
-
-
-
