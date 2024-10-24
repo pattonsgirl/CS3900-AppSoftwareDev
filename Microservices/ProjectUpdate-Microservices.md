@@ -17,12 +17,12 @@ Revisit your team's proposed wireframes and apply feedback from the UIUX team.  
 
 Through the microservices unit, you have been detangling layers & mappings for endpoints.  The group project will have you defining and implementing endpoints for your group project.
 
-In your group project github repository, create a folder named `PROJECTTHEME-service`, replacing PROJECTHEME with your group's project theme.  
+In your group project GitHub repository, create a folder named `PROJECTTHEME-service`, replacing PROJECTHEME with your group's project theme.  
     - Add a folder named `READMES` to the `PROJECTTHEME-service` folder.  
     - Have **ONE TEAM MEMBER** copy in their Assignment 7 code to the `PROJECTTHEME-service` folder, at minimum with a working `healthcheck` GET endpoint.  Verify all team members can pull this base and run the project on their system.
     - Add common exception class files from the [WorkOrder Pro `exception` folder](https://github.com/pattonsgirl/CS3900-AppSoftwareDev/tree/main/Microservices/work-order-pro-service/src/main/java/com/wsu/workorderproservice/exception) - adjust to refer to your project package.
 
-This is where github repository version management is going to come in clutch.
+This is where GitHub repository version management is going to come in clutch.
 > [!TIP] 
 > Have team members build their endpoints on different branches.  Name the branch with the corresponding endpoint.  Merge branches with `main` once branch endpoint is built and tested.
 
@@ -111,7 +111,7 @@ URL looks like: https://github.com/WSU-kduncan/cs3900-YOURGROUPNAME
 
 ## Rubric
 
-Team members with no contributions to the team project github repository will receive a 0.
+Team members with no contributions to the team project GitHub repository will receive a 0.
 
 If a team member did not build the endpoint they were tasked with, the participating team members will not take a penalty.
 
