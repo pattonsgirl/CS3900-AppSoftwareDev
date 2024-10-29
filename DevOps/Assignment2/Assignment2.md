@@ -42,6 +42,8 @@ To your `devops-assignment-2-YOURUSERNAME` repository, verify the following file
   - Link to the image artifact in DockerHub
   - Link to Workflow Action Run Summary
 
+In Pilot, submit the link to your assignment repository to the Dropbox.
+
 ## Rubric
 
 Score: # out of 5 points
