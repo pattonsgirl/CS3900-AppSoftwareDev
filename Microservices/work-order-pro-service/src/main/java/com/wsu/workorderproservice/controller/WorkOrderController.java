@@ -2,9 +2,9 @@ package com.wsu.workorderproservice.controller;
 
 import com.wsu.workorderproservice.dto.ServiceResponseDTO;
 import com.wsu.workorderproservice.dto.WorkOrderDTO;
-import com.wsu.workorderproservice.model.WorkOrder;
 import com.wsu.workorderproservice.service.WorkOrderService;
 import jakarta.validation.Valid;
+import java.util.Map;
 import lombok.RequiredArgsConstructor;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
@@ -16,7 +16,6 @@ import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
-import java.util.Map;
 
 import static com.wsu.workorderproservice.utilities.Constants.MESSAGE;
 

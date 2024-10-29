@@ -5,9 +5,8 @@ import com.wsu.workorderproservice.dto.TechnicianDTO;
 import com.wsu.workorderproservice.exception.InvalidRequestException;
 import com.wsu.workorderproservice.service.TechnicianService;
 import com.wsu.workorderproservice.utilities.Constants;
-import java.util.Map;
-
 import jakarta.validation.Valid;
+import java.util.Map;
 import lombok.RequiredArgsConstructor;
 import org.springframework.data.domain.Page;
 import org.springframework.http.HttpStatus;
@@ -27,7 +26,8 @@ import static com.wsu.workorderproservice.utilities.Constants.MESSAGE;
 import static com.wsu.workorderproservice.utilities.Constants.PAGE_COUNT;
 import static com.wsu.workorderproservice.utilities.Constants.RESULT_COUNT;
 
-//@RestController is used when you want to return data (e.g. JSON or XML) rather than a view (HTML). @ RestController is basically a meta-annotation that combines @Controller and @ResponseBody
+//@RestController is used when you want to return data (e.g. JSON or XML) rather than a view (HTML).
+// @ RestController is basically a meta-annotation that combines @Controller and @ResponseBody
 @RestController
 //@RequiredArgsConstructor is a Lombok annotation that generates constructors for all final and non-null fields.
 @RequiredArgsConstructor
@@ -47,15 +47,16 @@ public class TechnicianController {
      * @return - ServiceResponseDTO which include list of technicians and pagination info along with success message.
      */
     //GetMapping annotation is a shortcut for @RequestMapping(method = RequestMethod.GET) that maps HTTP GET requests to specific handler methods
-    //@RequestParam annotation tells Spring that it should map a request parameter from the GET request to your method argument
-    // [In RequestParam we can specify parameter is required or not, and also can provide default value if it's not given. If param name is different then we must have to specify that on name field.]
+    // @RequestParam annotation tells Spring that it should map a request parameter from the GET request to your method argument
+    // [In RequestParam we can specify parameter is required or not, and also can provide default value if it's not given.
+    // If param name is different then we must have to specify that on name field.]
     //ResponseEntity represents the whole HTTP response: status code, headers, and body.
     @GetMapping
     public ResponseEntity<ServiceResponseDTO> getAllTechnicians(@RequestParam(required = false) String search,
-                                                                              @RequestParam(required = false, defaultValue = "1") Integer page,
-                                                                              @RequestParam(required = false, defaultValue = "10") Integer rpp,
-                                                                              @RequestParam(required = false, defaultValue = "technicianCode") String sortField,
-                                                                              @RequestParam(required = false, defaultValue = Constants.DESC) String sortOrder) {
+                                                                @RequestParam(required = false, defaultValue = "1") Integer page,
+                                                                @RequestParam(required = false, defaultValue = "10") Integer rpp,
+                                                                @RequestParam(required = false, defaultValue = "technicianCode") String sortField,
+                                                                @RequestParam(required = false, defaultValue = Constants.DESC) String sortOrder) {
 
         //In Spring Data, the Page interface represents a sublist of a larger result set, typically used for pagination.
         // It provides methods to access information about the current page, such as the page number, page size, and total number of elements.
