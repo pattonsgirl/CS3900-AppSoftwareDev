@@ -40,7 +40,7 @@ To your `devops-assignment-2-YOURUSERNAME` repository, verify the following file
 - `build-pipeline.md` includes:
   - Written summary of workflow tasks
   - Link to the image artifact in DockerHub
-  - Link to Workflow Action Run Summary
+  - Link to Workflow Action Run Results Summary
 
 In Pilot, submit the link to your assignment repository to the Dropbox.
 
@@ -50,5 +50,5 @@ Score: # out of 5 points
 
 - Written summary of workflow tasks accurately describes workflow behavior (1 pt.)
 - Completed YAML file for GitHub Actions workflow. (1 pt.)
-- Link to Workflow Action Run Summary validates workflow successfully built and pushed the app and image without error (2 pt.)
+- Link to Workflow Action Run Results Summary validates workflow successfully built and pushed the app and image without error (2 pt.)
 - Link to image in DockerHub (1 pt.)
