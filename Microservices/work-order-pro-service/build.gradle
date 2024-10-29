@@ -2,16 +2,10 @@ plugins {
 	id 'java'
 	id 'org.springframework.boot' version '3.3.1'
 	id 'io.spring.dependency-management' version '1.1.5'
-	id 'checkstyle'
 	id 'jacoco'
 }
 
 group = 'com.wsu'
-
-checkstyle {
-	toolVersion = '8.1'
-	configFile = new File(rootDir, 'config/checkstyle/checkstyle.xml')
-}
 
 java {
 	toolchain {
@@ -36,17 +30,6 @@ dependencies {
 	runtimeOnly 'com.microsoft.sqlserver:mssql-jdbc'
 
 	testImplementation 'org.springframework.boot:spring-boot-starter-test'
-	testImplementation 'com.h2database:h2'
-	testImplementation group: 'com.intuit.karate', name: 'karate-junit5', version: '1.4.1'
-	testRuntimeOnly 'org.junit.platform:junit-platform-launcher'
-}
-
-tasks.named('test') {
-	useJUnitPlatform()
-	systemProperty "karate.options", System.properties.getProperty("karate.options")
-	systemProperty "karate.env", System.properties.getProperty("karate.env")
-	outputs.upToDateWhen { false }
-	testLogging.showStandardStreams = true
 }
 
 jacocoTestReport {

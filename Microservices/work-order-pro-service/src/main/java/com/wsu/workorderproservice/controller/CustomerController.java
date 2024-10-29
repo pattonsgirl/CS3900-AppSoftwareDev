@@ -5,6 +5,7 @@ import com.wsu.workorderproservice.dto.ServiceResponseDTO;
 import com.wsu.workorderproservice.service.CustomerService;
 import com.wsu.workorderproservice.utilities.Constants;
 import jakarta.validation.Valid;
+import java.util.Map;
 import lombok.RequiredArgsConstructor;
 import org.springframework.data.domain.Page;
 import org.springframework.http.HttpStatus;
@@ -18,8 +19,6 @@ import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
-
-import java.util.Map;
 
 import static com.wsu.workorderproservice.utilities.Constants.MESSAGE;
 import static com.wsu.workorderproservice.utilities.Constants.PAGE_COUNT;
@@ -65,7 +64,7 @@ public class CustomerController {
     @PostMapping
     public ResponseEntity<ServiceResponseDTO> createCustomer(@RequestBody @Valid CustomerDTO customerDTO) {
         return new ResponseEntity<>(ServiceResponseDTO.builder().meta(Map.of(MESSAGE, "Customer created successfully"))
-                .data(customerService.save(customerDTO)).build(), HttpStatus.OK);
+                .data(customerService.save(customerDTO)).build(), HttpStatus.CREATED);
     }
 
     /**
