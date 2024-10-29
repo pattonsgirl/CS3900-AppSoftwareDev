@@ -2,10 +2,14 @@
 
 ## Purpose / Objectives
 
-- Familiarity with AWS CloudFormation for configuring ECS (repositories, tasks, clusters, services)
 - Setting up a build automation and pipelines using GitHub Actions
+- Building and pushing container images to DockerHub
 
 ## Description
+
+Create / verify access to an [account on DockerHub](https://hub.docker.com/)
+
+Create a [Personal Access Token with Read & Write as the scope](https://docs.docker.com/security/for-developers/access-tokens/).  Save Token to a trusted file / location.
 
 Clone assignment repository with starter application, AWS ECS configuration YAML, and GitHub Action workflow.
 
