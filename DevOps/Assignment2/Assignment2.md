@@ -34,7 +34,7 @@ Edit the file named `build-pipeline.md` to contain:
 
 ## Deliverables
 
-To your work-order-pro repository, add the following files:
+To your `devops-assignment-2-YOURUSERNAME` repository, verify the following files exist per assignment taskings:
 
 - Completed YAML file for GitHub Actions workflow (in `.github/workflows` folder)
 - `build-pipeline.md` includes:
