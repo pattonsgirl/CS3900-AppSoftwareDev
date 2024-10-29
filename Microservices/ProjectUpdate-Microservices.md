@@ -13,9 +13,9 @@ If you have not already, join your group's GitHub repository and clone the repos
 
 Check that you can build and connect to your group project database and have a current copy of any revisions made using the feedback from the DB team.
 
-Revisit your team's proposed wireframes and apply feedback from the UIUX team.  The wireframes will provide foundation for your project's endpoints.
+Revisit your team's proposed wireframes and apply feedback from the UIUX team.  The wireframes will provide foundation for your project's resources.
 
-Through the microservices unit, you have been detangling layers & mappings for endpoints.  The group project will have you defining and implementing endpoints for your group project.
+Through the microservices unit, you have been detangling layers & endpoint mappings for resources.  The group project will have you defining and implementing endpoints for your group project resources.
 
 In your group project GitHub repository, create a folder named `PROJECTTHEME-service`, replacing PROJECTHEME with your group's project theme.  
 - Add a folder named `READMES` to the `PROJECTTHEME-service` folder.  
@@ -24,30 +24,30 @@ In your group project GitHub repository, create a folder named `PROJECTTHEME-ser
 
 This is where GitHub repository version management is going to come in clutch.
 > [!TIP] 
-> Have team members build their endpoints on different branches.  Name the branch with the corresponding endpoint.  Merge branches with `main` once branch endpoint is built and tested.
+> Have team members build their resources and corresponding endpoints on different branches.  Name the branch with the corresponding resource.  Merge branches with `main` once branch resource and its endpoints are built and tested.
 
-**Since each team member built a wireframe, I recommend having the same team member who built the wireframe take lead in building the endpoint.**
+**Since each team member built a wireframe, I recommend having the same team member who built the wireframe take lead in building the resource and its endpoints.**
 
-For each application endpoint, there will be two deliverables:
-1. The code for the endpoint
-2. An `ENDPOINTNAME-README.md` file in the folder named `READMES` where `ENDPOINTNAME` is the name of the endpoint.
+For each application resource, there will be two deliverables:
+1. The code for the resource and its endpoints
+2. An `RESOURCENAME-README.md` file in the folder named `READMES` where `RESOURCENAME` is the name of the resource.
 
-### `ENDPOINTNAME-README.md` Taskings
+### `RESOURCENAME-README.md` Taskings
 
-This README will serve as the design and justification document for the endpoint.  There are 4 potential endpoint mappings for a resource:
+This README will serve as the design and justification document for the resource and its endpoints.  There are 4 potential endpoint mappings for a resource:
 - GET (return data / return data based on a search term)
 - POST (add new entry)
 - PUT (update fields in existing entry)
 - DELETE (remove data entry)
 
-For each mapping the endpoint supports, document 
+For each endpoint mapping the resource supports, document 
 1. What the mapping must ingest from the frontend (for example: user provides a search term; user provides an entry identifier?)
 2. What the mapping will return (for example: all entries that match a phrase; an updated data entry)
 3. What the database query needs to be (what table(s), what column(s), etc.)
 
-Not every resource will need GET, POST, PUT, and DELETE.  For example, in the context of WorkOrder Pro, work orders in the system can have their status change, but work orders cannot be deleted (no DELETE mapping - why would a business delete that a work order was generated?).  If your endpoint **should not support a mapping** justify why the mapping is not suitable from a business logic perspective.
+Not every resource will need GET, POST, PUT, and DELETE.  For example, in the context of WorkOrder Pro, work orders in the system can have their status change, but work orders cannot be deleted (no DELETE mapping - why would a business delete that a work order was generated?).  If your resource **should not support an endpoint mapping** justify why the mapping is not suitable from a business logic perspective.
 
-### Endpoint Code Taskings
+### Resource Code Taskings
 
 **For each resource** create Java class files for the Controller, Service, DTO, and Model layers. Create Interface for Repository layer.
 
@@ -89,11 +89,11 @@ Resource Model class contains:
 
 ### GitHub repository Expectations
 
-`main` branch contains only **working** endpoints.  If the endpoint does not work, leave it in its branch or repository for continued development.  For their contributions to count, have documentation make clear to the microservices team about where to find the work.  Your code on the `main` branch should always be operational (as in the application will start and working endpoints will respond)
+`main` branch contains only **working** resources with endpoints.  If the resource (or endpoints within the resource) does not work, leave it in its branch or repository for continued development.  For their contributions to count, have documentation make clear to the microservices team about where to find the work.  Your code on the `main` branch should always be operational (as in the application will start and working resource endpoints will respond)
 
 ### Honors / Bonus Requirements
 
-For a **minimum of one endpoint**:
+For a **minimum of one resource and its endpoint mappings**:
 - GET mapping uses pagination
 - endpoint has a working Swagger `.yml` file that tests the endpoint's mappings
     - add this to a folder named `SWAGGER` in your group project folder
@@ -101,8 +101,8 @@ For a **minimum of one endpoint**:
 
 ## Deliverables
 
-- Endpoint code developed by each team member.  If the team member does not have a working endpoint, do not merge their code into `main`
-- `ENDPOINT-README` in `READMES` folder
+- Resource and endpoint mapping code developed by each team member.  If the team member does not have a working resource (or an endpoint within the resource), do not merge their code into `main`
+- `RESOURCE-README` in `READMES` folder
 
 ## Submission
 
