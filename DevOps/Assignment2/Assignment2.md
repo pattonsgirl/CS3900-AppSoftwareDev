@@ -22,7 +22,8 @@ Add a GitHub Actions Workflow to a folder named `.github` in a folder named `wor
 The workflow should run any time a commit is pushed to the **main** branch.
 
 The workflow should perform the following `job`s:
-- build the application container image
+- compile the WorkOrder Pro Spring application to a Java JAR
+- build the JAR application into a container image
 - push the Docker image to your account on DockerHub
 
 Trigger the workflow to run. Verify success by checking that the image was pushed to DockerHub with a timestamp that reflects when the image should have been pushed based on when the GitHub Workflow was triggered.
