@@ -47,7 +47,7 @@ This outline is a proposed ordering.
 | 8 - Oct 14  | Microservices | Microservices |
 | 9 - Oct 21  | Microservices - Group Project Planning | Microservices - Group Project Planning  |
 | 10 - Oct 28 | Dev Ops - Pipelines     | Dev Ops - Pipelines   |
-| 11 - Nov 4  | Hand off day <br> Agile check-in   | Web Design    |
+| 11 - Nov 4  | Web Design - Toolkit   | Web Design    |
 | 12 - Nov 11 | Web Design  | Web Design     |
 | 13 - Nov 18 | Web Design  | Web Design - Group Project Implementation   |
 | 14 - Nov 25 | Dev Ops - Hosting |  Thanksgiving Break <br> No class 11/28  |
