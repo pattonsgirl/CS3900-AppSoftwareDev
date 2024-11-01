@@ -49,9 +49,9 @@ This outline is a proposed ordering.
 | 10 - Oct 28 | Dev Ops - Pipelines     | Dev Ops - Pipelines   |
 | 11 - Nov 4  | Hand off day <br> Agile check-in   | Web Design    |
 | 12 - Nov 11 | Web Design  | Web Design     |
-| 13 - Nov 18 | Web Design  | Office Hours with Module Teams     |
+| 13 - Nov 18 | Web Design  | Web Design - Group Project Implementation   |
 | 14 - Nov 25 | Dev Ops - Hosting |  Thanksgiving Break <br> No class 11/28  |
-| 15 - Dec 2  | Office Hours with Module Teams |  Retrospective   |
+| 15 - Dec 2  | Retrospective |  Office Hours with Module Teams   |
 | 16 - Dec 9  | --- | Final Exam Block <br> 12/12, 2:45 PM - 4:45 PM   |
 
 ## Grading
