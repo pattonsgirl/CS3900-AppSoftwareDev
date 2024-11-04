@@ -1,4 +1,4 @@
-### After Class 1: Angular Environment Setup and Basic Components
+### After Classes 1 & 2: Angular Environment Setup and Basic Components
 
 **Deliverables**  
 1. **Project Setup**:
@@ -20,7 +20,7 @@
 
 ---
 
-### After Class 2: Services, Dependency Injection, and Routing
+### After Class 3: Services, Dependency Injection, and Routing
 
 **Deliverables**  
 1. **Services and Data Management**:
@@ -39,7 +39,7 @@
 
 ---
 
-### After Class 3: Forms and Validation
+### After Class 4: Forms and Validation
 
 **Deliverables**  
 1. **Forms for Work Order Creation**:
@@ -58,7 +58,7 @@
 
 ---
 
-### After Class 4: Performance Optimizations, Componentization, Services, Standalone Components, Assets & Models, and Unit Tests
+### After Class 5: Performance Optimizations, Componentization, Services, Standalone Components, Assets & Models, and Unit Tests
 
 **Deliverables**  
 1. **Componentize Key Features Using Standalone Components**:
