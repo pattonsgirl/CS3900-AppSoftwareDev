@@ -11,6 +11,7 @@ applicable outside of just web development. Optional, but still highly valuable.
 ### Angular / Documentation
 These are some links for basic documentation regarding Angular and web development as a whole. If you are unsure of 
 what a given feature of Angular, or even html / css / javascript does, these links will be very helpful.
+- https://angular.dev/overview (Angular 18)
 - https://v17.angular.io/docs (angular documentation homepage)
 - https://developer.mozilla.org/en-US/ (mdn web docs home)
 - https://v17.angular.io/cli (angular cli guide)
