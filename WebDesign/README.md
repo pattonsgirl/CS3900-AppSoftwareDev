@@ -41,7 +41,7 @@
     - Encourage the use of shared modules to organize reusable components, directives, and pipes.
 
 4. **Modular Structure**
-    - Teach how to structure an Angular application using feature modules and core/shared modules.
+    - Teach how to structure an Angular application using feature modules and core/shared modules (Angular appears to be moving away from this and more towards standalone components).
     - Explain the benefits of lazy loading and how to implement it to improve performance.
 
 5. **Testing**
@@ -52,7 +52,7 @@
     - Teach how to use Angular CLI tools for performance analysis and improvement.
 
 
-## Class 1: Introduction to Angular and Basic Concepts
+## Class 1 & 2: Introduction to Angular and Basic Concepts
 
 ### Background
 
@@ -77,9 +77,9 @@ Before we begin this unit, you need to read/watch the following articles/videos.
 
 ### Project Requirements
 
-The group project should have new requirements within each module based on lessons learned from the in-class work.
+Please refer to the `ProjectUpdate-WebDesign.md` for your expected project deliverables.
 
-## Class 2: Services and Dependency Injection, Routing
+## Class 3: Services and Dependency Injection, Routing
 
 ### Background
 
@@ -102,9 +102,9 @@ Before we begin this unit, you need to read/watch the following videos/articles.
 
 ### Project Requirements
 
-The group project should have new requirements within each module based on lessons learned from the in-class work.
+Please refer to the `ProjectUpdate-WebDesign.md` for your expected project deliverables.
 
-## Class 3: Forms and HTTP Client
+## Class 4: Forms and HTTP Client
 
 ### Background
 
@@ -127,9 +127,9 @@ Before we begin this unit, you need to read/watch the following videos/articles.
 
 ### Project Requirements
 
-The group project should have new requirements within each module based on lessons learned from the in-class work.
+Please refer to the `ProjectUpdate-WebDesign.md` for your expected project deliverables.
 
-## Class 4: Best Practices and Performance Optimization
+## Class 5: Best Practices and Performance Optimization
 
 ### Background
 
@@ -154,4 +154,4 @@ Key points you will be presenting in class, any internet resources to share as c
 
 ### Project Requirements
 
-The group project should have new requirements within each module based on lessons learned from the in-class work.
+Please refer to the `ProjectUpdate-WebDesign.md` for your expected project deliverables.
