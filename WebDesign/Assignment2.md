@@ -9,6 +9,8 @@
 
 ## Description
 
+Complete the assignment instructions in your cloned Web Design Assignment Repository.
+
 1. **Set Up Routing**
    - Configure the Angular Router to navigate between different pages.
    - Create routes for the new pages (About, Contact).
@@ -32,6 +34,11 @@
 Push your edits to the assignment repository.
 
 ## Rubric
+
+Assignment score: X / 5 points
+
 - Meets assignment criteria / objectives (3 pts)
 - Follows good styling (1 pt)
 - Good commit structure based on completion of components (1 pt)
+
+Feedback:

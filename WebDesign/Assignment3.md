@@ -25,6 +25,11 @@
 Push your edits to the assignment repository.
 
 ## Rubric
+
+Assignment score: X / 5 points
+
 - Meets assignment criteria / objectives (3 pts)
 - Follows good styling (1 pt)
 - Good commit structure based on completion of components (1 pt)
+
+Feedback:
