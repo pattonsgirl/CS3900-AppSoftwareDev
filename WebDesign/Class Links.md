@@ -1,22 +1,5 @@
-## Web Design Class Links
-### Basic Web Dev 
-These are some basic videos covering introductory concepts of web design, please view before our first class.
-- https://youtu.be/ok-plXXHlWw?si=i2rmfRNDLC6rloka (html)
-- https://youtu.be/OEV8gMkCHXQ?si=_o3pWGN3XnFfYyKe (css)
-- https://youtu.be/DHjqpvDnNGE?si=gGqnmhXCkRDp2prT (js)
-### Uncle Bob (OPTIONAL)
-This links to a series of videos by 'Uncle Bob'. They cover good software development practices and are extremely
-applicable outside of just web development. Optional, but still highly valuable.
-- https://www.youtube.com/watch?v=7EmboKQH8lM&list=PLmmYSbUCWJ4x1GO839azG_BBw8rkh-zOj (link to video 1 of the entire playlist of clean code videos)
-### Angular / Documentation
-These are some links for basic documentation regarding Angular and web development as a whole. If you are unsure of 
-what a given feature of Angular, or even html / css / javascript does, these links will be very helpful.
-- https://angular.dev/overview (Angular 18)
-- https://v17.angular.io/docs (angular documentation homepage)
-- https://developer.mozilla.org/en-US/ (mdn web docs home)
-- https://v17.angular.io/cli (angular cli guide)
+## Web Design Module Useful Links
 
-## Web Design Class Links
 ### Basic Web Dev 
 These are some basic videos covering introductory concepts of web design, please view before our first class.
 - [Fireship - HTML Overview](https://youtu.be/ok-plXXHlWw?si=i2rmfRNDLC6rloka)
@@ -39,6 +22,7 @@ what a given feature of Angular, or even HTML / CSS / JavaScript does, these lin
 - [MDN Web Docs](https://developer.mozilla.org/en-US/)
 
 ## Assignment Resources
+
 ### Assignment 1
 - [Angular Tutorial - Building an Angular App](https://v17.angular.io/tutorial/tour-of-heroes/toh-pt0)
     - [Updated version - can ignore](https://angular.dev/tutorials/learn-angular/1-components-in-angular)
