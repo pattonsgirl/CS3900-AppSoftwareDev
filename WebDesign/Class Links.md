@@ -1,7 +1,7 @@
 ## Web Design Module Useful Links
 
 ### Basic Web Dev 
-These are some basic videos covering introductory concepts of web design, please view before our first class.
+These are some basic videos covering introductory concepts of web design. Please view if you need a refresher or overview of these concepts.
 - [Fireship - HTML Overview](https://youtu.be/ok-plXXHlWw?si=i2rmfRNDLC6rloka)
 - [Fireship - CSS Overview](https://youtu.be/OEV8gMkCHXQ?si=_o3pWGN3XnFfYyKe)
 - [Fireship - JavaScript Overview](https://youtu.be/DHjqpvDnNGE?si=gGqnmhXCkRDp2prT)
