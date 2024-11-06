@@ -1,14 +1,14 @@
 # Web Design - Assignment 3 - Building a Form with Reactive Forms
 
 ## Purpose / Objectives
-- Create a user login/signup form using reactive forms
+- Create a reactive form for your app
 - Implement form validation
 - Handle HTTP requests (simulated with hardcoded data)
 
 ## Description
-1. **Create User Login/Signup Form**
-   - Set up a form using Angular’s reactive forms module.
-   - Include fields for username, password, and other relevant information.
+1. **Create a Reactive Form**
+   - Set up a reactive form using Angular’s reactive forms module.
+   - Include fields relevant to your use case.
  
 2. **Implement Form Validation**
    - Add validation rules to ensure data integrity (e.g., required fields, email format).
