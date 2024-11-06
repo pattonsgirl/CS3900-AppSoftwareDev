@@ -21,7 +21,7 @@ import java.util.Set;
 public class WorkOrderDTO {
 
     private Integer workOrderNumber;
-    @NotBlank(message = "Status code must not be null or blank")
+    @NotNull(message = "Status code must not be null or blank")
     private WorkOrderStatus statusCode;
     @NotNull(message = "Date ordered must not be null")
     private Date dateOrdered;
