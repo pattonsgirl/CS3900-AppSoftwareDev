@@ -14,11 +14,11 @@ Familiarize yourself with your group project wireframes in cs3900-YOURGROUPNAME 
 Work with your group to make updated designs about your database or wireframes using the feedback in Issues in cs3900-YOURGROUPNAME repository
 
 Each group member needs to **design** not implement a GET, POST, PUT, and DELETE mapping for their group project for an endpoint.  Ideally each group member makes a plan for a unique component to have the API team review your overall plans and understanding of the concepts.  The follow on assignment will focus on coding one endpoint.  The group project assignment will ask for a full implementation attempt.
-    - The key elements to focus on for each :
-        - what data the user **must provide** to complete the request 
-            - pagination (page number, and number of results per page) in the GET request is an assumed feature, you don't need to detail it
-        - what data will be returned
-        - an outline of the query needed to interact with the database
+- The key elements to focus on for each :
+  - what data the user **must provide** to complete the request 
+    - pagination (page number, and number of results per page) in the GET request is an assumed feature, you don't need to detail it
+  - what data will be returned
+ - an outline of the query needed to interact with the database
 
 You will need to document this with two parts
 1. a written document named `ENDPOINT-design-LASTNAME.md` where endpoint is your tasked endpoint & last name is your last name that details how your endpoint plans to use GET, POST, PUT and DELETE mappings using key the elements noted above and any useful visualizations you wish to provide.
