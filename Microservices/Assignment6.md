@@ -18,7 +18,7 @@ Each group member needs to **design** not implement a GET, POST, PUT, and DELETE
   - what data the user **must provide** to complete the request 
     - pagination (page number, and number of results per page) in the GET request is an assumed feature, you don't need to detail it
   - what data will be returned
- - an outline of the query needed to interact with the database
+  - an outline of the query needed to interact with the database
 
 You will need to document this with two parts
 1. a written document named `ENDPOINT-design-LASTNAME.md` where endpoint is your tasked endpoint & last name is your last name that details how your endpoint plans to use GET, POST, PUT and DELETE mappings using key the elements noted above and any useful visualizations you wish to provide.
