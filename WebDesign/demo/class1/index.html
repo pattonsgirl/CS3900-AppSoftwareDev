@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://unpkg.com/fireworks-js@2.x/dist/index.umd.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"
+        integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <title>Docker Demo</title>
+</head>
+
+<body style="height: 95vh; text-align: center; background-color: rgb(13, 6, 27);">
+    <h2 style="font-family: sans-serif; color: white; font-size: 32pt; height: 0; padding: 0; margin: 0; position: relative; top: 50%;">My custom NGINX image running as a <span class="sparkling">container</span>!</h2>
+    <script>
+        const container = document.querySelector('body')
+        const fireworks = new Fireworks.default(container, {
+            delay: {
+                min: 100,
+                max: 160
+            },
+            particles: 200
+        })
+        fireworks.start()
+    </script>
+    <script>
+        function initSparkling() {
+            // settings
+            const color = "#FFC700";
+            const svgPath = 'M26.5 25.5C19.0043 33.3697 0 34 0 34C0 34 19.1013 35.3684 26.5 43.5C33.234 50.901 34 68 34 68C34 68 36.9884 50.7065 44.5 43.5C51.6431 36.647 68 34 68 34C68 34 51.6947 32.0939 44.5 25.5C36.5605 18.2235 34 0 34 0C34 0 33.6591 17.9837 26.5 25.5Z';
+
+            // sparkling effect
+            let sparkling = function () {
+                $('.sparkling').each(function () {
+                    let sparklingElement = $(this);
+                    let stars = sparklingElement.find('.star');
+
+                    // remove the first star when more than 6 stars existing
+                    if (stars.length > 5) {
+                        stars.each(function (index) {
+                            if (index === 0) {
+                                $(this).remove();
+                            }
+                        });
+                    }
+                    // add a new star
+                    sparklingElement.append(addStar());
+                });
+
+                let rand = Math.round(Math.random() * 700) + 100;
+                setTimeout(sparkling, rand);
+            }
+
+            // star
+            let addStar = function () {
+                let size = Math.floor(Math.random() * 20) + 10;
+                let top = Math.floor(Math.random() * 100) - 50;
+                let left = Math.floor(Math.random() * 100);
+
+                return '<span class="star" style="top:' + top + '%; left:' + left + '%;">'
+                    + '<svg width="' + size + '" height="' + size + '" viewBox="0 0 68 68" fill="none">'
+                    + '<path d="' + svgPath + '" fill="' + color + '" /></svg></span>';
+            }
+
+            // execute
+            sparkling();
+        }
+
+        $(function () {
+            // init sparkling stars
+            initSparkling();
+        });
+
+    </script>
+    <style>
+        /* sparkling stars */
+        /*******************/
+        @-webkit-keyframes comeInOut {
+            0% {
+                transform: scale(0);
+            }
+
+            50% {
+                transform: scale(1);
+            }
+
+            100% {
+                transform: scale(0);
+            }
+        }
+
+        @-moz-keyframes comeInOut {
+            0% {
+                transform: scale(0);
+            }
+
+            50% {
+                transform: scale(1);
+            }
+
+            100% {
+                transform: scale(0);
+            }
+        }
+
+        @-o-keyframes comeInOut {
+            0% {
+                transform: scale(0);
+            }
+
+            50% {
+                transform: scale(1);
+            }
+
+            100% {
+                transform: scale(0);
+            }
+        }
+
+        @keyframes comeInOut {
+            0% {
+                transform: scale(0);
+            }
+
+            50% {
+                transform: scale(1);
+            }
+
+            100% {
+                transform: scale(0);
+            }
+        }
+
+        @-webkit-keyframes spin {
+            0% {
+                transform: rotate(0deg);
+            }
+
+            100% {
+                transform: rotate(180deg);
+            }
+        }
+
+        @-moz-keyframes spin {
+            0% {
+                transform: rotate(0deg);
+            }
+
+            100% {
+                transform: rotate(180deg);
+            }
+        }
+
+        @-o-keyframes spin {
+            0% {
+                transform: rotate(0deg);
+            }
+
+            100% {
+                transform: rotate(180deg);
+            }
+        }
+
+        @keyframes spin {
+            0% {
+                transform: rotate(0deg);
+            }
+
+            100% {
+                transform: rotate(180deg);
+            }
+        }
+
+        .sparkling {
+            position: relative;
+            display: inline-block;
+            z-index: 0;
+            font-weight: bold;
+            color: #ffffff;
+        }
+
+        .sparkling>span {
+            z-index: 5;
+            position: absolute;
+            display: block;
+            animation: comeInOut 700ms forwards;
+        }
+
+        .sparkling>span>svg {
+            display: block;
+            animation: spin 1000ms linear;
+        }
+    </style>
+</body>
+
+</html>
