@@ -9,29 +9,37 @@
 
 ## Description
 
-Complete the assignment instructions in your cloned Web Design Assignment Repository.
+For this assignment set, continue building on the Angular elements you tried in Assignment 1.
 
-1. **Set Up Routing**
+1. **Continuing from the Web Design Assignment Repository** in Pilot...
+    - The repository will have your demonstrated Angular practices from Assignment 1
+    - Complete the assignment instructions in your cloned repository
+
+2. **Set Up Routing**
    - Configure the Angular Router to navigate between different pages.
    - Create routes for the new pages (About, Contact).
 
-2. **Create Additional Pages**
+3. **Create Additional Pages**
    - Create components for the additional pages.
    - Add content and basic styling to these components.
 
-3. **Implement Navigation Links**
+4. **Implement Navigation Links**
    - Update the navigation bar to include links to the new pages.
    - Ensure the links work correctly and navigate to the appropriate pages.
 
-4. **Create and Use a Service**
+5. **Create and Use a Service**
    - Create an Angular service that provides data or functionality to multiple components.
    - Inject the service into the components and utilize it appropriately.
 
-5. **Bonus Feature**
+6. **Bonus Feature**
    - Implement active link styling to highlight the current page in the navbar.
 
-## Deliverable
-Push your edits to the assignment repository.
+
+## Deliverable 
+
+Push your commits to the assignment repository.
+
+Submit the link to your repository to the assignment Dropbox on Pilot.
 
 ## Rubric
 
