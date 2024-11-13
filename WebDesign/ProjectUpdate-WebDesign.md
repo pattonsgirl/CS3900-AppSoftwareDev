@@ -2,7 +2,7 @@
 
 ## Purpose / Objectives
 
-This project aims to provide students with hands-on experience in building a robust Angular front-end application. 
+This project aims to provide students with hands-on experience in building a robust Angular front-end application using their group project theme. 
 
 Students will demonstrate their understanding of Angular fundamentals, including:
 - component creation
@@ -41,8 +41,11 @@ The project is structured into four main sections:
     ```
   - The application should be accessible at `http://localhost:4200/` in a web browser.
 
-### 1.2. Generating Components
+- **Documentation:**
+  - `README.md` within the frontend application folder to instruct users / your teammates the required steps to run the application.
+    - Must include required installations & commands
 
+### 1.2. Generate Generic Components
 - **Create Components:**
   - Generate at least **four (4)** distinct components using the Angular CLI:
     ```bash
@@ -59,6 +62,10 @@ The project is structured into four main sections:
 - **Component Requirements:**
   - Each generated component should have its own HTML, CSS, and TypeScript files.
   - Ensure that components are properly declared and integrated within the application.
+
+### 1.3. Generate Specialty Components
+
+  
 
 ---
 
@@ -94,7 +101,7 @@ For each component created in **Section 1**, adhere to the following guidelines:
   - Incorporate CSS or TypeScript transitions for at least **one (1)** element within any of the components.
   - Utilize the `calc` function effectively in your CSS to demonstrate advanced styling capabilities.
 
-### **2.2. Responsive Design Enhancements (Honors Only)**
+### 2.2. Responsive Design Enhancements (Honors Only)
 
 - **Media Queries:**
   - Implement a minimum of **two (2)** different media queries within the project.
