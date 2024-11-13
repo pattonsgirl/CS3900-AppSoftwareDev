@@ -6,23 +6,31 @@
 - Optimize change detection
 
 ## Description
-1. **Add Unit Tests**
+
+1. **Continuing from the Web Design Assignment Repository** in Pilot...
+    - The repository will contain your Assignment 1, 2, and 3 Angular elements practice assignments.
+    - Complete the taskings below in your assignment repository
+
+2. **Add Unit Tests**
    - Write unit tests for all components and services created so far.
    - Ensure tests cover key functionality and edge cases.
  
-2. **Implement Lazy Loading**
+3. **Implement Lazy Loading**
    - Configure Angular to lazy load certain modules or components.
    - Verify that lazy loading works as expected and improves performance.
  
-3. **Optimize Change Detection**
+4. **Optimize Change Detection**
    - Analyze the application for performance bottlenecks.
    - Optimize change detection where necessary to improve efficiency.
 
-4. **Bonus Feature**
+5. **Bonus Feature**
    - Set up code coverage reporting to track the percentage of code covered by tests.
 
-## Deliverable
-- Push your edits to the assignment repository.
+## Deliverable 
+
+Push your commits to the assignment repository.
+
+Submit the link to your repository to the assignment Dropbox on Pilot.
 
 ## Rubric
 

@@ -12,8 +12,8 @@
 For this assignment set, continue building on the Angular elements you tried in Assignment 1.
 
 1. **Continuing from the Web Design Assignment Repository** in Pilot...
-    - The repository will have your demonstrated Angular practices from Assignment 1
-    - Complete the assignment instructions in your cloned repository
+    - The repository will contain your Assignment 1 Angular elements practice assignments.
+    - Complete the taskings below in your assignment repository
 
 2. **Set Up Routing**
    - Configure the Angular Router to navigate between different pages.
