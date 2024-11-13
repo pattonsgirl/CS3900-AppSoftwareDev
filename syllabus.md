@@ -51,8 +51,8 @@ This outline is a proposed ordering.
 | 12 - Nov 11 | Web Design  | Web Design     |
 | 13 - Nov 18 | Web Design  | Web Design - Group Project Implementation   |
 | 14 - Nov 25 | Dev Ops - Hosting |  Thanksgiving Break <br> No class 11/28  |
-| 15 - Dec 2  | Retrospective |  Office Hours with Module Teams   |
-| 16 - Dec 9  | --- | Final Exam Block <br> 12/12, 2:45 PM - 4:45 PM   |
+| 15 - Dec 2  | Office Hours with Module Teams |  Project Presentation   |
+| 16 - Dec 9  | --- | Final Exam Block - Retrospective <br> 12/12, 2:45 PM - 4:45 PM   |
 
 ## Grading
 
