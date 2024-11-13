@@ -1,14 +1,27 @@
-# **Angular Front-End Project Deliverables**
+# Web Design - Angular Front-End Group Project Additions
 
-## **Overview**
+## Purpose / Objectives
 
-This project aims to provide students with hands-on experience in building a robust Angular front-end application. Students will demonstrate their understanding of Angular fundamentals, including component creation, service implementation, routing, state management, and testing. The project is structured into four main sections: Project Initialization, Component Development, Application Functionality, and Testing & Efficiency.
+This project aims to provide students with hands-on experience in building a robust Angular front-end application. 
+
+Students will demonstrate their understanding of Angular fundamentals, including:
+- component creation
+- service implementation
+- routing
+- state management
+- testing 
+
+The project is structured into four main sections: 
+- [Project Initialization](#1-project-initialization)
+- [Component Development](#2-component-development)
+- [Application Functionality](#3-application-functionality)
+- [Testing & Efficiency](#4-testing-and-efficiency)
 
 ---
 
-## **1. Project Initialization**
+## 1. Project Initialization
 
-### **1.1. Creating the Angular Project**
+### 1.1. Creating the Angular Project
 
 - **Initialize the Project:**
   - Utilize the Angular CLI to create a new Angular project using the following command:
@@ -28,7 +41,7 @@ This project aims to provide students with hands-on experience in building a rob
     ```
   - The application should be accessible at `http://localhost:4200/` in a web browser.
 
-### **1.2. Generating Components**
+### 1.2. Generating Components
 
 - **Create Components:**
   - Generate at least **four (4)** distinct components using the Angular CLI:
@@ -49,9 +62,9 @@ This project aims to provide students with hands-on experience in building a rob
 
 ---
 
-## **2. Component Development**
+## 2. Component Development
 
-### **2.1. Populating Components with Content**
+### 2.1. Populating Components with Content
 
 For each component created in **Section 1**, adhere to the following guidelines:
 
@@ -89,9 +102,9 @@ For each component created in **Section 1**, adhere to the following guidelines:
 
 ---
 
-## **3. Application Functionality**
+## 3. Application Functionality
 
-### **3.1. Navigation and Routing**
+### 3.1. Navigation and Routing
 
 - **Coherent Navigation:**
   - Implement seamless navigation between the populated components using Angular Routing.
@@ -102,7 +115,7 @@ For each component created in **Section 1**, adhere to the following guidelines:
 - **Navigation Elements:**
   - Incorporate at least **one (1)** navigation bar or dropdown menu within the application to facilitate user navigation.
 
-### **3.2. Data Binding and Directives**
+### 3.2. Data Binding and Directives
 
 - **Class Binding:**
   - Utilize at least **one (1)** instance of class binding to dynamically assign CSS classes based on component state.
@@ -117,7 +130,7 @@ For each component created in **Section 1**, adhere to the following guidelines:
   - **ngIf:**
     - Apply `*ngIf` to conditionally render content based on specific conditions or user interactions.
 
-### **3.3. Component Communication**
+### 3.3. Component Communication
 
 - **Parent-Child Interaction:**
   - Establish communication between parent and child components using `@Input` and `@Output` decorators.
@@ -127,14 +140,14 @@ For each component created in **Section 1**, adhere to the following guidelines:
     - Models can be implemented as either TypeScript interfaces or classes.
     - **Requirement:** Provide a rationale for choosing between an interface or a class (e.g., use of constructors in classes).
 
-### **3.4. Forms Implementation**
+### 3.4. Forms Implementation
 
 - **Form Types:**
   - Create at least **two (2)** different forms within the application:
     - **Template-Driven Form:** Utilize Angular's template-driven forms for straightforward form handling.
     - **Reactive Form:** Implement a reactive form to demonstrate advanced form management and validation techniques.
 
-### **3.5. Component Methods**
+### 3.5. Component Methods
 
 - **Method Implementation:**
   - Develop at least **five (5)** unique component-level methods.
@@ -145,7 +158,7 @@ For each component created in **Section 1**, adhere to the following guidelines:
   
   - Ensure that methods contribute to clear and productive functionality within the application.
 
-### **3.6. Service Integration**
+### 3.6. Service Integration
 
 - **Service Creation:**
   - Generate at least **one (1)** Angular service using the CLI:
@@ -174,9 +187,9 @@ For each component created in **Section 1**, adhere to the following guidelines:
 
 ---
 
-## **4. Testing and Efficiency**
+## 4. Testing and Efficiency
 
-### **4.1. Code Efficiency**
+### 4.1. Code Efficiency
 
 - **Componentization:**
   - Ensure effective usage of component-based architecture.
@@ -189,7 +202,7 @@ For each component created in **Section 1**, adhere to the following guidelines:
 - **Iterators:**
   - Use `*ngFor` to dynamically iterate over and display user-defined components, enhancing scalability.
 
-### **4.2. Unit Testing**
+### 4.2. Unit Testing
 
 - **Testing Framework:**
   - Implement unit tests using Jest to validate component functionality and service methods.
@@ -202,20 +215,20 @@ For each component created in **Section 1**, adhere to the following guidelines:
 
 ---
 
-## **Summary of Deliverables**
+## Deliverables
 
-### **1. Project Initialization**
+### 1. Project Initialization
 - Angular project created and verified using `ng new` and `ng serve`.
 - At least four distinct components generated.
 
-### **2. Component Development**
+### 2. Component Development
 - Each component contains organized HTML content.
 - Flexbox utilized in at least one component.
 - Minimum of ten handwritten CSS classes applied globally and within components.
 - Mobile-friendly designs for honors-level projects.
 - Media queries and CSS transitions implemented as per requirements.
 
-### **3. Application Functionality**
+### 3. Application Functionality
 - Seamless navigation implemented via Angular Routing using `app.routes.ts`.
 - Class binding, style binding, `ngFor`, and `ngIf` utilized effectively.
 - Parent-child component communication established with `@Input` and `@Output`.
@@ -224,7 +237,11 @@ For each component created in **Section 1**, adhere to the following guidelines:
 - Five component-level methods developed.
 - At least one service with CRUD operations and HTTP client usage integrated.
 
-### **4. Testing and Efficiency**
+### 4. Testing and Efficiency
 - Effective componentization and method optimization demonstrated.
 - `ngFor` used to iterate over user-defined components.
 - Unit tests implemented with Jest achieving the required code coverage, preferably above 80%.
+
+## Rubric
+
+TODO
