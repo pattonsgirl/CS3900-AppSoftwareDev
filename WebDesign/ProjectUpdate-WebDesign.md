@@ -45,9 +45,9 @@ The project is structured into four main sections:
   - `README.md` within the frontend application folder to instruct users / your teammates the required steps to run the application.
     - Must include required installations & commands
 
-### 1.2. Generate Generic Components
+### 1.2. Generic Application Requirements
 - **Create Components:**
-  - Generate at least **four (4)** distinct components using the Angular CLI:
+  - Generate at least **three (3)** distinct components using the Angular CLI:
     ```bash
     ng generate component [component-name]
     ```
@@ -55,23 +55,34 @@ The project is structured into four main sections:
     ```bash
     ng generate component header
     ng generate component footer
-    ng generate component dashboard
-    ng generate component user-profile
+    ng generate component navbar
     ```
 
 - **Component Requirements:**
   - Each generated component should have its own HTML, CSS, and TypeScript files.
   - Ensure that components are properly declared and integrated within the application.
+  - These components should be present on every page (exception for modals / pop-ups)
 
-### 1.3. Generate Specialty Components
+- **CSS Classes:**
+    - Implement a minimum of **ten (10)** handwritten CSS classes.
+    - Classes should be defined and utilized at both global and component levels.
+    - **Note:** The use of CSS frameworks like Tailwind CSS or component libraries like PrimeNG 
+    is permitted beyond the initial requirement.
 
-  
+### 1.3. Generate Specialty Content
+
+For each wireframe / resource, generate a page.  Each wireframe / resource must have its own component.  
+
+See [Part 2](#2-component-development) for requirements on what you must demonstrate in a least one wireframe component.
 
 ---
 
 ## 2. Component Development
 
-### 2.1. Populating Components with Content
+For the wireframe your team has assigned you, you must meet the following requirements in a 
+**minimum** of one component.
+
+### 2.1. Populating Wireframe Component(s) with Content
 
 For each component created in **Section 1**, adhere to the following guidelines:
 
@@ -84,34 +95,27 @@ For each component created in **Section 1**, adhere to the following guidelines:
     - At least **one (1)** component must implement Flexbox for layout management.
     - Demonstrate responsive design practices using Flexbox properties.
   
-  - **CSS Classes:**
-    - Implement a minimum of **ten (10)** handwritten CSS classes.
-    - Classes should be defined and utilized at both global and component levels.
-    - **Note:** The use of CSS frameworks like Tailwind CSS or component libraries like PrimeNG is permitted beyond the initial requirement.
-
 - **UI/UX Standards:**
   - Content should be organized in a manner that reflects the UI/UX principles taught during the course.
   - Focus on creating intuitive and user-friendly interfaces.
 
 - **Mobile Responsiveness (Honors Only):**
-  - Ensure that content on each component is mobile-friendly.
+  - Ensure that content on each component on your assigned wireframe is mobile-friendly.
   - Implement responsive design techniques to provide a seamless experience across various devices.
+  - Recommended testing sites:
+    - [Chrome - Use Dev Tools](https://contextqa.com/mobile-version-of-a-website-on-chrome/)
 
 - **Advanced Styling (Bonus):**
   - Incorporate CSS or TypeScript transitions for at least **one (1)** element within any of the components.
   - Utilize the `calc` function effectively in your CSS to demonstrate advanced styling capabilities.
 
-### 2.2. Responsive Design Enhancements (Honors Only)
-
-- **Media Queries:**
-  - Implement a minimum of **two (2)** different media queries within the project.
-  - Use media queries to adjust layouts, font sizes, and other stylistic elements based on screen size.
-
 ---
 
 ## 3. Application Functionality
 
-### 3.1. Navigation and Routing
+Somewhere in the application needs 
+
+### 3.1. Navigation and Routing - TODO: project wide
 
 - **Coherent Navigation:**
   - Implement seamless navigation between the populated components using Angular Routing.
@@ -122,7 +126,7 @@ For each component created in **Section 1**, adhere to the following guidelines:
 - **Navigation Elements:**
   - Incorporate at least **one (1)** navigation bar or dropdown menu within the application to facilitate user navigation.
 
-### 3.2. Data Binding and Directives
+### 3.2. Data Binding and Directives - TODO: part of wireframe
 
 - **Class Binding:**
   - Utilize at least **one (1)** instance of class binding to dynamically assign CSS classes based on component state.
@@ -137,7 +141,7 @@ For each component created in **Section 1**, adhere to the following guidelines:
   - **ngIf:**
     - Apply `*ngIf` to conditionally render content based on specific conditions or user interactions.
 
-### 3.3. Component Communication
+### 3.3. Component Communication - TODO: Project wide
 
 - **Parent-Child Interaction:**
   - Establish communication between parent and child components using `@Input` and `@Output` decorators.
@@ -147,14 +151,14 @@ For each component created in **Section 1**, adhere to the following guidelines:
     - Models can be implemented as either TypeScript interfaces or classes.
     - **Requirement:** Provide a rationale for choosing between an interface or a class (e.g., use of constructors in classes).
 
-### 3.4. Forms Implementation
+### 3.4. Forms Implementation - TODO: wireframe must have
 
 - **Form Types:**
-  - Create at least **two (2)** different forms within the application:
+  - Create **one (1)** different form within the wireframe using either a:
     - **Template-Driven Form:** Utilize Angular's template-driven forms for straightforward form handling.
     - **Reactive Form:** Implement a reactive form to demonstrate advanced form management and validation techniques.
 
-### 3.5. Component Methods
+### 3.5. Component Methods - TODO: Wireframe
 
 - **Method Implementation:**
   - Develop at least **five (5)** unique component-level methods.
@@ -165,7 +169,7 @@ For each component created in **Section 1**, adhere to the following guidelines:
   
   - Ensure that methods contribute to clear and productive functionality within the application.
 
-### 3.6. Service Integration
+### 3.6. Service Integration - TODO: Wireframe specific.  May give a defense if not productive in context of given wireframe
 
 - **Service Creation:**
   - Generate at least **one (1)** Angular service using the CLI:
@@ -194,7 +198,7 @@ For each component created in **Section 1**, adhere to the following guidelines:
 
 ---
 
-## 4. Testing and Efficiency
+## 4. Testing and Efficiency: TODO: write tests within your own wireframe.  Code coverage 50%
 
 ### 4.1. Code Efficiency
 
