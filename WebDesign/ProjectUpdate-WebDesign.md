@@ -104,6 +104,7 @@ For each component created in **Section 1**, adhere to the following guidelines:
   - Implement responsive design techniques to provide a seamless experience across various devices.
   - Recommended testing sites:
     - [Chrome - Use Dev Tools](https://contextqa.com/mobile-version-of-a-website-on-chrome/)
+    - [Chrome Extension - U-Eyes: Mobile Device Simulator](https://chromewebstore.google.com/detail/u-eyes-mobile-device-simu/pjldgnhfobpnhbdmfmofkfppdilefnjj?hl=en-US&utm_source=ext_sidebar&pli=1)
 
 - **Advanced Styling (Bonus):**
   - Incorporate CSS or TypeScript transitions for at least **one (1)** element within any of the components.
@@ -207,7 +208,7 @@ Somewhere in the application needs
   - Avoid duplicating HTML code across components; leverage reusable components where applicable.
 
 - **Method Optimization:**
-  - Eliminate redundant methods that perform identical functionalities.
+  - Eliminate redundant methods that perform identical functionalities by utilizing services.
   - Consolidate similar logic to maintain a clean and maintainable codebase.
 
 - **Iterators:**
