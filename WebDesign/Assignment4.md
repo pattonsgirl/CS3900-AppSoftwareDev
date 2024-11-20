@@ -15,16 +15,8 @@
    - Write unit tests for all components and services created so far.
    - Ensure tests cover key functionality and edge cases.
    - Aim for 50% code coverage
- 
-3. ~~**Implement Lazy Loading**~~
-   - Configure Angular to lazy load certain modules or components.
-   - Verify that lazy loading works as expected and improves performance.
- 
-4. ~~**Optimize Change Detection**~~
-   - Analyze the application for performance bottlenecks.
-   - Optimize change detection where necessary to improve efficiency.
 
-5. **Bonus Feature**
+3. **Bonus Feature**
    - Set up code coverage reporting to track the percentage of code covered by tests.
 
 ## Deliverable 
