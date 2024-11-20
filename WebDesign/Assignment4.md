@@ -27,9 +27,9 @@ Submit the link to your repository to the assignment Dropbox on Pilot.
 
 ## Rubric
 
-Assignment score: X / 5 points
+Assignment score: X / 3 points
 
-- Meets assignment criteria / objectives (3 pts)
+- Meets assignment criteria / objectives (1 pt)
 - Follows good styling (1 pt)
 - Good commit structure based on completion of components (1 pt)
 
