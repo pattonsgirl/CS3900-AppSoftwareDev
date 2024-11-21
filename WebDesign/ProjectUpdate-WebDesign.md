@@ -15,9 +15,31 @@ The project is structured into two main sections:
 - [General Application Requirements](#1-general-application-requirements)
 - [Wireframe Development](#2-wireframe-development)
 
+Before beginning, you (as a group) should revisit the group project portions in which you planned wireframes & your API implementation.  It is expected that not all planned endpoints were built.  
+If the API endpoints are not functional, you'll need to flesh out the CRUD (endpoint) operations without API calls (although you can leave code sketches to future plan the API resource working).
+
+Note that **most** wireframes will likely use form components to get input from users and **most** wireframes will display results in tables.  Use of flexbox will likely assist with putting components  
+where you want them on a page.
+
+In your group project GitHub repository, create a folder named `PROJECTTHEME-frontend`, replacing PROJECTHEME with your group's project theme.  
+- Add a folder named `READMES` to the `PROJECTTHEME-frontend` folder.
+- Leaning on the Web Design assignments, you are allowed to choose a group member to be the starting code base that worked out a good layout that the team would like to use as a base.
+  - If you feel you have a good base as a team, have that member add their code to the `PROJECTTHEME-frontend` folder so that all team members can start from the same base.
+
+> [!TIP] 
+> Have team members on components / pages on different branches.  Name the branch with the corresponding components / pages.  Merge branches with `main` once branch components / pages are tested to  
+not break the application on `main`.  The application state on `main` should always be functional
+
+**Since each team member built a wireframe, I recommend having the same team member who built the wireframe take lead in building the page and it's components.**  How you as a team choose to  
+distribute the work is up to the team - I will only be checking that all team members contributed in the commit history.  You may also have team members work on different approaches to the same  
+component / wireframe if there are unique opinions on layout / interaction.
+
 ---
 
 ## 1. General Application Requirements
+
+This section will outline the basis of what all applications must have - a navigation bar, a header, and a footer.  Whether you application has a dedicated homepage and expects users to head to  
+the navigation bar, or if it display a buttoned menu of options (in addition to the navigation bar) is up to you as a group. 
 
 ### 1.1. Create the Angular Project
 
@@ -67,9 +89,9 @@ The project is structured into two main sections:
   - The homepage should must make use of the required components listed above.
 
 ### 1.3. **CSS Classes:**
-    - Implement a minimum of **ten (10)** handwritten CSS classes.
-    - Classes should be defined and utilized at both global and component levels.
-    - **Note:** The use of CSS frameworks like Tailwind CSS or component libraries like PrimeNG  
+  - Implement a minimum of **ten (10)** handwritten CSS classes.
+  - Classes should be defined and utilized at both global and component levels.
+  - **Note:** The use of CSS frameworks like Tailwind CSS or component libraries like PrimeNG  
     is permitted beyond the initial requirement.
 
 ### 1.4. Navigation and Routing
