@@ -78,6 +78,7 @@ the navigation bar, or if it display a buttoned menu of options (in addition to 
     ng generate component footer
     ng generate component navbar
     ```
+    - For the navigation bar, follow requirement in 1.4. Navigation & Routing
 
 - **Component Requirements:**
   - Each generated component should have its own HTML, CSS, and TypeScript files.
@@ -150,16 +151,18 @@ Each wireframe, in addition to utilizing the generic components of at minimum he
   - Content should be organized in a manner that reflects the UI/UX principles taught during the course.
   - Focus on creating intuitive and user-friendly interfaces.
 
-- **Mobile Responsiveness (Honors Only):**
+- **Honors - Mobile Responsiveness:**
   - Ensure that content on each component on your assigned wireframe is mobile-friendly.
   - Implement responsive design techniques to provide a seamless experience across various devices.
   - Recommended testing sites:
     - [Chrome - Use Dev Tools](https://contextqa.com/mobile-version-of-a-website-on-chrome/)
     - [Chrome Extension - U-Eyes: Mobile Device Simulator](https://chromewebstore.google.com/detail/u-eyes-mobile-device-simu/pjldgnhfobpnhbdmfmofkfppdilefnjj?hl=en-US&utm_source=ext_sidebar&pli=1)
+  - Note in `PAGE-README.md` if tasking was complete and if for HONORS or BONUS credit
 
-- **Advanced Styling (Bonus):**
+- **Bonus - Advanced Styling:**
   - Incorporate CSS or TypeScript transitions for at least **one (1)** element within any of the components.
   - Utilize the `calc` function effectively in your CSS to demonstrate advanced styling capabilities.
+  - Note in `PAGE-README.md` if tasking was complete for BONUS credit
 
 ### 2.2. Data Binding and Directives
 
@@ -212,11 +215,12 @@ Each wireframe, in addition to utilizing the generic components of at minimum he
     - Instantiate and utilize Angular's `HttpClient` within the service.
     - **Requirement:** Make actual HTTP requests to demonstrate understanding, even if the endpoints are mock or do not return real data.
   
-  - **Honors Only - Inter-Component Communication:**
-    - Implement a subscription or signal within the service to facilitate communication between sibling components.
-  
-  - **Bonus - Utility Methods:**
-    - Develop one or more services that include at least **two (2)** commonly reused utility methods.
+  - **Bonus**
+    - Inter-Component Communication:
+      - Implement a subscription or signal within the service to facilitate communication between sibling components.
+    - Utility Methods:
+      - Develop one or more services that include at least **two (2)** commonly reused utility methods.
+    - Note in `PAGE-README.md` if tasking was complete for BONUS credit
 
 - **Service Consumption:**
   - Correctly declare and inject the service as a dependency within at least **one (1)** component.
@@ -248,33 +252,78 @@ Each wireframe, in addition to utilizing the generic components of at minimum he
 
 ---
 
-## Deliverables - TODO: Patch after reorg
+## Deliverables
 
-### 1. Project Initialization
-- Angular project created and verified using `ng new` and `ng serve`.
-- At least four distinct components generated.
+- `main` contains the working pieces of the application frontend. 
+- Pages with components with contributions by each team member.  
+- If the team member does not have a working component / page, do not merge their code into `main`, leave it on the branch with documentation in `main` about the status / difficulties to show the teams where assistance / advice is needed.
+- `PAGE-README` in `READMES` folder documenting exemptions to the assignment description for a given page
 
-### 2. Component Development
-- Each component contains organized HTML content.
-- Flexbox utilized in at least one component.
-- Minimum of ten handwritten CSS classes applied globally and within components.
-- Mobile-friendly designs for honors-level projects.
-- Media queries and CSS transitions implemented as per requirements.
+## Submission
 
-### 3. Application Functionality
-- Seamless navigation implemented via Angular Routing using `app.routes.ts`.
-- Class binding, style binding, `ngFor`, and `ngIf` utilized effectively.
-- Parent-child component communication established with `@Input` and `@Output`.
-- Two distinct data models defined and used.
-- Two forms (template-driven and reactive) implemented.
-- Five component-level methods developed.
-- At least one service with CRUD operations and HTTP client usage integrated.
+Submit link to assignment repository in the Dropbox in Pilot.  Only ONE team member needs to remember to submit the link.
 
-### 4. Testing and Efficiency
-- Effective componentization and method optimization demonstrated.
-- `ngFor` used to iterate over user-defined components.
-- Unit tests implemented with Jest achieving the required code coverage, preferably above 80%.
+URL looks like: https://github.com/WSU-kduncan/cs3900-YOURGROUPNAME
 
-## Rubric - TODO
+## Rubric
 
-TODO
+Team members with no contributions to the team project GitHub repository will receive a 0.
+
+If a team member did not build the page / components they were tasked with, the participating team members will not take a penalty.
+
+If a team member helps another team member within polishing / debugging an page / component (and therefore makes contributions), there will not be a penalty on the team member who requested help.
+
+If a page / component is not working (incomplete), partial credit is available for the work that was done.
+
+### Total Score: 
+- Total points among complete & incomplete pages / components / total earnable complete & incomplete points
+
+### General application requirements: / 18 pts
+- Angular project created
+- `README.md` contains notes for how to run app
+- For the three generic components: / 9
+  - each has it's own HTML, CSS, and TypeScript files
+  - each are declared and integrated within the application
+  - each is present on every page (exception for modals / pop-ups)
+- application homepage: / 2
+  - exists, loads as default landing page
+  - makes use of generic components
+- CSS classes: / 1
+  - minimum of 10 defined and utilized at both global and component levels
+- Navigation / routing: / 2
+  - Implement navigation between the components using Angular Routing
+  - Define routes in a dedicated `app.routes.ts`
+- Component communication: / 2
+  - Establish communication between parent and child components using `@Input` and `@Output` decorators.
+  - Define and utilize at least **two (2)** distinct object data models.
+
+### Component requirements (for a min. of 1 component / page): / 17 pts per page
+- Logically organized HTML content
+- Styling with flexbox
+- UI / UX principles utilized
+- Utilizes at least **one (1)** instance of class binding
+- Implements at least **one (1)** instance of style binding
+- Use `*ngFor` to iterate over and display a list of items
+- Apply `*ngIf` to conditionally render content
+- At least **five (5)** unique component-level methods
+- At least **one (1)** Angular service meeting the objectives: / 4
+  - Implement Create, Read, Update, and Delete (CRUD) functionalities within the service.
+  - Instantiate and utilize Angular's `HttpClient` within the service.
+  - Correctly declare and inject the service as a dependency within at least **one (1)** component.
+  - Demonstrate the service's usage through method calls and data handling within the component.
+- Code demonstrates: / 3
+  - componentization
+  - method optimization
+  - iterators
+- Implement unit tests using Jest to validate component functionality and service methods.
+- Achieve a minimum of **60%** code coverage across the project.
+
+### Honors Score: / 2
+- mobile responsiveness of the page / component
+- 80% code coverage in testing of the page / component
+
+### Bonus Score: / 4
+- Incorporate CSS or TypeScript transitions for at least **one (1)** element within any of the components.
+- Utilize the `calc` function effectively in your CSS to demonstrate advanced styling capabilities.
+- Implement a subscription or signal within the service to facilitate communication between sibling components.
+- Develop one or more services that include at least **two (2)** commonly reused utility methods.
