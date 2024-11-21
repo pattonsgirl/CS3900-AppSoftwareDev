@@ -117,26 +117,22 @@ the navigation bar, or if it display a buttoned menu of options (in addition to 
 
 ---
 
-## 2. Wireframe Development
+## 2. Page / Component Development
 
-It is expected that during the UI / UX process, each team member created a unique wireframe for the group project application.  
-Each group member will now be responsible for implementation of that wireframe, or the wireframe assigned to them by the group.
+This section will get into the specific of what pages on your application need to have.  Not all pages will need more than one component (in addition to using the generic components).  Not all pages will make use of all CRUD operations to call all types of endpoints (GET, PUT, POST, DELETE) - cases like this will be justified in the page README.
 
-This section will detail the requirements for each wireframe.
+I'll reiterate that I would recommend assigning a group member to a wireframe, but if you as a group would rather break it into team members who manage component layout versus service layout versus testing, you as a group may make that call.
 
 Each wireframe, in addition to utilizing the generic components of at minimum header, footer, and navigation bar, must  
-**implement a minimum of one component** unique to the wireframe.  
-- [Section 2.1.](#21-components-requirements) details the component requirements
-- [Section 2.2.](#22-data-binding-and-directives) details data binding & directives requirements
-- [Section 2.3.](#23-forms-implementation) details form implementation requirements
-- [Section 2.4.](#24-component-methods) details component method requirements
-- [Section 2.5.](#25-service-integration) details service integration requirements
-- [Section 2.6.](#26-code-efficiency) details code efficiency requirements
-- [Section 2.7.](#27-unit-testing) details unit testing requirements
-
-**NOTE** If your assigned wireframe has no purpose for a specifically required elements (in particular down in service integration),  
-you may justify why it unsuitable in context of the wireframe and application intent.  Add justifications to a file named  
-`exemptions.md`, with a content header of the wireframe / application page name applying for exemption. 
+- **implement a minimum of one component** unique to the page.  
+  - [Section 2.1.](#21-components-requirements) details the component requirements
+  - [Section 2.2.](#22-data-binding-and-directives) details data binding & directives requirements
+  - [Section 2.3.](#23-forms-implementation) details form implementation requirements
+  - [Section 2.4.](#24-component-methods) details component method requirements
+  - [Section 2.5.](#25-service-integration) details service integration requirements
+  - [Section 2.6.](#26-code-efficiency) details code efficiency requirements
+  - [Section 2.7.](#27-unit-testing) details unit testing requirements
+- have a `PAGENAME-README.md` file to document exemptions to the generic requirements.
 
 ### 2.1. Component(s) Requirements
 
