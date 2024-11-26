@@ -49,8 +49,8 @@ This outline is a proposed ordering.
 | 10 - Oct 28 | Dev Ops - Pipelines     | Dev Ops - Pipelines   |
 | 11 - Nov 4  | Web Design - Toolkit   | Web Design    |
 | 12 - Nov 11 | Web Design  | Web Design     |
-| 13 - Nov 18 | Web Design  | Web Design - Group Project Implementation   |
-| 14 - Nov 25 | Dev Ops - Hosting |  Thanksgiving Break <br> No class 11/28  |
+| 13 - Nov 18 | Web Design  | Web Design    |
+| 14 - Nov 25 | Web Design - Group Project Implementation |  Thanksgiving Break <br> No class 11/28  |
 | 15 - Dec 2  | Office Hours with Module Teams |  Project Presentation   |
 | 16 - Dec 9  | --- | Final Exam Block - Retrospective <br> 12/12, 2:45 PM - 4:45 PM   |
 
@@ -65,9 +65,9 @@ This outline is a proposed ordering.
 | Database Design Module | 13.33% | Individual Assignments x 5 <br> Group Project Component | 70% <br> 30%  |
 | UI / UX Module | 13.33% | Individual Assignments x 2 <br> Group Project Component | 70% <br> 30%  |
 | Microservices Module | 13.33% | Individual Assignments x 5 <br> Group Project Component | 70% <br> 30%  |
-| Unit & Automation Testing Module | 13.33% | Individual Assignments x 3 <br> Group Project Component | 70% <br> 30%  |
 | Web Design Module | 13.33% | Individual Assignments x 4 <br> Group Project Component | 70% <br> 30%  |
-| Final Project  | 10%  |   |  |
+| Project Final Grade  | 10%  |   |  |
+| Project Presentation  | 10%  |   |  |
 | Retrospective  | 10%  |   |  |
 
 The grading scale for the course is [90-100] A; [80-90) B; [70-80) C; [60-69) D; [0-60) F. 
