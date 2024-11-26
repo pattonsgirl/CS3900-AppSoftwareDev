@@ -29,3 +29,10 @@ Demonstration 2:
 - Database is updated (show in demo - likely in DBeaver), confirmation / result sent to API
 - API returns result to application
 - Application displays result / message to end user
+
+## *Potential* Questions for Teams to Field:
+
+1. Can your application ___
+2. Why did you decide to ____
+3. Did you think about users wanting to ____
+4. What else would you implement if you had more time?
