@@ -67,8 +67,8 @@ This outline is a proposed ordering.
 | Microservices Module | 13.33% | Individual Assignments x 5 <br> Group Project Component | 70% <br> 30%  |
 | Web Design Module | 13.33% | Individual Assignments x 4 <br> Group Project Component | 70% <br> 30%  |
 | Project Final Grade  | 10%  |   |  |
-| Project Presentation  | 10%  |   |  |
-| Retrospective  | 10%  |   |  |
+| Project Presentation  | 5%  |   |  |
+| Retrospective  | 5%  |   |  |
 
 The grading scale for the course is [90-100] A; [80-90) B; [70-80) C; [60-69) D; [0-60) F. 
 
