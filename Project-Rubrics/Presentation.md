@@ -3,7 +3,7 @@
 ## Project Presentation Elements
 Score of 0 to 5 for the following elements. 
 - 0 being weak presentation that shows lack of understanding of key elements
-- 5 being strong presentation that shows good of understanding of key elements
+- 5 being strong presentation that shows good understanding of key elements
 
 1. Presents business case of the application:
 2. Presents wireframes of expected interaction:
