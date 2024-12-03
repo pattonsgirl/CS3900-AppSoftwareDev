@@ -23,6 +23,7 @@
 - Frontend allows user to update an **existing** record for some resource and stores the update in the database
 - Frontend allows user to **filter** records for some resource using information stored in the database
 - Fronted displays some business case valuable report of records in the database
+    - Revisit your SQL Toolbox (and corresponding feedback) from DB Design Assignment 5
     - Examples to jog the imagination:
         - number of pets adopted vs number of pets available for adoption
         - number of orders served vs number of orders open
